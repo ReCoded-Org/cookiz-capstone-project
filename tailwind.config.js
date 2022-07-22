@@ -8,6 +8,9 @@ module.exports = {
             fontFamily: {
                 primary: ["Inter", ...fontFamily.sans],
             },
+            backgroundImage: {
+                herobg: "url('/images/dinner-bg2.png')",
+            },
         },
     },
     plugins: [require("@tailwindcss/forms")],
