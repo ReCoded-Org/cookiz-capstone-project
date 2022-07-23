@@ -8,6 +8,10 @@ module.exports = {
             fontFamily: {
                 primary: ["Inter", ...fontFamily.sans],
             },
+            margin: {
+                '45px': '45px',
+              }
+            
         },
     },
     plugins: [require("@tailwindcss/forms")],
