@@ -1,4 +1,7 @@
+import { useState } from "react";
+
 const SearchCities = () => {
+    const [city, setCity] = useState("");
     return (
         <div className='flex flex-row justify-center'>
             <div className='flex flex-col items-center gap-6 px-8 py-6 '>
@@ -17,6 +20,8 @@ const SearchCities = () => {
                                 type='text'
                                 className=' w-full p-3 font-normal focus-within:border-[#004945] focus:ring-[#004945]'
                                 placeholder='Enter a city name'
+                                value={city}
+                                onChange={(e) => setCity(e.target.value)}
                                 required
                             />
                         </div>
