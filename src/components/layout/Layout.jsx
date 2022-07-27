@@ -1,12 +1,12 @@
 import * as React from "react";
 
-import Hero from "@/components/hero/Hero";
+import Navbar from "@/components/navbar/Navbar";
 
 export default function Layout({ children }) {
     // Put Header or Footer around the children element
     return (
         <>
-            <Hero />
+            <Navbar />
             {children}
         </>
     );
