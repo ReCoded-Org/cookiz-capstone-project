@@ -4,8 +4,10 @@ import Navbar from "@/components/navbar/Navbar";
 
 export default function Layout({ children }) {
     // Put Header or Footer around the children element
-    return <>
-    <Navbar/>
-    {children}
-    </>;
+    return (
+        <>
+            <Navbar />
+            {children}
+        </>
+    );
 }

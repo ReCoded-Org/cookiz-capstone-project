@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 import renderer from "react-test-renderer";
 
-import Navbar from '@/components/navbar/Navbar';
+import Navbar from "@/components/navbar/Navbar";
 
 // eslint-disable-next-line
 it("Navbar Component", () => {
