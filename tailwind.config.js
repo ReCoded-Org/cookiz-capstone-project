@@ -7,7 +7,12 @@ module.exports = {
         extend: {
             fontFamily: {
                 primary: ["Inter", ...fontFamily.sans],
+                opensans: ["Open Sans", "serif"],
             },
+        },
+        screens: {
+            tablet: { max: "1024px" },
+            mobile: { max: "640" },
         },
     },
     plugins: [require("@tailwindcss/forms")],
