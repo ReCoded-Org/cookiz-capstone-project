@@ -28,9 +28,11 @@ exports[`renders correctly 1`] = `
         >
           <input
             className=" w-full p-3 font-normal focus-within:border-[#004945] focus:ring-[#004945]"
+            onChange={[Function]}
             placeholder="Enter a city name"
             required={true}
             type="text"
+            value=""
           />
         </div>
       </div>
