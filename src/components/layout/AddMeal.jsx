@@ -2,6 +2,7 @@ import { useState } from "react";
 import { HiArrowSmLeft, HiArrowSmRight, HiPlusCircle } from "react-icons/hi";
 import { IoAddCircleOutline, IoTrashBinOutline } from "react-icons/io5";
 export default function AddMeal() {
+    const imageUrl = "../images/header.jpg";
     const [dietary, setDietary] = useState([""]);
 
     function addRemoveDietary(dietaryName) {
@@ -20,12 +21,20 @@ export default function AddMeal() {
     }
 
     return (
-        <div className='flex h-full w-full flex-col items-start justify-center gap-3 overflow-hidden'>
-            <div className='mx-0 mt-0 flex h-40 w-full items-center justify-center bg-slate-400 bg-center bg-no-repeat'>
-                <div className='flex items-center justify-between gap-28 md:gap-80 lg:gap-y-96'>
-                    <HiArrowSmLeft />
-                    <HiPlusCircle />
-                    <HiArrowSmRight />
+        <div className='flex h-fit w-[360px] flex-col items-start justify-start gap-3 overflow-hidden bg-red-200'>
+            <div
+                style={{
+                    backgroundImage: `url(${imageUrl})`,
+                    // backgroundSize: "",
+                    width: "100%",
+                    border: "none",
+                }}
+                className='mx-0 mt-0 flex h-64 w-full items-center justify-center overflow-hidden bg-center bg-no-repeat'
+            >
+                <div className='flex items-center justify-between gap-28 text-white md:gap-80 lg:gap-y-96'>
+                    <HiArrowSmLeft style={{ fontSize: "40px" }} />
+                    <HiPlusCircle style={{ fontSize: "40px" }} />
+                    <HiArrowSmRight style={{ fontSize: "40px" }} />
                 </div>
             </div>
 
