@@ -7,6 +7,10 @@ module.exports = {
         extend: {
             fontFamily: {
                 primary: ["Inter", ...fontFamily.sans],
+                secondary: {
+                    100: "#E2E2D5",
+                    200: "#888883",
+                },
             },
         },
     },
