@@ -11,18 +11,6 @@ export default function CreateAccountForm() {
     const [city, setCity] = useState("");
     const [county, setCounty] = useState("");
 
-    /* Debugging */
-    // console.log(
-    //     firstname,
-    //     lastname,
-    //     password,
-    //     email,
-    //     phone,
-    //     address,
-    //     city,
-    //     county
-    // );
-
     return (
         // component container
         <div className='flex flex-row flex-wrap justify-center'>
