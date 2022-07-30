@@ -1,32 +1,47 @@
-import { useEffect, useState } from "react";
-import { HiArrowSmLeft, HiArrowSmRight, HiPlusCircle } from "react-icons/hi";
+import { useState } from "react";
+import { HiPlusCircle } from "react-icons/hi";
 import { IoAddCircleOutline, IoTrashBinOutline } from "react-icons/io5";
 export default function AddMeal() {
-    const imageUrl = "../images/header.jpg";
+    const [mealImage, setMealImage] = useState("../images/header.jpg");
+    const [mealName, setMealName] = useState("");
+    const [dietary, setDietary] = useState([]); // I know it seems unnecessary I put maybe we can use for filter
+    const [vegan, isVegan] = useState(false);
+    const [vegetarian, isVegetarian] = useState(false);
+    const [glutenFree, isGlutenFree] = useState(false);
+    const [ingredient, setIngredient] = useState(""); //it keeps state of place adjacent to plus icon
+    const [ingredients, setIngredients] = useState([]); // it keeps array of all ingredients
+    const [deliveryMin, setDeliveryMin] = useState("");
+    const [price, setPrice] = useState("");
 
-    const [meal, setMeal] = useState({
-        imageUrl: "",
-        name: "",
-        dietary: [],
-        ingredients: ["tangerina", "cucumber"],
-        minute: "",
-        price: "",
-    });
-
-    useEffect(() => {}, [meal]);
-
-    function addIngredient(value) {
-        const obj = {
-            ...meal,
-            ingredients: [...meal["ingredients"], value],
-        };
-        setMeal(obj);
+    function chooseImage(e) {
+        setMealImage(URL.createObjectURL(e.target.files[0]));
+    }
+    function deleteIngredients(ingredientId) {
+        setIngredients(
+            ingredients.filter((item, itemId) => itemId !== ingredientId)
+        );
+    }
+    function addIngredients(ingredient) {
+        //add single ingredient to list
+        setIngredients([...ingredients, ingredient]);
+    }
+    function checkVegan() {
+        isVegan(!vegan);
+        vegan ? setDietary([...dietary, "vegan"]) : null;
+    }
+    function checkVegetarian() {
+        isVegetarian(!vegetarian);
+        vegetarian ? setDietary([...dietary, "vegetarian"]) : null;
+    }
+    function checkGluten() {
+        isGlutenFree(!glutenFree);
+        glutenFree ? setDietary([...dietary, "gluten free"]) : null;
     }
     return (
         <div className='flex h-fit w-[340px] flex-col items-start justify-start gap-3 overflow-hidden'>
             <div
                 style={{
-                    backgroundImage: `url(${imageUrl})`,
+                    backgroundImage: `url(${mealImage})`,
                     backgroundSize: "cover",
 
                     border: "none",
@@ -34,9 +49,33 @@ export default function AddMeal() {
                 className='mx-0 mt-0 flex h-48 w-full items-center justify-center overflow-hidden bg-center bg-no-repeat'
             >
                 <div className='flex items-center justify-between gap-28 text-white md:gap-80 lg:gap-y-96'>
-                    <HiArrowSmLeft style={{ fontSize: "40px" }} />
-                    <HiPlusCircle style={{ fontSize: "40px" }} />
-                    <HiArrowSmRight style={{ fontSize: "40px" }} />
+                    {/* <HiArrowSmLeft
+                        className='cursor-pointer'
+                        style={{ fontSize: "40px" }}
+                    /> */}
+                    <input
+                        type='file'
+                        id='add-image'
+                        className='peer hidden'
+                        required=''
+                        onChange={chooseImage}
+                    />
+                    <label
+                        htmlFor='add-image'
+                        className='inline-flex w-full cursor-pointer items-center justify-between'
+                    >
+                        <div className='block'>
+                            <HiPlusCircle
+                                className='cursor-pointer'
+                                style={{ fontSize: "40px" }}
+                            />
+                        </div>
+                    </label>
+
+                    {/* <HiArrowSmRight
+                        className='cursor-pointer'
+                        style={{ fontSize: "40px" }}
+                    /> */}
                 </div>
             </div>
 
@@ -45,79 +84,91 @@ export default function AddMeal() {
                 placeholder='Fried Chips'
                 className='ml-5 w-2/3 rounded border-none bg-[#00494533] text-center text-sm focus:ring-1 focus:ring-[#004945] lg:text-base'
                 required
-                value={Event.value}
+                value={mealName}
                 onChange={(e) => {
-                    const obj = { ...meal, name: e.target.value };
-                    setMeal(obj);
+                    setMealName(e.target.value);
                 }}
             />
             <p className='ml-3 text-sm lg:text-base'>Dietary</p>
-            <div className='ml-5 flex w-full items-center justify-start gap-3'>
-                <label
-                    className=' w-1/4 rounded-full  bg-[#00494533] p-2 text-center text-xs text-zinc-800 lg:w-1/3 lg:text-sm'
-                    htmlFor='vegetarianid'
-                >
+            <ul className='ml-5 flex w-full items-center justify-start gap-3'>
+                <li>
                     <input
                         type='checkbox'
-                        id='vegetarianid'
-                        value='vegetarianid'
-                        checked=''
-                        className='hidden'
+                        id='react-option'
+                        className='peer hidden'
+                        required=''
+                        onChange={() => checkVegetarian()}
                     />
-                    Vegetarian
-                </label>
-                <label
-                    className=' w-1/4 rounded-full  bg-[#00494533] p-2 text-center text-xs text-zinc-800 lg:w-1/3 lg:text-sm'
-                    htmlFor='vegetarianid'
-                >
+                    <label
+                        htmlFor='react-option'
+                        className='inline-flex w-full cursor-pointer items-center justify-between rounded-full bg-[#00494533] p-1 ring-1 ring-[#00494533] peer-checked:ring-[#004945]'
+                    >
+                        <div className='block'>
+                            <div className='w-full text-xs '>Vegetarian</div>
+                        </div>
+                    </label>
+                </li>
+                <li>
                     <input
                         type='checkbox'
-                        id='vegetarianid'
-                        value='vegetarianid'
-                        checked=''
-                        className='hidden'
+                        id='flowbite-option'
+                        className='peer hidden'
+                        onChange={() => checkVegan()}
                     />
-                    Vegan
-                </label>
-                <label
-                    className=' w-1/4 rounded-full  bg-[#00494533] p-2 text-center text-xs text-zinc-800 lg:w-1/3 lg:text-sm'
-                    htmlFor='vegetarianid'
-                >
+                    <label
+                        htmlFor='flowbite-option'
+                        className='inline-flex w-full cursor-pointer items-center justify-between rounded-full bg-[#00494533] p-1 ring-1 ring-[#00494533] peer-checked:ring-[#004945]'
+                    >
+                        <div className='block'>
+                            <div className='w-full text-xs'>Vegan</div>
+                        </div>
+                    </label>
+                </li>
+                <li>
                     <input
                         type='checkbox'
-                        id='vegetarianid'
-                        value='vegetarianid'
-                        checked=''
-                        className='hidden'
+                        id='angular-option'
+                        className='peer hidden'
+                        onChange={() => checkGluten()}
                     />
-                    Gluten Free
-                </label>
-            </div>
+                    <label
+                        htmlFor='angular-option'
+                        className='inline-flex w-full cursor-pointer items-center justify-between rounded-full bg-[#00494533] p-1 ring-1 ring-[#00494533] peer-checked:ring-[#004945]'
+                    >
+                        <div className='block'>
+                            <div className='w-full text-xs'>Gluten Free</div>
+                        </div>
+                    </label>
+                </li>
+            </ul>
+
             <p className='ml-3 text-sm lg:text-base'>Ingredients</p>
             <div className='ml-5 flex w-full flex-col items-start justify-start gap-3'>
                 <div className='relative w-1/3'>
                     <input
                         type='text'
                         placeholder='Tomatoes'
-                        value={Event.value}
+                        value={ingredient}
                         className=' w-full rounded-full border-none bg-[#00494533] p-2 text-start text-xs focus:ring-1 focus:ring-[#004945] lg:text-sm'
+                        onChange={(e) => setIngredient(e.target.value)}
                     ></input>
                     <IoAddCircleOutline
-                        onClick={(e) => {
-                            addIngredient(e.target.value);
-                        }}
-                        className='absolute top-2 right-0.5 w-10'
+                        onClick={() => addIngredients(ingredient)}
+                        className='absolute top-2 right-0.5 w-10 cursor-pointer'
                     ></IoAddCircleOutline>
                 </div>
 
                 <div className='flex w-full flex-wrap items-start justify-start gap-3'>
-                    {meal["ingredients"].map((ingredient) => (
+                    {ingredients.map((ingredient, id) => (
                         // eslint-disable-next-line react/jsx-key
                         <div className=' relative w-1/3'>
                             <p className='w-full rounded-full border-none bg-[#00494533] p-2 text-start text-xs text-zinc-800 lg:text-sm'>
                                 {ingredient}
                             </p>
-                            <IoTrashBinOutline className='absolute top-2 right-0.5 w-10' />
+                            <IoTrashBinOutline
+                                onClick={() => deleteIngredients(id)}
+                                className='absolute top-2 right-0.5 w-10 cursor-pointer'
+                            />
                         </div>
                     ))}
                 </div>
@@ -127,7 +178,7 @@ export default function AddMeal() {
                 type='text'
                 className='ml-5  rounded border-none text-xs ring-1 ring-[#004945] focus:rounded focus:ring-1 focus:ring-[#004945] lg:text-base'
                 placeholder='30 min'
-                value=''
+                onChange={(e) => setDeliveryMin(e.target.value)}
             ></input>
 
             <p className='ml-3 text-sm lg:text-base'>Price</p>
@@ -135,10 +186,15 @@ export default function AddMeal() {
                 type='text'
                 className='ml-5 mb-3 rounded border-none text-xs ring-1 ring-[#004945] focus:rounded focus:ring-1 focus:ring-[#004945] lg:text-base'
                 placeholder='30 dollar'
-                value=''
+                onChange={(e) => setPrice(e.target.value)}
             ></input>
 
-            <button className=' absolute bottom-72 right-0  rounded bg-[#004945] px-6 py-1 text-white'>
+            <button
+                onClick={(e) => {
+                    e.preventDefault();
+                }}
+                className=' absolute bottom-80 right-0  mr-2 rounded bg-[#004945] px-6 py-1 text-white'
+            >
                 Save
             </button>
         </div>
