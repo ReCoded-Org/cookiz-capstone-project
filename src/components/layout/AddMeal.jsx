@@ -13,9 +13,7 @@ export default function AddMeal() {
         price: "",
     });
 
-    useEffect(() => {
-        console.log(meal);
-    }, [meal]);
+    useEffect(() => {}, [meal]);
 
     function addIngredient(value) {
         const obj = {
@@ -106,7 +104,6 @@ export default function AddMeal() {
                     ></input>
                     <IoAddCircleOutline
                         onClick={(e) => {
-                            console.log(e.target.name);
                             addIngredient(e.target.value);
                         }}
                         className='absolute top-2 right-0.5 w-10'
