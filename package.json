@@ -28,6 +28,7 @@
         "react-btn-checkbox": "^0.0.2",
         "react-dom": "^18.2.0",
         "react-icons": "^4.4.0",
+        "react-test-renderer": "^18.2.0",
         "tailwind-merge": "^1.3.0"
     },
     "devDependencies": {
