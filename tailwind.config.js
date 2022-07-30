@@ -7,7 +7,7 @@ module.exports = {
         extend: {
             colors: {
                 primary: "#004945",
-                signUpImageColor: "#FDFCEA"
+                signUpImageColor: "#FDFCEA",
             },
             fontFamily: {
                 primary: ["Inter", ...fontFamily.sans],
