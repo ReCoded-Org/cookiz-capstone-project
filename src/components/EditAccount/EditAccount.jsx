@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
+import { BiUserCircle } from "react-icons/bi";
 
 export default function EditAccount() {
     const [phoneNum, setPhoneNum] = useState("");
@@ -13,12 +14,7 @@ export default function EditAccount() {
             <div className='min-w-sm m-5'>
                 {/* icon */}
                 <div className='flex w-1/2 flex-row items-center justify-center'>
-                    <Image
-                        src='/images/user.png'
-                        alt='Edit Account Icon'
-                        width={35}
-                        height={35}
-                    ></Image>
+                    <BiUserCircle size={38} />
                     <h1 className='ml-2 text-2xl'>Edit Your Account</h1>
                 </div>
                 <div className=''>
