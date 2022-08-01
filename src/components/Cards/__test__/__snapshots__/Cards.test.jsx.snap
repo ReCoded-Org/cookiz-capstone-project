@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="mt-20 ml-10 flex flex-col items-center justify-center md:ml-0"
+  className="md:ml-0 mt-20 ml-10 flex flex-col items-center justify-center"
 >
   <div
     className="bflex m-auto flex-col"
@@ -11,7 +11,7 @@ exports[`renders correctly 1`] = `
       className=" flex flex-col"
     >
       <p
-        className=" text-2xl font-bold text-black md:text-3xl"
+        className=" md:text-3xl text-2xl font-bold text-black"
       >
         You’ve missed home made food?
       </p>
@@ -149,7 +149,7 @@ exports[`renders correctly 1`] = `
             </span>
           </div>
           <p
-            className=" h-40 w-[307px] text-2xl font-semibold text-black md:text-3xl"
+            className=" md:text-3xl h-40 w-[307px] text-2xl font-semibold text-black"
           >
             Pick your chef order the food and get it when you want
             <div>
@@ -400,7 +400,7 @@ exports[`renders correctly 1`] = `
           className="flex flex-col justify-center gap-7 px-6 "
         >
           <p
-            className=" w-[310px] text-2xl font-semibold text-black md:pt-12 md:text-3xl"
+            className=" md:pt-12 md:text-3xl w-[310px] text-2xl font-semibold text-black"
           >
             Get a 15% discount for your first order!
           </p>
