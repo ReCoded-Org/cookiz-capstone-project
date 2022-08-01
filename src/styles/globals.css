@@ -1,8 +1,0 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@font-face {
-    font-family: "Open Sans";
-    src: url("../../public/fonts/open-sans-variable.ttf");
-}
