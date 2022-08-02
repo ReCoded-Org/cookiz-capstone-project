@@ -6,6 +6,7 @@ import LandingMeals from "@/components/LandingMeals/LandingMeals";
 import Layout from "@/components/layout/Layout";
 
 export default function HomePage() {
+    // eslint-disable-next-line
     const { t } = useTranslation("common");
 
     return (
