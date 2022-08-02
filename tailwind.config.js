@@ -5,6 +5,10 @@ module.exports = {
     content: ["./src/**/*.{js,jsx,ts,tsx}"],
     theme: {
         extend: {
+            colors: {
+                primary: "#004945",
+                signUpImageColor: "#FDFCEA",
+            },
             fontFamily: {
                 primary: ["Inter", ...fontFamily.sans],
                 secondary: {
@@ -12,6 +16,10 @@ module.exports = {
                     200: "#888883",
                 },
             },
+        },
+        screens: {
+            tablet: { max: "1024px" },
+            mobile: { max: "640" },
         },
     },
     plugins: [require("@tailwindcss/forms")],
