@@ -1,7 +1,7 @@
 import React from "react";
 import renderer from "react-test-renderer";
 
-import Cards from "../Footer";
+import Footer from "../Footer";
 
 // eslint-disable-next-line
 it("renders correctly", () => {
