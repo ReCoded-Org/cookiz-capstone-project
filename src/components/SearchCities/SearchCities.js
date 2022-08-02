@@ -5,10 +5,10 @@ const SearchCities = () => {
     return (
         <div className='flex flex-row justify-center'>
             <div className='flex flex-col items-center gap-6 px-8 py-6 '>
-                <p className='text-center  text-xl font-bold md:text-3xl'>
+                <p className='md:text-3xl  text-center text-xl font-bold'>
                     Places where Cookiez is available
                 </p>
-                <p className='text-center text-sm font-normal md:text-base'>
+                <p className='md:text-base text-center text-sm font-normal'>
                     We are currently providing services for limited cities. We
                     plan to expand services across whole country very soon.
                 </p>
