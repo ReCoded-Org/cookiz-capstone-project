@@ -25,7 +25,7 @@ const Cards = () => {
                                     alt='x'
                                 />
                             </div>
-                            <p className=' md:text-3xl h-40 w-[307px] text-2xl font-semibold text-black'>
+                            <div className=' md:text-3xl h-40 w-[307px] text-2xl font-semibold text-black'>
                                 Pick your chef order the food and get it when
                                 you want
                                 <div>
@@ -37,7 +37,7 @@ const Cards = () => {
                                         alt='x'
                                     />
                                 </div>
-                            </p>
+                            </div>
                         </div>
                         <div className='h-[17.8rem] w-full  overflow-hidden rounded-r-lg '>
                             <Image
