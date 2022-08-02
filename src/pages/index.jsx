@@ -1,8 +1,7 @@
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import * as React from "react";
 
+import { useTranslation } from "next-i18next";
 import Cards from "@/components/Cards/Cards";
-import Layout from "@/components/layout/Layout";
+import Hero from "@/components/hero/Hero";
 
 export default function HomePage() {
     // eslint-disable-next-line
@@ -10,8 +9,7 @@ export default function HomePage() {
 
     return (
         <Layout>
-            <Cards />
-        </Layout>
+            <Hero />
     );
 }
 export async function getStaticProps({ locale }) {
