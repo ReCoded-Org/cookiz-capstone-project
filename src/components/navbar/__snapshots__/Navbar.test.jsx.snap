@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar Component 1`] = `
+<nav
+  className="m-auto flex items-center rounded-[100px] pt-[1.5rem] pb-[1.5rem] pl-8 pr-8 font-opensans tablet:pl-3 tablet:pr-3"
+>
+  <div
+    className="navbar flex w-[100%] items-center justify-between"
+  >
+    <div
+      className="logo text-2xl tablet:text-xl"
+    >
+      <a
+        href="/#"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        <span
+          className="font-black"
+        >
+          COOK
+        </span>
+        IEZ
+      </a>
+    </div>
+    <div
+      className="nav-list"
+    >
+      <ul
+        className="flex items-center gap-10 text-lg tablet:text-base"
+      >
+        <li>
+          Login
+        </li>
+        <li>
+          Sign up
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+`;
