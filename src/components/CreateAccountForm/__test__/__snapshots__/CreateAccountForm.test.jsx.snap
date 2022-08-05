@@ -13,13 +13,16 @@ exports[`Create Account Form Component 1`] = `
       Create An Account
     </h1>
     <form
+      action="#"
       className="flex w-96 flex-col space-y-5"
+      onSubmit={[Function]}
     >
       <input
         className="w-full appearance-none rounded border py-2 px-3 text-sm font-bold leading-tight text-gray-700 shadow"
         id="firstName"
         onChange={[Function]}
         placeholder="First Name"
+        required={true}
         type="text"
         value=""
       />
@@ -28,6 +31,7 @@ exports[`Create Account Form Component 1`] = `
         id="lastName"
         onChange={[Function]}
         placeholder="Last Name"
+        required={true}
         type="text"
         value=""
       />
@@ -36,6 +40,7 @@ exports[`Create Account Form Component 1`] = `
         id="password"
         onChange={[Function]}
         placeholder="Password"
+        required={true}
         type="password"
         value=""
       />
@@ -44,15 +49,18 @@ exports[`Create Account Form Component 1`] = `
         id="email"
         onChange={[Function]}
         placeholder="Email"
-        type="text"
+        required={true}
+        type="email"
         value=""
       />
       <input
         className="w-full appearance-none rounded border py-2 px-3 text-sm font-bold leading-tight text-gray-700 shadow focus:outline-none"
-        id="phoneNumber"
+        id="phone"
         onChange={[Function]}
+        pattern="[0-9]{10}"
         placeholder="Phone Number"
-        type="text"
+        required={true}
+        type="tel"
         value=""
       />
       <input
@@ -60,6 +68,7 @@ exports[`Create Account Form Component 1`] = `
         id="address"
         onChange={[Function]}
         placeholder="Address"
+        required={true}
         type="text"
         value=""
       />
@@ -68,14 +77,16 @@ exports[`Create Account Form Component 1`] = `
         id="city"
         onChange={[Function]}
         placeholder="City"
+        required={true}
         type="text"
         value=""
       />
       <input
         className="w-full appearance-none rounded border py-2 px-3 text-sm font-bold leading-tight text-gray-700 shadow focus:outline-none"
-        id="county"
+        id="country"
         onChange={[Function]}
         placeholder="Country"
+        required={true}
         type="text"
         value=""
       />
@@ -84,7 +95,9 @@ exports[`Create Account Form Component 1`] = `
       >
         <input
           className="mr-2 rounded bg-gray-100 text-primary focus:ring-primary"
-          id="termsAndCoditions-checkbox"
+          id="termsAndConditions"
+          onClick={[Function]}
+          required={true}
           type="checkbox"
         />
         <span
@@ -93,11 +106,11 @@ exports[`Create Account Form Component 1`] = `
           I agree to Terms and Conditions
         </span>
       </label>
-      <button
+      <input
         className="focus:shadow-outline rounded-xl bg-primary py-2 px-4 font-bold text-white shadow hover:bg-emerald-700"
-      >
-        Register
-      </button>
+        type="submit"
+        value="Submit"
+      />
       <button
         className="focus:shadow-outline rounded-xl border border-primary bg-transparent py-2 px-4 font-bold text-primary shadow hover:bg-primary hover:text-white"
       >
