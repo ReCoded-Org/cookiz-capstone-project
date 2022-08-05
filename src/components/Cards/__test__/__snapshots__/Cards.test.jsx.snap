@@ -148,7 +148,7 @@ exports[`renders correctly 1`] = `
               </noscript>
             </span>
           </div>
-          <p
+          <div
             className=" md:text-3xl h-40 w-[307px] text-2xl font-semibold text-black"
           >
             Pick your chef order the food and get it when you want
@@ -270,7 +270,7 @@ exports[`renders correctly 1`] = `
                 </noscript>
               </span>
             </div>
-          </p>
+          </div>
         </div>
         <div
           className="h-[17.8rem] w-full overflow-hidden rounded-r-lg "
