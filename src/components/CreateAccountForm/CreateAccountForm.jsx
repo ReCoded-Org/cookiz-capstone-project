@@ -2,14 +2,35 @@ import Image from "next/image";
 import { useState } from "react";
 
 export default function CreateAccountForm() {
-    const [firstname, setFirstname] = useState("");
-    const [lastname, setLastname] = useState("");
-    const [password, setPassword] = useState("");
-    const [email, setEmail] = useState("");
-    const [phone, setPhone] = useState("");
-    const [address, setAddress] = useState("");
-    const [city, setCity] = useState("");
-    const [county, setCounty] = useState("");
+    const [formData, setFormData] = useState({
+        firstName: "",
+        lastName: "",
+        password: "",
+        email: "",
+        phone: "",
+        address: "",
+        city: "",
+        country: "",
+        termsAndConditions: false,
+    });
+
+    const handleFormData = (event) => {
+        if (event.target.type === "checkbox") {
+            setFormData({
+                ...formData,
+                [event.target.id]: event.target.checked,
+            });
+        } else {
+            setFormData({
+                ...formData,
+                [event.target.id]: event.target.value,
+            });
+        }
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+    };
 
     return (
         // component container
@@ -19,15 +40,20 @@ export default function CreateAccountForm() {
                 <h1 className='text-center text-2xl font-bold text-primary'>
                     Create An Account
                 </h1>
-                <form className='flex w-96 flex-col space-y-5'>
+                <form
+                    className='flex w-96 flex-col space-y-5'
+                    action='#'
+                    onSubmit={(event) => handleSubmit(event)}
+                >
                     {/* first name */}
                     <input
                         className='w-full appearance-none rounded border py-2 px-3 text-sm font-bold leading-tight text-gray-700 shadow'
                         id='firstName'
                         type='text'
                         placeholder='First Name'
-                        value={firstname}
-                        onChange={(event) => setFirstname(event.target.value)}
+                        value={formData.firstName}
+                        onChange={(e) => handleFormData(e)}
+                        required
                     />
                     {/* last name */}
                     <input
@@ -35,8 +61,9 @@ export default function CreateAccountForm() {
                         id='lastName'
                         type='text'
                         placeholder='Last Name'
-                        value={lastname}
-                        onChange={(event) => setLastname(event.target.value)}
+                        value={formData.lastName}
+                        onChange={(e) => handleFormData(e)}
+                        required
                     />
                     {/* password */}
                     <input
@@ -44,26 +71,30 @@ export default function CreateAccountForm() {
                         id='password'
                         type='password'
                         placeholder='Password'
-                        value={password}
-                        onChange={(event) => setPassword(event.target.value)}
+                        value={formData.password}
+                        onChange={(e) => handleFormData(e)}
+                        required
                     />
                     {/* email */}
                     <input
                         className='w-full appearance-none rounded border py-2 px-3 text-sm font-bold leading-tight text-gray-700 shadow focus:outline-none'
                         id='email'
-                        type='text'
+                        type='email'
                         placeholder='Email'
-                        value={email}
-                        onChange={(event) => setEmail(event.target.value)}
+                        value={formData.email}
+                        onChange={(e) => handleFormData(e)}
+                        required
                     />
                     {/* phone number */}
                     <input
                         className='w-full appearance-none rounded border py-2 px-3 text-sm font-bold leading-tight text-gray-700 shadow focus:outline-none'
-                        id='phoneNumber'
-                        type='text'
+                        id='phone'
+                        type='tel'
+                        pattern='[0-9]{10}'
                         placeholder='Phone Number'
-                        value={phone}
-                        onChange={(event) => setPhone(event.target.value)}
+                        value={formData.phone}
+                        onChange={(e) => handleFormData(e)}
+                        required
                     />
                     {/* Address */}
                     <input
@@ -71,8 +102,9 @@ export default function CreateAccountForm() {
                         id='address'
                         type='text'
                         placeholder='Address'
-                        value={address}
-                        onChange={(event) => setAddress(event.target.value)}
+                        value={formData.address}
+                        onChange={(e) => handleFormData(e)}
+                        required
                     />
                     {/* City */}
                     {/* TODO: add the ZIP CODE field */}
@@ -81,33 +113,40 @@ export default function CreateAccountForm() {
                         id='city'
                         type='text'
                         placeholder='City'
-                        value={city}
-                        onChange={(event) => setCity(event.target.value)}
+                        value={formData.city}
+                        onChange={(e) => handleFormData(e)}
+                        required
                     />
                     {/* County */}
                     <input
                         className='w-full appearance-none rounded border py-2 px-3 text-sm font-bold leading-tight text-gray-700 shadow focus:outline-none'
-                        id='county'
+                        id='country'
                         type='text'
                         placeholder='Country'
-                        value={county}
-                        onChange={(event) => setCounty(event.target.value)}
+                        value={formData.country}
+                        onChange={(e) => handleFormData(e)}
+                        required
                     />
                     {/* Terms and Conditions */}
                     <label className='block w-full items-center font-bold text-black'>
                         <input
                             className='mr-2 rounded bg-gray-100 text-primary focus:ring-primary'
-                            id='termsAndCoditions-checkbox'
+                            id='termsAndConditions'
                             type='checkbox'
+                            onClick={(e) => handleFormData(e)}
+                            required
                         />
                         <span className='text-sm'>
                             I agree to Terms and Conditions
                         </span>
                     </label>
                     {/* submit button */}
-                    <button className='focus:shadow-outline rounded-xl bg-primary py-2  px-4 font-bold text-white shadow hover:bg-emerald-700'>
-                        Register
-                    </button>
+                    <input
+                        className='focus:shadow-outline rounded-xl bg-primary py-2  px-4 font-bold text-white shadow hover:bg-emerald-700'
+                        type='submit'
+                        value='Submit'
+                    />
+
                     {/* cancel button */}
                     <button className='focus:shadow-outline rounded-xl border border-primary  bg-transparent py-2 px-4 font-bold text-primary shadow hover:bg-primary  hover:text-white'>
                         Cancel
