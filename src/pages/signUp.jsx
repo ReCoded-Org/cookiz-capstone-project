@@ -1,9 +1,9 @@
-import CreateAccountForm from "@/components/CreateAccountForm/CreateAccountForm";
+import SignUpForm from "@/components/SignUpForm/SignUpForm";
 
 export default function SignUpPage() {
     return (
-        <div>
-            <CreateAccountForm />
-        </div>
+        <>
+            <SignUpForm />
+        </>
     );
 }

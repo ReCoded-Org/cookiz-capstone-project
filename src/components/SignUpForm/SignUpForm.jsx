@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useState } from "react";
 
-export default function CreateAccountForm() {
+export default function SignUpForm() {
     const [formData, setFormData] = useState({
         firstName: "",
         lastName: "",
