@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 
 const Footer = () => {
     return (
@@ -6,14 +7,18 @@ const Footer = () => {
             <footer className='footer w-auto bg-black pt-[5rem] pb-[5rem] pl-[4rem] pr-[4rem] font-opensans text-[1.5rem] text-white'>
                 <div className='footer-wrapper mb-[8rem] flex justify-between'>
                     <div className='footer-logo w-[50%]'>
-                        <div className='logo font-bold uppercase'>
+                        <div className='logo mb-[2rem] text-[3rem] font-bold uppercase'>
                             <Link href='#'>
                                 <a>
                                     cook<span className='font-thin'>iez</span>
                                 </a>
                             </Link>
                         </div>
-                        <div className='footer-icons'></div>
+                        <div className='footer-icons flex gap-[3rem] text-[2rem]'>
+                            <BsInstagram />
+                            <BsTwitter />
+                            <BsFacebook />
+                        </div>
                     </div>
 
                     <div className='footer-navigation flex w-[50%] items-center justify-around'>
