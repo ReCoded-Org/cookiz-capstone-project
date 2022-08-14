@@ -5,6 +5,7 @@ import * as React from "react";
 import Cards from "@/components/Cards/Cards";
 import Hero from "@/components/hero/Hero";
 import Layout from "@/components/layout/Layout";
+import SearchCities from "@/components/SearchCities/SearchCities";
 
 export default function HomePage() {
     // eslint-disable-next-line
@@ -14,6 +15,7 @@ export default function HomePage() {
         <Layout>
             <Hero />
             <Cards />
+            <SearchCities />
         </Layout>
     );
 }
