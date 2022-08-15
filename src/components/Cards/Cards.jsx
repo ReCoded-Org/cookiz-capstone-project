@@ -14,7 +14,7 @@ const Cards = () => {
                 </div>
 
                 <div className='flex w-full flex-row flex-wrap  justify-between gap-24'>
-                    <div className='flex   h-[17.813rem] w-[34.375] flex-row items-center justify-center rounded-[10px] bg-[#9EE2B8] shadow-lg '>
+                    <div className='flex   h-[17.813rem] w-[34.375] flex-row items-center justify-center rounded-[12px] bg-[#9EE2B8] shadow-lg '>
                         <div className='flex flex-col px-6 '>
                             <div>
                                 <Image
@@ -49,7 +49,7 @@ const Cards = () => {
                             />
                         </div>
                     </div>
-                    <div className='flex   h-[17.813rem] w-[34.375] flex-row rounded-[10px] bg-[#FFE7E3] shadow-lg '>
+                    <div className='flex   h-[17.813rem] w-[34.375] flex-row rounded-[12px] bg-[#FFE7E3] shadow-lg '>
                         <div className='flex  flex-col justify-center gap-7 px-6 '>
                             <p className='  md:pt-12   md:text-3xl   w-[310px] text-2xl font-semibold text-black'>
                                 Get a 15% discount for your first order!
