@@ -2,33 +2,33 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="md:ml-0 mt-20 ml-10 flex flex-col items-center justify-center"
+  className="mt-20 ml-10 flex flex-col items-center justify-center md:ml-0"
 >
   <div
-    className="bflex m-auto flex-col"
+    className="m-auto flex flex-col"
   >
     <div
       className=" flex flex-col"
     >
       <p
-        className=" md:text-3xl text-2xl font-bold text-black"
+        className=" text-3xl font-bold text-black"
       >
         You’ve missed home made food?
       </p>
       <p
-        className=" pb-12 pt-2 font-normal text-black"
+        className=" pb-12 pt-2 text-xl text-black"
       >
         Pick your favorite chef, food or cousin.
       </p>
     </div>
     <div
-      className="flex w-full flex-row flex-wrap justify-between gap-24"
+      className="mb-4 flex flex-row flex-wrap justify-between gap-16"
     >
       <div
-        className="flex h-[17.813rem] w-[34.375] flex-row items-center justify-center rounded-[10px] bg-[#9EE2B8] shadow-lg "
+        className="flex h-[350px] w-[660px] flex-row items-center justify-center rounded-[10px] bg-[#9EE2B8] shadow-lg"
       >
         <div
-          className="flex flex-col px-6 "
+          className="basis-2/3 p-5"
         >
           <div>
             <span
@@ -68,7 +68,7 @@ exports[`renders correctly 1`] = `
                 <img
                   alt=""
                   aria-hidden={true}
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2736%27%20height=%2736%27/%3e"
+                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2750%27%20height=%2750%27/%3e"
                   style={
                     Object {
                       "background": "none",
@@ -85,7 +85,7 @@ exports[`renders correctly 1`] = `
                 />
               </span>
               <img
-                alt="x"
+                alt="y"
                 data-nimg="intrinsic"
                 decoding="async"
                 onError={[Function]}
@@ -116,12 +116,12 @@ exports[`renders correctly 1`] = `
               />
               <noscript>
                 <img
-                  alt="x"
+                  alt="y"
                   data-nimg="intrinsic"
                   decoding="async"
                   loading="lazy"
-                  src="/_next/image?url=%2Fimages%2Fcheff.png&w=96&q=75"
-                  srcSet="/_next/image?url=%2Fimages%2Fcheff.png&w=48&q=75 1x, /_next/image?url=%2Fimages%2Fcheff.png&w=96&q=75 2x"
+                  src="/_next/image?url=%2Fimages%2Fcheff.png&w=128&q=75"
+                  srcSet="/_next/image?url=%2Fimages%2Fcheff.png&w=64&q=75 1x, /_next/image?url=%2Fimages%2Fcheff.png&w=128&q=75 2x"
                   style={
                     Object {
                       "border": "none",
@@ -149,34 +149,54 @@ exports[`renders correctly 1`] = `
             </span>
           </div>
           <div
-            className=" md:text-3xl h-40 w-[307px] text-2xl font-semibold text-black"
+            className="text-xl font-semibold text-black sm:text-2xl lg:text-3xl"
           >
+             
             Pick your chef order the food and get it when you want
-            <div>
+          </div>
+          <div>
+            <span
+              style={
+                Object {
+                  "background": "none",
+                  "border": 0,
+                  "boxSizing": "border-box",
+                  "display": "inline-block",
+                  "height": "initial",
+                  "margin": 0,
+                  "maxWidth": "100%",
+                  "opacity": 1,
+                  "overflow": "hidden",
+                  "padding": 0,
+                  "position": "relative",
+                  "width": "initial",
+                }
+              }
+            >
               <span
                 style={
                   Object {
                     "background": "none",
                     "border": 0,
                     "boxSizing": "border-box",
-                    "display": "inline-block",
+                    "display": "block",
                     "height": "initial",
                     "margin": 0,
                     "maxWidth": "100%",
                     "opacity": 1,
-                    "overflow": "hidden",
                     "padding": 0,
-                    "position": "relative",
                     "width": "initial",
                   }
                 }
               >
-                <span
+                <img
+                  alt=""
+                  aria-hidden={true}
+                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2750%27%20height=%2750%27/%3e"
                   style={
                     Object {
                       "background": "none",
                       "border": 0,
-                      "boxSizing": "border-box",
                       "display": "block",
                       "height": "initial",
                       "margin": 0,
@@ -186,33 +206,46 @@ exports[`renders correctly 1`] = `
                       "width": "initial",
                     }
                   }
-                >
-                  <img
-                    alt=""
-                    aria-hidden={true}
-                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2736%27%20height=%2736%27/%3e"
-                    style={
-                      Object {
-                        "background": "none",
-                        "border": 0,
-                        "display": "block",
-                        "height": "initial",
-                        "margin": 0,
-                        "maxWidth": "100%",
-                        "opacity": 1,
-                        "padding": 0,
-                        "width": "initial",
-                      }
-                    }
-                  />
-                </span>
+                />
+              </span>
+              <img
+                alt="l"
+                data-nimg="intrinsic"
+                decoding="async"
+                onError={[Function]}
+                onLoad={[Function]}
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style={
+                  Object {
+                    "border": "none",
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": 0,
+                    "left": 0,
+                    "margin": "auto",
+                    "maxHeight": "100%",
+                    "maxWidth": "100%",
+                    "minHeight": "100%",
+                    "minWidth": "100%",
+                    "objectFit": undefined,
+                    "objectPosition": undefined,
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              />
+              <noscript>
                 <img
-                  alt="x"
+                  alt="l"
                   data-nimg="intrinsic"
                   decoding="async"
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  loading="lazy"
+                  src="/_next/image?url=%2Fimages%2Fsoup.png&w=128&q=75"
+                  srcSet="/_next/image?url=%2Fimages%2Fsoup.png&w=64&q=75 1x, /_next/image?url=%2Fimages%2Fsoup.png&w=128&q=75 2x"
                   style={
                     Object {
                       "border": "none",
@@ -236,44 +269,12 @@ exports[`renders correctly 1`] = `
                     }
                   }
                 />
-                <noscript>
-                  <img
-                    alt="x"
-                    data-nimg="intrinsic"
-                    decoding="async"
-                    loading="lazy"
-                    src="/_next/image?url=%2Fimages%2Fsoup.png&w=96&q=75"
-                    srcSet="/_next/image?url=%2Fimages%2Fsoup.png&w=48&q=75 1x, /_next/image?url=%2Fimages%2Fsoup.png&w=96&q=75 2x"
-                    style={
-                      Object {
-                        "border": "none",
-                        "bottom": 0,
-                        "boxSizing": "border-box",
-                        "display": "block",
-                        "height": 0,
-                        "left": 0,
-                        "margin": "auto",
-                        "maxHeight": "100%",
-                        "maxWidth": "100%",
-                        "minHeight": "100%",
-                        "minWidth": "100%",
-                        "objectFit": undefined,
-                        "objectPosition": undefined,
-                        "padding": 0,
-                        "position": "absolute",
-                        "right": 0,
-                        "top": 0,
-                        "width": 0,
-                      }
-                    }
-                  />
-                </noscript>
-              </span>
-            </div>
+              </noscript>
+            </span>
           </div>
         </div>
         <div
-          className="h-[17.8rem] w-full overflow-hidden rounded-r-lg "
+          className="flex items-center justify-center"
         >
           <span
             style={
@@ -312,7 +313,7 @@ exports[`renders correctly 1`] = `
               <img
                 alt=""
                 aria-hidden={true}
-                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27200%27%20height=%27284%27/%3e"
+                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27220%27%20height=%27350%27/%3e"
                 style={
                   Object {
                     "background": "none",
@@ -329,7 +330,8 @@ exports[`renders correctly 1`] = `
               />
             </span>
             <img
-              alt="x"
+              alt="t"
+              className="rounded-r-xl"
               data-nimg="intrinsic"
               decoding="async"
               onError={[Function]}
@@ -360,7 +362,8 @@ exports[`renders correctly 1`] = `
             />
             <noscript>
               <img
-                alt="x"
+                alt="t"
+                className="rounded-r-xl"
                 data-nimg="intrinsic"
                 decoding="async"
                 loading="lazy"
@@ -394,13 +397,13 @@ exports[`renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="flex h-[17.813rem] w-[34.375] flex-row rounded-[10px] bg-[#FFE7E3] shadow-lg "
+        className="flex h-[350px] w-[660px] flex-row rounded-[10px] bg-[#FFE7E3] shadow-lg "
       >
         <div
-          className="flex flex-col justify-center gap-7 px-6 "
+          className="flex basis-2/3 flex-col justify-center gap-4 px-6 pt-12 "
         >
           <p
-            className=" md:pt-12 md:text-3xl w-[310px] text-2xl font-semibold text-black"
+            className="text-xl font-semibold text-black sm:text-2xl lg:text-3xl"
           >
             Get a 15% discount for your first order!
           </p>
@@ -408,15 +411,13 @@ exports[`renders correctly 1`] = `
             className=" box-border h-10 w-32 bg-green-900 "
           >
             <span
-              className="h-5 w-20 text-base font-bold leading-5 text-white"
+              className="h-5 w-20 text-sm font-bold leading-5 text-white sm:text-lg"
             >
               Order Now
             </span>
           </button>
         </div>
-        <div
-          className="h-[17.8rem] w-full overflow-hidden rounded-r-lg "
-        >
+        <div>
           <span
             style={
               Object {
@@ -454,7 +455,7 @@ exports[`renders correctly 1`] = `
               <img
                 alt=""
                 aria-hidden={true}
-                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27200%27%20height=%27284%27/%3e"
+                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27220%27%20height=%27350%27/%3e"
                 style={
                   Object {
                     "background": "none",
@@ -472,6 +473,7 @@ exports[`renders correctly 1`] = `
             </span>
             <img
               alt="x"
+              className="overflow-hidden rounded-r-lg "
               data-nimg="intrinsic"
               decoding="async"
               onError={[Function]}
@@ -503,6 +505,7 @@ exports[`renders correctly 1`] = `
             <noscript>
               <img
                 alt="x"
+                className="overflow-hidden rounded-r-lg "
                 data-nimg="intrinsic"
                 decoding="async"
                 loading="lazy"

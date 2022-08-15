@@ -162,7 +162,7 @@ export default function CreateAccountForm() {
             </div>
 
             {/* image section */}
-            <div className='max-w-screen-sm flex items-center bg-signUpImageColor'>
+            <div className='flex max-w-screen-sm items-center bg-signUpImageColor'>
                 <Image
                     src='/images/signup.png'
                     alt='test'

@@ -5,15 +5,15 @@
     "dashboard": "Dashboard",
     "account-settings": "Account settings",
     "logout": "Logout",
-    "title":"Home made healthy food",
-    "subtitle":"Find your favorite food and order in seconds",
-    "placeholder":"Enter a food name or location",
+    "title": "Home made healthy food",
+    "subtitle": "Find your favorite food and order in seconds",
+    "placeholder": "Enter a food name or location",
     "search-button": "Find",
-    "card-title":"You’ve missed home made food?",
-    "card-subtitle":"Pick your favorite chef, food or cousin.",
-    "card1-text":"Pick your chef order the food and get it when you want",
-    "card2-text":"Get a 15% discount for your first order!",
-    "card2-btn":"Order Now",
+    "card-title": "You’ve missed home made food?",
+    "card-subtitle": "Pick your favorite chef, food or cousin.",
+    "card1-text": "Pick your chef order the food and get it when you want",
+    "card2-text": "Get a 15% discount for your first order!",
+    "card2-btn": "Order Now",
     "map-title": "Places where Cookiez is available",
     "map-text": "We are currently providing services for limited cities. We plan to expand services across whole country very soon.Enter a city name",
     "map-placeholder": "Enter a city name",
@@ -24,8 +24,8 @@
     "chef-around": " Chefs near me",
     "view-foods": "View all home made foods",
     "view-cities": "View all cities",
-    "view-chefs":"View all chefs",
-    "create-account":"Create an Account",
+    "view-chefs": "View all chefs",
+    "create-account": "Create an Account",
     "firstname": "First Name",
     "lastname": "Last Name",
     "email": "Email",
@@ -59,14 +59,4 @@
     "old-password": "Old Password",
     "new-password": "New Password",
     "save-btn": "Save"
-
-
-
-
-
-
-
-
-
-    
-}  
+}
