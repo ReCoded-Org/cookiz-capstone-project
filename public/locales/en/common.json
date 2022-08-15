@@ -1,3 +1,72 @@
 {
-    "test": "Hello"
-}
+    "signup": "Sign up",
+    "login": "Login",
+    "add-new-food": "Add a new food",
+    "dashboard": "Dashboard",
+    "account-settings": "Account settings",
+    "logout": "Logout",
+    "title":"Home made healthy food",
+    "subtitle":"Find your favorite food and order in seconds",
+    "placeholder":"Enter a food name or location",
+    "search-button": "Find",
+    "card-title":"You’ve missed home made food?",
+    "card-subtitle":"Pick your favorite chef, food or cousin.",
+    "card1-text":"Pick your chef order the food and get it when you want",
+    "card2-text":"Get a 15% discount for your first order!",
+    "card2-btn":"Order Now",
+    "map-title": "Places where Cookiez is available",
+    "map-text": "We are currently providing services for limited cities. We plan to expand services across whole country very soon.Enter a city name",
+    "map-placeholder": "Enter a city name",
+    "help": "Get help",
+    "chef": "Become a chef",
+    "promotions": "Promotions",
+    "about": "About Cookiez",
+    "chef-around": " Chefs near me",
+    "view-foods": "View all home made foods",
+    "view-cities": "View all cities",
+    "view-chefs":"View all chefs",
+    "create-account":"Create an Account",
+    "firstname": "First Name",
+    "lastname": "Last Name",
+    "email": "Email",
+    "area-code": "Area Code",
+    "phone": "Phone Number",
+    "zip-code": "ZIP Code",
+    "city": "City",
+    "country": "Country",
+    "terms-conditions": "I agree to  Terms and Conditions  ",
+    "register-btn": "Register",
+    "listed-foods": "Listed foods",
+    "orders": "Orders",
+    "payment-settings": "Payment settings",
+    "customer-reviews": "Customer reviews",
+    "order-total": "Total orders",
+    "order-revenue": "Revenue",
+    "order-popular": "Popular orders",
+    "order-filter": "Filter",
+    "order-search": "Search by food name",
+    "order-date-btn": "Date range",
+    "order-status-btn": "Status",
+    "order-payment-btn": "Payment method",
+    "order-ref": "Ref.",
+    "order-date": "Date",
+    "order-customer": "Customer",
+    "order-food": "Food",
+    "order-status": "Status",
+    "order-payment": "Payment",
+    "order-price": "Price",
+    "edit-account": "Edit Account",
+    "old-password": "Old Password",
+    "new-password": "New Password",
+    "save-btn": "Save"
+
+
+
+
+
+
+
+
+
+    
+}  
