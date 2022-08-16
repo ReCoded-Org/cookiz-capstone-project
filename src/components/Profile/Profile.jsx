@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-function Dashboard() {
+function Profile({ children }) {
     return (
         <div className='dashboard flex h-screen w-auto font-opensans'>
             <div className='sidebar w-[15%] border-r-[1px] pt-[1.5rem] pb-[1.5rem]'>
@@ -15,7 +15,7 @@ function Dashboard() {
                         </div>
                         <div className='sub-title'>
                             <span className='text-base text-gray-500'>
-                                Dashboard
+                                Profile
                             </span>
                         </div>
                     </div>
@@ -46,7 +46,7 @@ function Dashboard() {
                         </li>
                         <li>
                             <Link href='#'>
-                                <a>Customer reviews</a>
+                                <a>Edit profile</a>
                             </Link>
                         </li>
                         <li>
@@ -57,11 +57,9 @@ function Dashboard() {
                     </ul>
                 </div>
             </div>
-            <div className='dash-content w-[85%]'>
-                {/* dashboard components will be rendered in this section */}
-            </div>
+            <div className='dash-content w-[85%]'>{children}</div>
         </div>
     );
 }
 
-export default Dashboard;
+export default Profile;

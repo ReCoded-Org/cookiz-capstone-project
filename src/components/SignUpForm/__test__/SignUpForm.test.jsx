@@ -1,10 +1,10 @@
 import renderer from "react-test-renderer";
 
-import CreateAccountForm from "../CreateAccountForm";
+import SignUpForm from "../SignUpForm";
 
 // eslint-disable-next-line
 it("Create Account Form Component", () => {
-    const tree = renderer.create(<CreateAccountForm />).toJSON();
+    const tree = renderer.create(<SignUpForm />).toJSON();
     // eslint-disable-next-line no-undef
     expect(tree).toMatchSnapshot();
 });

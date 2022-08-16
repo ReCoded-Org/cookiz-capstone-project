@@ -1,7 +1,7 @@
 import React from "react";
 import renderer from "react-test-renderer";
 
-import Hero from "@/components/hero/Hero";
+import Hero from "@/components/Hero/Hero";
 // eslint-disable-next-line
 it("Hero Component", () => {
     const tree = renderer.create(<Hero />).toJSON();
