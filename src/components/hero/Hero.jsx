@@ -3,9 +3,7 @@ import { useEffect, useState } from "react";
 function Hero() {
     const [search, setSearch] = useState("");
 
-    useEffect(() => {
-        console.log(search);
-    }, [search]);
+    useEffect(() => {}, [search]);
 
     return (
         <div className='hero-container h-screen bg-herobg bg-cover'>

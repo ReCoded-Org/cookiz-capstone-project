@@ -9,9 +9,9 @@ function Navbar() {
 
     return (
         <>
-            <nav className='m-auto flex items-center rounded-[100px] pt-[1.5rem] pb-[1.5rem] pl-8 pr-8 font-opensans tablet:pl-3 tablet:pr-3'>
+            <nav className='tablet:pl-3 tablet:pr-3 m-auto flex items-center rounded-[100px] pt-[1.5rem] pb-[1.5rem] pl-8 pr-8 font-opensans'>
                 <div className='navbar flex w-[100%] items-center justify-between'>
-                    <div className='logo text-2xl tablet:text-xl'>
+                    <div className='logo tablet:text-xl text-2xl'>
                         <Link href='#'>
                             <a>
                                 <span className='font-black'>COOK</span>IEZ
@@ -101,7 +101,7 @@ function Navbar() {
                         </Menu>
                     ) : (
                         <div className='nav-list'>
-                            <ul className='flex items-center gap-10 text-lg tablet:text-base'>
+                            <ul className='tablet:text-base flex items-center gap-10 text-lg'>
                                 <li>
                                     <button>En</button>/<button>Tr</button>
                                 </li>

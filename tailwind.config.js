@@ -17,10 +17,6 @@ module.exports = {
                 herobg: "url('/images/dinner-bg2.png')",
             },
         },
-        screens: {
-            tablet: { max: "1024px" },
-            mobile: { max: "640" },
-        },
     },
     plugins: [require("@tailwindcss/forms")],
 };

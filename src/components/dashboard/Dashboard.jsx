@@ -6,7 +6,7 @@ function Dashboard() {
             <div className='sidebar w-[15%] border-r-[1px] pt-[1.5rem] pb-[1.5rem]'>
                 <div className='dash-title mb-10 border-b-[1px]'>
                     <div className='logo-wrapper mb-[7rem] pl-8'>
-                        <div className='logo text-2xl tablet:text-xl'>
+                        <div className='logo tablet:text-xl text-2xl'>
                             <Link href='#'>
                                 <a>
                                     <span className='font-black'>COOK</span>IEZ
