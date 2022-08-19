@@ -51,6 +51,8 @@ exports[`Hero Component 1`] = `
         >
           <button
             className="box-border bg-[#004945] pt-[8.8px] pb-[9px] pl-5 pr-5 text-base font-medium text-[white]"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
           >
             Find
           </button>

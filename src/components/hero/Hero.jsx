@@ -1,11 +1,7 @@
-import { useEffect, useState } from "react";
-
+import Link from "next/link";
+import { useState } from "react";
 function Hero() {
     const [search, setSearch] = useState("");
-
-    useEffect(() => {
-        console.log(search);
-    }, [search]);
 
     return (
         <div className='hero-container h-screen bg-herobg bg-cover'>
@@ -34,9 +30,11 @@ function Hero() {
                             />
                         </div>
                         <div className='search-btn'>
-                            <button className='box-border bg-[#004945] pt-[8.8px] pb-[9px] pl-5 pr-5 text-base font-medium text-[white]'>
-                                Find
-                            </button>
+                            <Link href='/allfoods'>
+                                <button className='box-border bg-[#004945] pt-[8.8px] pb-[9px] pl-5 pr-5 text-base font-medium text-[white]'>
+                                    Find
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
