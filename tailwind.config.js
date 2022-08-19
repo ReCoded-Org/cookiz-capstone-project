@@ -14,7 +14,7 @@ module.exports = {
                 opensans: ["Open Sans", "serif"],
             },
             backgroundImage: {
-                herobg: "url('/images/dinner-bg2.png')",
+                herobg: "url('/images/new-bg-test.jpg')",
             },
         },
         screens: {

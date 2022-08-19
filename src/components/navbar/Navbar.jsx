@@ -9,7 +9,7 @@ function Navbar() {
 
     return (
         <>
-            <nav className='m-auto flex items-center rounded-[100px] pt-[1.5rem] pb-[1.5rem] pl-8 pr-8 font-opensans tablet:pl-3 tablet:pr-3'>
+            <nav className='fixed m-auto flex w-[100%] items-center bg-white pt-[1.5rem] pb-[1.5rem] pl-8 pr-8 font-opensans tablet:pl-3 tablet:pr-3'>
                 <div className='navbar flex w-[100%] items-center justify-between'>
                     <div className='logo text-2xl tablet:text-xl'>
                         <Link href='#'>
@@ -24,7 +24,7 @@ function Navbar() {
                             className='relative inline-block text-left'
                         >
                             <div>
-                                <Menu.Button className='inline-flex w-full justify-center  gap-4 px-4 py-2 font-sans text-black  hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75'>
+                                <Menu.Button className='inline-flex w-full justify-center gap-4 px-4 py-2 font-sans text-black  hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75'>
                                     <h1 className='pt-2 text-lg'>
                                         Merry Curry
                                     </h1>
