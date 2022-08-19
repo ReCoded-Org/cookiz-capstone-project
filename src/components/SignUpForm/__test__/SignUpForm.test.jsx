@@ -1,10 +1,10 @@
-import React from "react";
 import renderer from "react-test-renderer";
 
-import Hero from "@/components/hero/Hero";
+import SignUpForm from "../SignUpForm";
+
 // eslint-disable-next-line
-it("Hero Component", () => {
-    const tree = renderer.create(<Hero />).toJSON();
+it("Create Account Form Component", () => {
+    const tree = renderer.create(<SignUpForm />).toJSON();
     // eslint-disable-next-line no-undef
     expect(tree).toMatchSnapshot();
 });

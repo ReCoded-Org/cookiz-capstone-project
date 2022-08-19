@@ -1,11 +1,10 @@
 import React from "react";
 import renderer from "react-test-renderer";
 
-import Dashboard from "@/components/dashboard/Dashboard";
-
+import Hero from "@/components/Hero/Hero";
 // eslint-disable-next-line
-it("Dashboard Component", () => {
-    const tree = renderer.create(<Dashboard />).toJSON();
+it("Hero Component", () => {
+    const tree = renderer.create(<Hero />).toJSON();
     // eslint-disable-next-line no-undef
     expect(tree).toMatchSnapshot();
 });
