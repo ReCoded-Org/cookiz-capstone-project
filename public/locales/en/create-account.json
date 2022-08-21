@@ -1,0 +1,19 @@
+{
+  "create-account": "Create an Account",
+  "firstname": "First Name",
+  "lastname": "Last Name",
+  "password":"Password",
+  "email": "Email",
+  "area-code": "Area Code",
+  "phone": "Phone Number",
+  "adress":"Adress",
+  "zip-code": "ZIP Code",
+  "city": "City",
+  "country": "Country",
+  "terms-conditions": "I agree to  Terms and Conditions  ",
+  "cancel": "Cancel",
+  "have-account": "Already Have An Account?",
+  "register-btn": "Register",
+  "signin":"Sign In"
+
+}

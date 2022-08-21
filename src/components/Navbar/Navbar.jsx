@@ -1,11 +1,13 @@
 import { Menu } from "@headlessui/react";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
 import { useState } from "react";
 
 function Navbar() {
     // this is a temporary state, when we apply login auth. this will be replaced with actual state
     const [loggedIn, setLoggedIn] = useState(false);
+    const { t } = useTranslation("navbar");
 
     return (
         <>
@@ -52,7 +54,7 @@ function Navbar() {
                                                 <span className='pr-1 text-lg font-bold'>
                                                     +
                                                 </span>{" "}
-                                                Add a new food
+                                                {t("add-new-food")}
                                             </button>
                                         )}
                                     </Menu.Item>
@@ -65,7 +67,7 @@ function Navbar() {
                                                         : "text-gray-900"
                                                 } text-m  group flex w-full items-center  rounded-[10px] px-2  py-2 font-sans`}
                                             >
-                                                Dashboard
+                                                {t("dashboard")}
                                             </button>
                                         )}
                                     </Menu.Item>
@@ -78,7 +80,7 @@ function Navbar() {
                                                         : "text-gray-900"
                                                 } text-m  group flex w-full items-center  rounded-[10px] px-2  py-2 font-sans`}
                                             >
-                                                Account Settings
+                                                {t("account-settings")}
                                             </button>
                                         )}
                                     </Menu.Item>
@@ -92,7 +94,7 @@ function Navbar() {
                                                         : "text-gray-900"
                                                 } text-m  group flex w-full items-center  rounded-[10px] px-2  py-2 font-sans`}
                                             >
-                                                Logout
+                                                {t("logout")}
                                             </button>
                                         )}
                                     </Menu.Item>
@@ -105,8 +107,10 @@ function Navbar() {
                                 <li>
                                     <button>En</button>/<button>Tr</button>
                                 </li>
-                                <li onClick={setLoggedIn(true)}>Login</li>
-                                <li>Sign up</li>
+                                <li onClick={setLoggedIn(true)}>
+                                    {t("login")}
+                                </li>
+                                <li>{t("signup")}</li>
                             </ul>
                         </div>
                     )}

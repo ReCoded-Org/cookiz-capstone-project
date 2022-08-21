@@ -1,6 +1,8 @@
+import { useTranslation } from "next-i18next";
 import { useState } from "react";
 import { HiPlusCircle } from "react-icons/hi";
 import { IoAddCircleOutline, IoTrashBinOutline } from "react-icons/io5";
+
 export default function AddMeal() {
     const [mealImage, setMealImage] = useState("../images/header.jpg");
     const [mealName, setMealName] = useState("");
@@ -37,6 +39,8 @@ export default function AddMeal() {
         isGlutenFree(!glutenFree);
         glutenFree ? setDietary([...dietary, "gluten free"]) : null;
     }
+    const { t } = useTranslation("addmeal");
+
     return (
         <div className='flex h-fit w-[340px] flex-col items-start justify-start gap-3 overflow-hidden'>
             <div
@@ -81,7 +85,7 @@ export default function AddMeal() {
 
             <input
                 type='text'
-                placeholder='Fried Chips'
+                placeholder={t("fried-chips")}
                 className='lg:text-base ml-5 w-2/3 rounded border-none bg-[#00494533] text-center text-sm focus:ring-1 focus:ring-[#004945]'
                 required
                 value={mealName}
@@ -89,7 +93,7 @@ export default function AddMeal() {
                     setMealName(e.target.value);
                 }}
             />
-            <p className='lg:text-base ml-3 text-sm'>Dietary</p>
+            <p className='lg:text-base ml-3 text-sm'> {t("dietary")}</p>
             <ul className='ml-5 flex w-full items-center justify-start gap-3'>
                 <li>
                     <input
@@ -104,7 +108,9 @@ export default function AddMeal() {
                         className='inline-flex w-full cursor-pointer items-center justify-between rounded-full bg-[#00494533] p-1 ring-1 ring-[#00494533] peer-checked:ring-[#004945]'
                     >
                         <div className='block'>
-                            <div className='w-full text-xs '>Vegetarian</div>
+                            <div className='w-full text-xs '>
+                                {t("vegeterian")}
+                            </div>
                         </div>
                     </label>
                 </li>
@@ -120,7 +126,7 @@ export default function AddMeal() {
                         className='inline-flex w-full cursor-pointer items-center justify-between rounded-full bg-[#00494533] p-1 ring-1 ring-[#00494533] peer-checked:ring-[#004945]'
                     >
                         <div className='block'>
-                            <div className='w-full text-xs'>Vegan</div>
+                            <div className='w-full text-xs'>{t("vegan")}</div>
                         </div>
                     </label>
                 </li>
@@ -136,18 +142,20 @@ export default function AddMeal() {
                         className='inline-flex w-full cursor-pointer items-center justify-between rounded-full bg-[#00494533] p-1 ring-1 ring-[#00494533] peer-checked:ring-[#004945]'
                     >
                         <div className='block'>
-                            <div className='w-full text-xs'>Gluten Free</div>
+                            <div className='w-full text-xs'>
+                                {t("gluten-free")}
+                            </div>
                         </div>
                     </label>
                 </li>
             </ul>
 
-            <p className='lg:text-base ml-3 text-sm'>Ingredients</p>
+            <p className='lg:text-base ml-3 text-sm'>{t("ingredients")}</p>
             <div className='ml-5 flex w-full flex-col items-start justify-start gap-3'>
                 <div className='relative w-1/3'>
                     <input
                         type='text'
-                        placeholder='Tomatoes'
+                        placeholder={t("tomatoes")}
                         value={ingredient}
                         className=' lg:text-sm w-full rounded-full border-none bg-[#00494533] p-2 text-start text-xs focus:ring-1 focus:ring-[#004945]'
                         onChange={(e) => setIngredient(e.target.value)}
@@ -173,19 +181,21 @@ export default function AddMeal() {
                     ))}
                 </div>
             </div>
-            <p className='lg:text-base ml-3 text-sm'>Delivery in</p>
+            <p className='lg:text-base ml-3 text-sm'>{t("delivery")}</p>
             <input
                 type='text'
+                value={deliveryMin}
                 className='lg:text-base  ml-5 rounded border-none text-xs ring-1 ring-[#004945] focus:rounded focus:ring-1 focus:ring-[#004945]'
-                placeholder='30 min'
+                placeholder={t("time")}
                 onChange={(e) => setDeliveryMin(e.target.value)}
             ></input>
 
-            <p className='lg:text-base ml-3 text-sm'>Price</p>
+            <p className='lg:text-base ml-3 text-sm'>{t("price")}</p>
             <input
                 type='text'
+                value={price}
                 className='lg:text-base ml-5 mb-3 rounded border-none text-xs ring-1 ring-[#004945] focus:rounded focus:ring-1 focus:ring-[#004945]'
-                placeholder='30 dollar'
+                placeholder={t("howmuch")}
                 onChange={(e) => setPrice(e.target.value)}
             ></input>
 
@@ -195,7 +205,7 @@ export default function AddMeal() {
                 }}
                 className=' absolute bottom-80 right-0  mr-2 rounded bg-[#004945] px-6 py-1 text-white'
             >
-                Save
+                {t("save")}
             </button>
         </div>
     );
