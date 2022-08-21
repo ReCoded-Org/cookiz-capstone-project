@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Create Account Form Component 1`] = `
+exports[`Dashboard Component 1`] = `
 <div
   className="flex flex-row flex-wrap justify-center"
 >
@@ -10,7 +10,7 @@ exports[`Create Account Form Component 1`] = `
     <h1
       className="text-center text-2xl font-bold text-primary"
     >
-      Create An Account
+      create-account
     </h1>
     <form
       action="#"
@@ -21,7 +21,7 @@ exports[`Create Account Form Component 1`] = `
         className="w-full appearance-none rounded border py-2 px-3 text-sm font-bold leading-tight text-gray-700 shadow"
         id="firstName"
         onChange={[Function]}
-        placeholder="First Name"
+        placeholder="firstname"
         required={true}
         type="text"
         value=""
@@ -30,7 +30,7 @@ exports[`Create Account Form Component 1`] = `
         className="w-full appearance-none rounded border py-2 px-3 text-sm font-bold leading-tight text-gray-700 shadow focus:outline-none"
         id="lastName"
         onChange={[Function]}
-        placeholder="Last Name"
+        placeholder="lastname"
         required={true}
         type="text"
         value=""
@@ -39,7 +39,7 @@ exports[`Create Account Form Component 1`] = `
         className="w-full appearance-none rounded border py-2 px-3 text-sm font-bold leading-tight text-gray-700 shadow focus:outline-none"
         id="password"
         onChange={[Function]}
-        placeholder="Password"
+        placeholder="password"
         required={true}
         type="password"
         value=""
@@ -48,7 +48,7 @@ exports[`Create Account Form Component 1`] = `
         className="w-full appearance-none rounded border py-2 px-3 text-sm font-bold leading-tight text-gray-700 shadow focus:outline-none"
         id="email"
         onChange={[Function]}
-        placeholder="Email"
+        placeholder="email"
         required={true}
         type="email"
         value=""
@@ -58,7 +58,7 @@ exports[`Create Account Form Component 1`] = `
         id="phone"
         onChange={[Function]}
         pattern="[0-9]{10}"
-        placeholder="Phone Number"
+        placeholder="phone"
         required={true}
         type="tel"
         value=""
@@ -67,7 +67,7 @@ exports[`Create Account Form Component 1`] = `
         className="w-full appearance-none rounded border py-2 px-3 text-sm font-bold leading-tight text-gray-700 shadow focus:outline-none"
         id="address"
         onChange={[Function]}
-        placeholder="Address"
+        placeholder="adress"
         required={true}
         type="text"
         value=""
@@ -76,7 +76,7 @@ exports[`Create Account Form Component 1`] = `
         className="w-full appearance-none rounded border py-2 px-3 text-sm font-bold leading-tight text-gray-700 shadow focus:outline-none"
         id="city"
         onChange={[Function]}
-        placeholder="City"
+        placeholder="city"
         required={true}
         type="text"
         value=""
@@ -85,7 +85,7 @@ exports[`Create Account Form Component 1`] = `
         className="w-full appearance-none rounded border py-2 px-3 text-sm font-bold leading-tight text-gray-700 shadow focus:outline-none"
         id="country"
         onChange={[Function]}
-        placeholder="Country"
+        placeholder="country"
         required={true}
         type="text"
         value=""
@@ -103,24 +103,25 @@ exports[`Create Account Form Component 1`] = `
         <span
           className="text-sm"
         >
-          I agree to Terms and Conditions
+          terms-conditions
         </span>
       </label>
       <input
         className="focus:shadow-outline rounded-xl bg-primary py-2 px-4 font-bold text-white shadow hover:bg-emerald-700"
         type="submit"
-        value="Submit"
+        value="register-btn"
       />
       <button
         className="focus:shadow-outline rounded-xl border border-primary bg-transparent py-2 px-4 font-bold text-primary shadow hover:bg-primary hover:text-white"
       >
-        Cancel
+        cancel
       </button>
       <div
         className="text-center text-xs font-bold text-black"
       >
         <span>
-          Already Have An Account?
+           
+          have-account
         </span>
          
         <span
@@ -129,7 +130,8 @@ exports[`Create Account Form Component 1`] = `
           <a
             href=""
           >
-            Sign in
+             
+            signin
           </a>
         </span>
       </div>

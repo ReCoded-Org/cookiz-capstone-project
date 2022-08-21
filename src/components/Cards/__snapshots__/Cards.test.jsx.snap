@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
+exports[`Dashboard Component 1`] = `
 <div
   className="md:ml-0 mt-20 ml-10 flex flex-col items-center justify-center"
 >
@@ -13,12 +13,12 @@ exports[`renders correctly 1`] = `
       <p
         className=" md:text-3xl text-2xl font-bold text-black"
       >
-        You’ve missed home made food?
+        card-title
       </p>
       <p
         className=" pb-12 pt-2 font-normal text-black"
       >
-        Pick your favorite chef, food or cousin.
+        card-subtitle
       </p>
     </div>
     <div
@@ -151,7 +151,7 @@ exports[`renders correctly 1`] = `
           <div
             className=" md:text-3xl h-40 w-[307px] text-2xl font-semibold text-black"
           >
-            Pick your chef order the food and get it when you want
+            card1-text
             <div>
               <span
                 style={
@@ -402,7 +402,8 @@ exports[`renders correctly 1`] = `
           <p
             className=" md:pt-12 md:text-3xl w-[310px] text-2xl font-semibold text-black"
           >
-            Get a 15% discount for your first order!
+            card2-text
+             
           </p>
           <button
             className=" box-border h-10 w-32 bg-green-900 "
@@ -410,7 +411,7 @@ exports[`renders correctly 1`] = `
             <span
               className="h-5 w-20 text-base font-bold leading-5 text-white"
             >
-              Order Now
+              card2-btn
             </span>
           </button>
         </div>

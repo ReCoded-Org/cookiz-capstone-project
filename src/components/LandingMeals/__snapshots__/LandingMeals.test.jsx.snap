@@ -15,14 +15,14 @@ exports[`renders correctly 1`] = `
           <input
             className="rounded-xl font-semibold hover:font-bold"
             name="search"
-            placeholder="Search"
+            placeholder="search"
             type="search"
           />
         </div>
         <h1
           className="flex justify-center pt-8 font-bold"
         >
-          Categories
+          categories
         </h1>
         <ul
           className="flex flex-col items-center"

@@ -1,8 +1,8 @@
 {
-  "profile":"Profile",
-  "listed-foods": "Listed foods",
-  "orders": "Orders",
-  "payment-settings":"Payment settings",
-  "edit-profile":"Edit profile",
-  "logout":"Logout"
+    "profile": "Profile",
+    "listed-foods": "Listed foods",
+    "orders": "Orders",
+    "payment-settings": "Payment settings",
+    "edit-profile": "Edit profile",
+    "logout": "Logout"
 }

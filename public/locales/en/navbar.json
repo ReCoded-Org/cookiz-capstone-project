@@ -1,10 +1,9 @@
 {
-  "signup": "Sign Up",
-  "login": "Login",
-  "add-new-food":" Add a new food",
-  "dashboard": "Dashboard",
-  "account-settings": "Account Settings",
-  "logout": "Logout",
-  "name": "{{name}}"
-  
+    "signup": "Sign Up",
+    "login": "Login",
+    "add-new-food": " Add a new food",
+    "dashboard": "Dashboard",
+    "account-settings": "Account Settings",
+    "logout": "Logout",
+    "name": "{{name}}"
 }

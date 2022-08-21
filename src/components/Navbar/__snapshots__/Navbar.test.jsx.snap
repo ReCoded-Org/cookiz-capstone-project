@@ -2,7 +2,7 @@
 
 exports[`Navbar Component 1`] = `
 <nav
-  className="m-auto flex items-center rounded-[100px] pt-[1.5rem] pb-[1.5rem] pl-8 pr-8 font-opensans tablet:pl-3 tablet:pr-3"
+  className="fixed m-auto flex w-[100%] items-center bg-white pt-[1.5rem] pb-[1.5rem] pl-8 pr-8 font-opensans tablet:pl-3 tablet:pr-3"
 >
   <div
     className="navbar flex w-[100%] items-center justify-between"

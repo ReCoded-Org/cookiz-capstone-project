@@ -1,11 +1,11 @@
 import React from "react";
 import renderer from "react-test-renderer";
 
-import Orders from "../Orders";
+import Cards from "@/components/Cards/Cards";
 
 // eslint-disable-next-line
-it("Navbar Component", () => {
-    const tree = renderer.create(<Orders />).toJSON();
+it("Dashboard Component", () => {
+    const tree = renderer.create(<Cards />).toJSON();
     // eslint-disable-next-line no-undef
     expect(tree).toMatchSnapshot();
 });

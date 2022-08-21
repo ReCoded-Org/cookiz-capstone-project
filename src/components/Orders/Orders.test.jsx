@@ -1,10 +1,11 @@
+import React from "react";
 import renderer from "react-test-renderer";
 
-import SignUpForm from "../SignUpForm";
+import Orders from "./Orders";
 
 // eslint-disable-next-line
-it("Create Account Form Component", () => {
-    const tree = renderer.create(<SignUpForm />).toJSON();
+it("Dashboard Component", () => {
+    const tree = renderer.create(<Orders />).toJSON();
     // eslint-disable-next-line no-undef
     expect(tree).toMatchSnapshot();
 });

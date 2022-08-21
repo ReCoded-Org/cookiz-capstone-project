@@ -1,8 +1,8 @@
 {
-  "profile":"Profil",
-  "listed-foods": "Listelenmiş Yemekler",
-  "orders": "Siparişler",
-  "payment-settings":"Ödeme Ayarları",
-  "edit-profile":"Profili Düzenle",
-  "logout":"Çıkış"
+    "profile": "Profil",
+    "listed-foods": "Listelenmiş Yemekler",
+    "orders": "Siparişler",
+    "payment-settings": "Ödeme Ayarları",
+    "edit-profile": "Profili Düzenle",
+    "logout": "Çıkış"
 }
