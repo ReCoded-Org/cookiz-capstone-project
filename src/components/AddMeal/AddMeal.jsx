@@ -48,7 +48,7 @@ export default function AddMeal() {
                 }}
                 className='mx-0 mt-0 flex h-48 w-full items-center justify-center overflow-hidden bg-center bg-no-repeat'
             >
-                <div className='md:gap-80 lg:gap-y-96 flex items-center justify-between gap-28 text-white'>
+                <div className='flex items-center justify-between gap-28 text-white md:gap-80 lg:gap-y-96'>
                     {/* <HiArrowSmLeft
                         className='cursor-pointer'
                         style={{ fontSize: "40px" }}
@@ -82,14 +82,14 @@ export default function AddMeal() {
             <input
                 type='text'
                 placeholder='Fried Chips'
-                className='lg:text-base ml-5 w-2/3 rounded border-none bg-[#00494533] text-center text-sm focus:ring-1 focus:ring-[#004945]'
+                className='ml-5 w-2/3 rounded border-none bg-[#00494533] text-center text-sm focus:ring-1 focus:ring-[#004945] lg:text-base'
                 required
                 value={mealName}
                 onChange={(e) => {
                     setMealName(e.target.value);
                 }}
             />
-            <p className='lg:text-base ml-3 text-sm'>Dietary</p>
+            <p className='ml-3 text-sm lg:text-base'>Dietary</p>
             <ul className='ml-5 flex w-full items-center justify-start gap-3'>
                 <li>
                     <input
@@ -142,14 +142,14 @@ export default function AddMeal() {
                 </li>
             </ul>
 
-            <p className='lg:text-base ml-3 text-sm'>Ingredients</p>
+            <p className='ml-3 text-sm lg:text-base'>Ingredients</p>
             <div className='ml-5 flex w-full flex-col items-start justify-start gap-3'>
                 <div className='relative w-1/3'>
                     <input
                         type='text'
                         placeholder='Tomatoes'
                         value={ingredient}
-                        className=' lg:text-sm w-full rounded-full border-none bg-[#00494533] p-2 text-start text-xs focus:ring-1 focus:ring-[#004945]'
+                        className=' w-full rounded-full border-none bg-[#00494533] p-2 text-start text-xs focus:ring-1 focus:ring-[#004945] lg:text-sm'
                         onChange={(e) => setIngredient(e.target.value)}
                     ></input>
                     <IoAddCircleOutline
@@ -162,7 +162,7 @@ export default function AddMeal() {
                     {ingredients.map((ingredient, id) => (
                         // eslint-disable-next-line react/jsx-key
                         <div className=' relative w-1/3'>
-                            <p className='lg:text-sm w-full rounded-full border-none bg-[#00494533] p-2 text-start text-xs text-zinc-800'>
+                            <p className='w-full rounded-full border-none bg-[#00494533] p-2 text-start text-xs text-zinc-800 lg:text-sm'>
                                 {ingredient}
                             </p>
                             <IoTrashBinOutline
@@ -173,18 +173,20 @@ export default function AddMeal() {
                     ))}
                 </div>
             </div>
-            <p className='lg:text-base ml-3 text-sm'>Delivery in</p>
+            <p className='ml-3 text-sm lg:text-base'>Delivery in</p>
             <input
                 type='text'
-                className='lg:text-base  ml-5 rounded border-none text-xs ring-1 ring-[#004945] focus:rounded focus:ring-1 focus:ring-[#004945]'
+                value={deliveryMin}
+                className='ml-5  rounded border-none text-xs ring-1 ring-[#004945] focus:rounded focus:ring-1 focus:ring-[#004945] lg:text-base'
                 placeholder='30 min'
                 onChange={(e) => setDeliveryMin(e.target.value)}
             ></input>
 
-            <p className='lg:text-base ml-3 text-sm'>Price</p>
+            <p className='ml-3 text-sm lg:text-base'>Price</p>
             <input
                 type='text'
-                className='lg:text-base ml-5 mb-3 rounded border-none text-xs ring-1 ring-[#004945] focus:rounded focus:ring-1 focus:ring-[#004945]'
+                value={price}
+                className='ml-5 mb-3 rounded border-none text-xs ring-1 ring-[#004945] focus:rounded focus:ring-1 focus:ring-[#004945] lg:text-base'
                 placeholder='30 dollar'
                 onChange={(e) => setPrice(e.target.value)}
             ></input>
