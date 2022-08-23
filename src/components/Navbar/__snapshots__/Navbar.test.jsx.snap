@@ -24,67 +24,50 @@ exports[`Navbar Component 1`] = `
         IEZ
       </a>
     </div>
-    <div
-      className="relative inline-block text-left"
-    >
-      <div>
-        <button
-          aria-expanded={false}
-          aria-haspopup={true}
-          className="inline-flex w-full justify-center gap-4 px-4 py-2 font-sans text-black hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
-          id="headlessui-menu-button-:r0:"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          type="button"
-        >
-          <h1
-            className="pt-2 text-lg"
+    <div>
+      <div
+        className="relative inline-block text-left"
+      >
+        <div>
+          <button
+            aria-expanded={false}
+            aria-haspopup={true}
+            className="inline-flex w-full justify-center gap-4 px-4 py-2 font-sans text-black hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
+            id="headlessui-menu-button-:r0:"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            type="button"
           >
-            Merry Curry
-          </h1>
-          <span
-            style={
-              Object {
-                "background": "none",
-                "border": 0,
-                "boxSizing": "border-box",
-                "display": "inline-block",
-                "height": "initial",
-                "margin": 0,
-                "maxWidth": "100%",
-                "opacity": 1,
-                "overflow": "hidden",
-                "padding": 0,
-                "position": "relative",
-                "width": "initial",
-              }
-            }
-          >
+            <h1
+              className="pt-2 text-lg"
+            >
+              Merry Curry
+            </h1>
             <span
               style={
                 Object {
                   "background": "none",
                   "border": 0,
                   "boxSizing": "border-box",
-                  "display": "block",
+                  "display": "inline-block",
                   "height": "initial",
                   "margin": 0,
                   "maxWidth": "100%",
                   "opacity": 1,
+                  "overflow": "hidden",
                   "padding": 0,
+                  "position": "relative",
                   "width": "initial",
                 }
               }
             >
-              <img
-                alt=""
-                aria-hidden={true}
-                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2745%27%20height=%2745%27/%3e"
+              <span
                 style={
                   Object {
                     "background": "none",
                     "border": 0,
+                    "boxSizing": "border-box",
                     "display": "block",
                     "height": "initial",
                     "margin": 0,
@@ -94,46 +77,33 @@ exports[`Navbar Component 1`] = `
                     "width": "initial",
                   }
                 }
-              />
-            </span>
-            <img
-              alt="chef"
-              data-nimg="intrinsic"
-              decoding="async"
-              onError={[Function]}
-              onLoad={[Function]}
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style={
-                Object {
-                  "border": "none",
-                  "bottom": 0,
-                  "boxSizing": "border-box",
-                  "display": "block",
-                  "height": 0,
-                  "left": 0,
-                  "margin": "auto",
-                  "maxHeight": "100%",
-                  "maxWidth": "100%",
-                  "minHeight": "100%",
-                  "minWidth": "100%",
-                  "objectFit": undefined,
-                  "objectPosition": undefined,
-                  "padding": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-            <noscript>
+              >
+                <img
+                  alt=""
+                  aria-hidden={true}
+                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2745%27%20height=%2745%27/%3e"
+                  style={
+                    Object {
+                      "background": "none",
+                      "border": 0,
+                      "display": "block",
+                      "height": "initial",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "opacity": 1,
+                      "padding": 0,
+                      "width": "initial",
+                    }
+                  }
+                />
+              </span>
               <img
                 alt="chef"
                 data-nimg="intrinsic"
                 decoding="async"
-                loading="lazy"
-                src="/_next/image?url=%2Fimages%2FAvatar.png&w=96&q=75"
-                srcSet="/_next/image?url=%2Fimages%2FAvatar.png&w=48&q=75 1x, /_next/image?url=%2Fimages%2FAvatar.png&w=96&q=75 2x"
+                onError={[Function]}
+                onLoad={[Function]}
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                 style={
                   Object {
                     "border": "none",
@@ -157,10 +127,61 @@ exports[`Navbar Component 1`] = `
                   }
                 }
               />
-            </noscript>
-          </span>
-        </button>
+              <noscript>
+                <img
+                  alt="chef"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  loading="lazy"
+                  src="/_next/image?url=%2Fimages%2FAvatar.png&w=96&q=75"
+                  srcSet="/_next/image?url=%2Fimages%2FAvatar.png&w=48&q=75 1x, /_next/image?url=%2Fimages%2FAvatar.png&w=96&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+              </noscript>
+            </span>
+          </button>
+        </div>
       </div>
+      <a
+        className="text-lg"
+        href="/tr"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        Tr
+      </a>
+      /
+      <a
+        className="text-lg"
+        href="/en"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onTouchStart={[Function]}
+      >
+        En
+      </a>
     </div>
   </div>
 </nav>
