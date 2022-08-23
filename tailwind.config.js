@@ -17,10 +17,6 @@ module.exports = {
                 herobg: "url('/images/new-bg-test.jpg')",
             },
         },
-        screens: {
-            tablet: { max: "1024px" },
-            mobile: { max: "640" },
-        },
     },
     plugins: [require("@tailwindcss/forms")],
 };
