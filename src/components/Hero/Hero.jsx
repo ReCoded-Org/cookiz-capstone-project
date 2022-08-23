@@ -4,6 +4,7 @@ function Hero() {
     const [search, setSearch] = useState("");
 
     useEffect(() => {
+        // eslint-disable-next-line
         console.log(search);
     }, [search]);
 

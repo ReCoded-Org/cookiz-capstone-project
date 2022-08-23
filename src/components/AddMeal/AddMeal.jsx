@@ -10,7 +10,9 @@ export default function AddMeal() {
     const [glutenFree, isGlutenFree] = useState(false);
     const [ingredient, setIngredient] = useState(""); //it keeps state of place adjacent to plus icon
     const [ingredients, setIngredients] = useState([]); // it keeps array of all ingredients
+    // eslint-disable-next-line
     const [deliveryMin, setDeliveryMin] = useState("");
+    // eslint-disable-next-line
     const [price, setPrice] = useState("");
 
     function chooseImage(e) {
