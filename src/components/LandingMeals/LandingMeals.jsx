@@ -31,9 +31,8 @@ const LandingMeals = () => {
                 </nav>
             </div>
             <div className='md:col-span-5  '>
-                <div className='md:grid-cols-3 m-16 mt-8 grid gap-10'>
+                <div className='m-16 mt-8 grid gap-10 md:grid-cols-3'>
                     <div className='card relative'>
-
                         <Image
                             src='/images/meat.jpg'
                             width='500'

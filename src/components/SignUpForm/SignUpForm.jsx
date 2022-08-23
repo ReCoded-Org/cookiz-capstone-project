@@ -30,7 +30,6 @@ export default function SignUpLanding() {
                         <AiOutlineUser size={80} />
                         <p className='m-1 text-xl font-bold '>Customer</p>
                     </div>
-
                 </div>
                 {/* chef */}
                 <div

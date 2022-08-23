@@ -216,7 +216,7 @@ exports[`Create Sign up Chef Form Component 1`] = `
     </form>
   </div>
   <div
-    className="max-w-screen-sm flex items-center bg-signUpImageColor"
+    className="flex max-w-screen-sm items-center bg-signUpImageColor"
   >
     <span
       style={
