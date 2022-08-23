@@ -2,18 +2,19 @@
 
 exports[`Navbar Component 1`] = `
 <nav
-  className="fixed m-auto flex w-[100%] items-center bg-white pt-[1.5rem] pb-[1.5rem] pl-8 pr-8 font-opensans tablet:pl-3 tablet:pr-3"
+  className="tablet:pl-3 tablet:pr-3 fixed m-auto flex w-[100%] items-center bg-white pt-[1.5rem] pb-[1.5rem] pl-8 pr-8 font-opensans"
 >
   <div
     className="navbar flex w-[100%] items-center justify-between"
   >
     <div
-      className="logo text-2xl tablet:text-xl"
+      className="logo tablet:text-xl text-2xl"
     >
       <a
         href="/#"
         onClick={[Function]}
         onMouseEnter={[Function]}
+        onTouchStart={[Function]}
       >
         <span
           className="font-black"

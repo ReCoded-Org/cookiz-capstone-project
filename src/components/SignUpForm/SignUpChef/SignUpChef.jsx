@@ -59,27 +59,21 @@ export default function SignUpChefForm() {
     // POSTing to chef endpoint
     const handleSubmit = async (e) => {
         e.preventDefault();
-        try {
-            const res = await api.post("/auth/chef/signup", newUser);
-            // if res.ok redirect to sign in
-            if (res) {
-                router.push("/");
-            }
-            // debugging
-            console.log(res.data);
-            console.log("Server Response: " + res.statusText);
-        } catch (err) {
-            // res not in 200 res, errs from axios itself
-            // errs from axios, if err is within the 200 range
-            if (err.response) {
-                console.log(err.response.data);
-                console.log(err.response.status);
-                console.log(err.response.headers);
-            } else {
-                // if err is not in 200 range, tis will display the err message itself
-                console.log(`Error, res not in 200 range: ${err.message}`);
-            }
+        //try {
+        const res = await api.post("/auth/chef/signup", newUser);
+        // if res.ok redirect to sign in
+        if (res) {
+            router.push("/");
         }
+        // debugging
+        //} catch (err) {
+        // res not in 200 res, errs from axios itself
+        // errs from axios, if err is within the 200 range
+        // if (err.response) {
+        //} else {
+        // if err is not in 200 range, tis will display the err message itself
+        // }
+        //}
     };
 
     // initializing router
@@ -314,7 +308,7 @@ export default function SignUpChefForm() {
 
             {/* make this hidden */}
 
-            <div className='max-w-screen-sm flex items-center bg-signUpImageColor'>
+            <div className='flex max-w-screen-sm items-center bg-signUpImageColor'>
                 <Image
                     src='/images/signup2.jpg'
                     alt='test'

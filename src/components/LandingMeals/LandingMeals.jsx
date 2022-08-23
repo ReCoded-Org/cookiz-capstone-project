@@ -5,7 +5,7 @@ const LandingMeals = () => {
     const { t } = useTranslation("landing-meals");
 
     return (
-        <div className='md:grid-cols-6 m-14 grid '>
+        <div className='m-14 grid md:grid-cols-6 '>
             <div className='md:col-span-1 '>
                 <nav>
                     <div>
@@ -31,7 +31,7 @@ const LandingMeals = () => {
                 </nav>
             </div>
             <div className='md:col-span-5  '>
-                <div className='md:grid-cols-3 m-16 mt-8 grid gap-10'>
+                <div className='m-16 mt-8 grid gap-10 md:grid-cols-3'>
                     <div className='card relative'>
                         <Image
                             src='/images/meat.jpg'
@@ -39,11 +39,11 @@ const LandingMeals = () => {
                             height='300'
                             alt='meatball'
                         />
-                        <span className='md:text-base m-4 text-sm font-bold '>
+                        <span className='m-4 text-sm font-bold md:text-base '>
                             Spanish Paella{" "}
                         </span>
                         <div className='flex items-center '>
-                            <div className='md:w-11 flex items-center  p-2'>
+                            <div className='flex items-center p-2  md:w-11'>
                                 <Image
                                     src='/images/Avatar.png'
                                     width='32'
@@ -52,7 +52,7 @@ const LandingMeals = () => {
                                     alt='chef'
                                 />
                             </div>
-                            <span className='text-grey-500 md:text-sm text-xs'>
+                            <span className='text-grey-500 text-xs md:text-sm'>
                                 Jennifer Lawrence
                             </span>
                         </div>
@@ -68,11 +68,11 @@ const LandingMeals = () => {
                             height='300'
                             alt='meatball'
                         />
-                        <span className='md:text-base m-4 text-sm font-bold'>
+                        <span className='m-4 text-sm font-bold md:text-base'>
                             Spanish Paella{" "}
                         </span>
                         <div className='flex items-center '>
-                            <div className='md:w-11 flex items-center  p-2'>
+                            <div className='flex items-center p-2  md:w-11'>
                                 <Image
                                     src='/images/Avatar.png'
                                     width='32'
@@ -81,7 +81,7 @@ const LandingMeals = () => {
                                     alt='chef'
                                 />
                             </div>
-                            <span className='text-grey-500 md:text-sm text-xs'>
+                            <span className='text-grey-500 text-xs md:text-sm'>
                                 Jennifer Lawrence
                             </span>
                         </div>
@@ -97,11 +97,11 @@ const LandingMeals = () => {
                             height='300'
                             alt='meatball'
                         />
-                        <span className='md:text-base m-4 text-sm font-bold'>
+                        <span className='m-4 text-sm font-bold md:text-base'>
                             Spanish Paella{" "}
                         </span>
                         <div className='flex items-center '>
-                            <div className='md:w-11 flex items-center  p-2'>
+                            <div className='flex items-center p-2  md:w-11'>
                                 <Image
                                     src='/images/Avatar.png'
                                     width='32'
@@ -110,7 +110,7 @@ const LandingMeals = () => {
                                     alt='chef'
                                 />
                             </div>
-                            <span className='text-grey-500 md:text-sm text-xs'>
+                            <span className='text-grey-500 text-xs md:text-sm'>
                                 Jennifer Lawrence
                             </span>
                         </div>
@@ -126,11 +126,11 @@ const LandingMeals = () => {
                             height='300'
                             alt='meatball'
                         />
-                        <span className='md:text-base m-4 text-sm font-bold'>
+                        <span className='m-4 text-sm font-bold md:text-base'>
                             Spanish Paella{" "}
                         </span>
                         <div className='flex items-center '>
-                            <div className='md:w-11 flex items-center  p-2'>
+                            <div className='flex items-center p-2  md:w-11'>
                                 <Image
                                     src='/images/Avatar.png'
                                     width='32'
@@ -139,7 +139,7 @@ const LandingMeals = () => {
                                     alt='chef'
                                 />
                             </div>
-                            <span className='text-grey-500 md:text-sm text-xs'>
+                            <span className='text-grey-500 text-xs md:text-sm'>
                                 Jennifer Lawrence
                             </span>
                         </div>
@@ -155,11 +155,11 @@ const LandingMeals = () => {
                             height='300'
                             alt='meatball'
                         />
-                        <span className='md:text-base m-4 text-sm font-bold'>
+                        <span className='m-4 text-sm font-bold md:text-base'>
                             Spanish Paella{" "}
                         </span>
                         <div className='flex items-center '>
-                            <div className='md:w-11 flex items-center  p-2'>
+                            <div className='flex items-center p-2  md:w-11'>
                                 <Image
                                     src='/images/Avatar.png'
                                     width='32'
@@ -168,7 +168,7 @@ const LandingMeals = () => {
                                     alt='chef'
                                 />
                             </div>
-                            <span className='text-grey-500 md:text-sm text-xs'>
+                            <span className='text-grey-500 text-xs md:text-sm'>
                                 Jennifer Lawrence
                             </span>
                         </div>
@@ -184,11 +184,11 @@ const LandingMeals = () => {
                             height='300'
                             alt='meatball'
                         />
-                        <span className='md:text-base m-4 text-sm font-bold'>
+                        <span className='m-4 text-sm font-bold md:text-base'>
                             Spanish Paella{" "}
                         </span>
                         <div className='flex items-center '>
-                            <div className='md:w-11 flex items-center  p-2'>
+                            <div className='flex items-center p-2  md:w-11'>
                                 <Image
                                     src='/images/Avatar.png'
                                     width='32'
@@ -197,7 +197,7 @@ const LandingMeals = () => {
                                     alt='chef'
                                 />
                             </div>
-                            <span className='text-grey-500 md:text-sm text-xs'>
+                            <span className='text-grey-500 text-xs md:text-sm'>
                                 Jennifer Lawrence
                             </span>
                         </div>
