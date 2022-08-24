@@ -6,7 +6,7 @@ import { useState } from "react";
 
 function Navbar() {
     // this is a temporary state, when we apply login auth. this will be replaced with actual state
-    const [loggedIn, setLoggedIn] = useState(true);
+    const [loggedIn, setLoggedIn] = useState(false);
     const { t } = useTranslation("common");
 
     return (
@@ -89,6 +89,9 @@ function Navbar() {
                                         <Menu.Item>
                                             {({ active }) => (
                                                 <button
+                                                    onClick={() =>
+                                                        setLoggedIn(false)
+                                                    }
                                                     className={`${
                                                         active
                                                             ? " bg-green-900  text-white"
