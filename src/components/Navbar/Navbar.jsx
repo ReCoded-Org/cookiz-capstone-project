@@ -14,7 +14,7 @@ function Navbar() {
             <nav className='tablet:pl-3 tablet:pr-3 fixed m-auto flex w-[100%] items-center bg-white pt-[1.5rem] pb-[1.5rem] pl-8 pr-8 font-opensans'>
                 <div className='navbar flex w-[100%] items-center justify-between'>
                     <div className='logo tablet:text-xl text-2xl'>
-                        <Link href='#'>
+                        <Link href='/'>
                             <a>
                                 <span className='font-black'>COOK</span>IEZ
                             </a>
@@ -45,44 +45,50 @@ function Navbar() {
                                     <div className='px-1 py-1 '>
                                         <Menu.Item>
                                             {({ active }) => (
-                                                <button
-                                                    className={`${
-                                                        active
-                                                            ? " bg-green-900  text-white"
-                                                            : "text-gray-900"
-                                                    } text-m  group flex w-full items-center  rounded-[10px] px-2  py-2 font-sans`}
-                                                >
-                                                    <span className='pr-1 text-lg font-bold'>
-                                                        +
-                                                    </span>{" "}
-                                                    Add a new food
-                                                </button>
+                                                <Link href='/addmealmodal'>
+                                                    <button
+                                                        className={`${
+                                                            active
+                                                                ? " bg-green-900  text-white"
+                                                                : "text-gray-900"
+                                                        } text-m  group flex w-full items-center  rounded-[10px] px-2  py-2 font-sans`}
+                                                    >
+                                                        <span className='pr-1 text-lg font-bold'>
+                                                            +
+                                                        </span>{" "}
+                                                        Add a new food
+                                                    </button>
+                                                </Link>
                                             )}
                                         </Menu.Item>
                                         <Menu.Item>
                                             {({ active }) => (
-                                                <button
-                                                    className={`${
-                                                        active
-                                                            ? " bg-green-900  text-white"
-                                                            : "text-gray-900"
-                                                    } text-m  group flex w-full items-center  rounded-[10px] px-2  py-2 font-sans`}
-                                                >
-                                                    Dashboard
-                                                </button>
+                                                <Link href='/landingmeal'>
+                                                    <button
+                                                        className={`${
+                                                            active
+                                                                ? " bg-green-900  text-white"
+                                                                : "text-gray-900"
+                                                        } text-m  group flex w-full items-center  rounded-[10px] px-2  py-2 font-sans`}
+                                                    >
+                                                        Dashboard
+                                                    </button>
+                                                </Link>
                                             )}
                                         </Menu.Item>
                                         <Menu.Item>
                                             {({ active }) => (
-                                                <button
-                                                    className={`${
-                                                        active
-                                                            ? " bg-green-900  text-white"
-                                                            : "text-gray-900"
-                                                    } text-m  group flex w-full items-center  rounded-[10px] px-2  py-2 font-sans`}
-                                                >
-                                                    Account Settings
-                                                </button>
+                                                <Link href='/profile'>
+                                                    <button
+                                                        className={`${
+                                                            active
+                                                                ? " bg-green-900  text-white"
+                                                                : "text-gray-900"
+                                                        } text-m  group flex w-full items-center  rounded-[10px] px-2  py-2 font-sans`}
+                                                    >
+                                                        Account Settings
+                                                    </button>
+                                                </Link>
                                             )}
                                         </Menu.Item>
 
@@ -117,7 +123,9 @@ function Navbar() {
                         <div className='nav-list'>
                             <ul className='tablet:text-base flex items-center gap-10 text-lg'>
                                 <li onClick={() => setLoggedIn(true)}>Login</li>
-                                <li>Sign up</li>
+                                <Link href='/signup'>
+                                    <li>Sign up</li>
+                                </Link>
                                 <li>
                                     <Link href='/' locale='en'>
                                         <a>En</a>
