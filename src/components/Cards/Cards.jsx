@@ -25,7 +25,7 @@ const Cards = () => {
                                     width={50}
                                 />
                             </div>
-                            <div className='text-xl font-semibold text-black  sm:text-2xl lg:text-3xl'>
+<div className='text-xl font-semibold text-black  sm:text-2xl lg:text-3xl'>
                                 {" "}
                                 Pick your chef order the food and get it when
                                 you want
@@ -49,7 +49,6 @@ const Cards = () => {
                             />
                         </div>
                     </div>
-
                     <div className='flex  h-[350px] w-[660px] flex-row rounded-[10px] bg-[#FFE7E3] shadow-lg '>
                         <div className='flex basis-2/3 flex-col justify-center gap-4 px-6 pt-12 '>
                             <p className='text-xl font-semibold text-black  sm:text-2xl lg:text-3xl'>

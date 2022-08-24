@@ -403,7 +403,7 @@ exports[`renders correctly 1`] = `
           className="flex basis-2/3 flex-col justify-center gap-4 px-6 pt-12 "
         >
           <p
-            className="text-xl font-semibold text-black sm:text-2xl lg:text-3xl"
+            className="text-xl font-semibold text-black sm:text-2xl lg:text-3xl
           >
             Get a 15% discount for your first order!
           </p>
