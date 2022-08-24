@@ -178,6 +178,7 @@ export default function AddMeal() {
             <p className='ml-3 text-sm lg:text-base'>Delivery in</p>
             <input
                 type='text'
+                value={deliveryMin}
                 className='ml-5  rounded border-none text-xs ring-1 ring-[#004945] focus:rounded focus:ring-1 focus:ring-[#004945] lg:text-base'
                 placeholder='30 min'
                 onChange={(e) => setDeliveryMin(e.target.value)}
@@ -186,6 +187,7 @@ export default function AddMeal() {
             <p className='ml-3 text-sm lg:text-base'>Price</p>
             <input
                 type='text'
+                value={price}
                 className='ml-5 mb-3 rounded border-none text-xs ring-1 ring-[#004945] focus:rounded focus:ring-1 focus:ring-[#004945] lg:text-base'
                 placeholder='30 dollar'
                 onChange={(e) => setPrice(e.target.value)}

@@ -204,6 +204,7 @@ exports[`renders correctly 1`] = `
     onChange={[Function]}
     placeholder="30 min"
     type="text"
+    value=""
   />
   <p
     className="ml-3 text-sm lg:text-base"
@@ -215,6 +216,7 @@ exports[`renders correctly 1`] = `
     onChange={[Function]}
     placeholder="30 dollar"
     type="text"
+    value=""
   />
   <button
     className=" absolute bottom-80 right-0 mr-2 rounded bg-[#004945] px-6 py-1 text-white"
