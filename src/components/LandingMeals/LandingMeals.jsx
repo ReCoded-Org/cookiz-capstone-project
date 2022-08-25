@@ -3,6 +3,25 @@ import { useTranslation } from "next-i18next";
 
 const LandingMeals = () => {
     const { t } = useTranslation("landing-meals");
+    // const [dishes, setDishes] = useState([]);
+    // const [chefs, setChefs] = useState([]);
+
+    // useEffect(() => {
+    //     const dishesList = axios
+    //         .get("https://cookiez-app.herokuapp.com/api/dishes")
+    //         .then((response) => setDishes(response.data));
+
+    //     const chefs = axios
+    //         .get("https://cookiez-app.herokuapp.com/api/chefs")
+    //         .then((response) => setChefs(response.data));
+    // }, []);
+
+    // const findChef = (chefId) => {
+    //     return chefs.find((chef) => chef.id === chefId);
+    // };
+
+    // console.log(dishes);
+    // console.log(chefs);
 
     return (
         <div className='m-14 grid md:grid-cols-6 '>
