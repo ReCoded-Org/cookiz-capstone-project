@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useTranslation } from "next-i18next";
 
 const LandingMeals = () => {
@@ -52,7 +51,7 @@ const LandingMeals = () => {
             <div className='md:col-span-5  '>
                 <div className='m-16 mt-8 grid gap-10 md:grid-cols-3'>
                     <div className='card relative'>
-                        <Image
+                        <img
                             src='/images/meat.jpg'
                             width='500'
                             height='300'
@@ -63,7 +62,7 @@ const LandingMeals = () => {
                         </span>
                         <div className='flex items-center '>
                             <div className='flex items-center p-2  md:w-11'>
-                                <Image
+                                <img
                                     src='/images/Avatar.png'
                                     width='32'
                                     height='32'
@@ -81,7 +80,7 @@ const LandingMeals = () => {
                         </div>
                     </div>
                     <div className='card relative'>
-                        <Image
+                        <img
                             src='/images/meat.jpg'
                             width='500'
                             height='300'
@@ -92,7 +91,7 @@ const LandingMeals = () => {
                         </span>
                         <div className='flex items-center '>
                             <div className='flex items-center p-2  md:w-11'>
-                                <Image
+                                <img
                                     src='/images/Avatar.png'
                                     width='32'
                                     height='32'
@@ -110,7 +109,7 @@ const LandingMeals = () => {
                         </div>
                     </div>
                     <div className='card relative'>
-                        <Image
+                        <img
                             src='/images/meat.jpg'
                             width='500'
                             height='300'
@@ -121,7 +120,7 @@ const LandingMeals = () => {
                         </span>
                         <div className='flex items-center '>
                             <div className='flex items-center p-2  md:w-11'>
-                                <Image
+                                <img
                                     src='/images/Avatar.png'
                                     width='32'
                                     height='32'
@@ -139,7 +138,7 @@ const LandingMeals = () => {
                         </div>
                     </div>
                     <div className='card relative'>
-                        <Image
+                        <img
                             src='/images/meat.jpg'
                             width='500'
                             height='300'
@@ -150,7 +149,7 @@ const LandingMeals = () => {
                         </span>
                         <div className='flex items-center '>
                             <div className='flex items-center p-2  md:w-11'>
-                                <Image
+                                <img
                                     src='/images/Avatar.png'
                                     width='32'
                                     height='32'
@@ -168,7 +167,7 @@ const LandingMeals = () => {
                         </div>
                     </div>
                     <div className='card relative'>
-                        <Image
+                        <img
                             src='/images/meat.jpg'
                             width='500'
                             height='300'
@@ -179,7 +178,7 @@ const LandingMeals = () => {
                         </span>
                         <div className='flex items-center '>
                             <div className='flex items-center p-2  md:w-11'>
-                                <Image
+                                <img
                                     src='/images/Avatar.png'
                                     width='32'
                                     height='32'
@@ -197,7 +196,7 @@ const LandingMeals = () => {
                         </div>
                     </div>
                     <div className='card relative'>
-                        <Image
+                        <img
                             src='/images/meat.jpg'
                             width='500'
                             height='300'
@@ -208,7 +207,7 @@ const LandingMeals = () => {
                         </span>
                         <div className='flex items-center '>
                             <div className='flex items-center p-2  md:w-11'>
-                                <Image
+                                <img
                                     src='/images/Avatar.png'
                                     width='32'
                                     height='32'
