@@ -10,12 +10,12 @@ exports[`renders correctly 1`] = `
     <p
       className="text-center text-4xl font-bold"
     >
-      Places where Cookiez is available
+      title
     </p>
     <p
       className="text-center text-2xl font-normal"
     >
-      We are currently providing services for limited cities. We plan to expand services across whole country very soon.
+      text
     </p>
     <div
       className="w-2/3 "
@@ -29,7 +29,7 @@ exports[`renders correctly 1`] = `
           <input
             className=" w-full p-3 text-2xl font-normal focus-within:border-[#004945] focus:ring-[#004945]"
             onChange={[Function]}
-            placeholder="Enter a city name"
+            placeholder="placeholder"
             required={true}
             type="text"
             value=""
