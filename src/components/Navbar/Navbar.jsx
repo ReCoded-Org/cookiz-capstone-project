@@ -122,7 +122,7 @@ function Navbar() {
                     ) : (
                         <div className='nav-list'>
                             <ul className='tablet:text-base flex items-center gap-10 text-lg'>
-                                <li onClick={() => setLoggedIn(true)}>Login</li>
+                                <Link href='/signin'>Login </Link>
                                 <Link href='/signup'>
                                     <li>Sign up</li>
                                 </Link>
