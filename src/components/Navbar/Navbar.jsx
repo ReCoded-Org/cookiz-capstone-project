@@ -7,7 +7,7 @@ import { useState } from "react";
 function Navbar() {
     // this is a temporary state, when we apply login auth. this will be replaced with actual state
     const [loggedIn, setLoggedIn] = useState(false);
-    const { t } = useTranslation("common");
+    const { t } = useTranslation("navbar");
 
     return (
         <>
@@ -55,8 +55,8 @@ function Navbar() {
                                                     >
                                                         <span className='pr-1 text-lg font-bold'>
                                                             +
-                                                        </span>{" "}
-                                                        Add a new food
+                                                        </span>
+                                                        {t("add-new-food")}
                                                     </button>
                                                 </Link>
                                             )}
@@ -71,7 +71,7 @@ function Navbar() {
                                                                 : "text-gray-900"
                                                         } text-m  group flex w-full items-center  rounded-[10px] px-2  py-2 font-sans`}
                                                     >
-                                                        Dashboard
+                                                        {t("dashboard")}
                                                     </button>
                                                 </Link>
                                             )}
@@ -86,7 +86,7 @@ function Navbar() {
                                                                 : "text-gray-900"
                                                         } text-m  group flex w-full items-center  rounded-[10px] px-2  py-2 font-sans`}
                                                     >
-                                                        Account Settings
+                                                        {t("account-settings")}
                                                     </button>
                                                 </Link>
                                             )}
@@ -104,7 +104,7 @@ function Navbar() {
                                                             : "text-gray-900"
                                                     } text-m  group flex w-full items-center  rounded-[10px] px-2  py-2 font-sans`}
                                                 >
-                                                    Logout
+                                                    {t("logout")}
                                                 </button>
                                             )}
                                         </Menu.Item>
@@ -122,10 +122,8 @@ function Navbar() {
                     ) : (
                         <div className='nav-list'>
                             <ul className='tablet:text-base flex items-center gap-10 text-lg'>
-                                <li onClick={() => setLoggedIn(true)}>Login</li>
-                                <Link href='/signup'>
-                                    <li>Sign up</li>
-                                </Link>
+                                <Link href='/signin'>{t("login")}</Link>
+                                <Link href='/signup'>{t("signup")}</Link>
                                 <li>
                                     <Link href='/' locale='en'>
                                         <a>En</a>

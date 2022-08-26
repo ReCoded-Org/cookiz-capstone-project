@@ -31,7 +31,7 @@ exports[`Edit Account Component 1`] = `
     <h1
       className="ml-2 text-2xl"
     >
-      Edit Your Account
+      account
     </h1>
   </div>
   <div
@@ -172,7 +172,7 @@ exports[`Edit Account Component 1`] = `
             className="rounded border text-sm font-bold leading-tight text-gray-700 shadow focus:outline-none"
             id="phoneNum"
             onChange={[Function]}
-            placeholder="Phone Number"
+            placeholder="phone-num"
             type="text"
             value=""
           />
@@ -180,7 +180,7 @@ exports[`Edit Account Component 1`] = `
             className="rounded border text-sm font-bold leading-tight text-gray-700 shadow focus:outline-none"
             id="oldPass"
             onChange={[Function]}
-            placeholder="Old Password"
+            placeholder="old-password"
             type="password"
             value=""
           />
@@ -188,14 +188,14 @@ exports[`Edit Account Component 1`] = `
             className="rounded border text-sm font-bold leading-tight text-gray-700 shadow focus:outline-none"
             id="newPass"
             onChange={[Function]}
-            placeholder="New Password"
+            placeholder="new-password"
             type="password"
             value=""
           />
           <button
             className="focus:shadow-outline rounded-xl bg-primary py-2 px-4 font-bold text-white shadow hover:bg-emerald-700"
           >
-            Save
+            save-btn
           </button>
         </form>
       </div>
