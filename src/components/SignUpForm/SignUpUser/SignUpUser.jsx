@@ -17,6 +17,8 @@ export default function SignUpUserForm() {
         termsAndConditions: false,
     });
 
+    const [err, setErr] = useState("");
+
     const handleFormData = (event) => {
         if (event.target.type === "checkbox") {
             setFormData({
@@ -63,9 +65,20 @@ export default function SignUpUserForm() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         //try {
-        const res = await api.post("/auth/customer/signup", newUser);
+        const res = await api
+            .post("/auth/customer/signup", newUser)
+            .catch(function (error) {
+                console.log(error);
+                let isArray = Array.isArray(error.response.data.errors);
+                if (isArray) {
+                    setErr(error.response.data.errors[0].msg);
+                } else {
+                    setErr(error.response.data.error);
+                }
+            });
         // if res.ok redirect to sign in
         if (res) {
+            alert("You have Successfuly Signed Up");
             router.push("/");
         }
         // debugging
@@ -273,6 +286,12 @@ export default function SignUpUserForm() {
                         </span>
                     </div>
                 </form>
+
+                {err && (
+                    <h2 className='text-center font-bold text-red-600'>
+                        {err}
+                    </h2>
+                )}
             </div>
 
             {/* image section */}
