@@ -1,0 +1,9 @@
+{
+    "signup": "Kayıt OL",
+    "login": "Giriş Yap",
+    "add-new-food": " Yeni Yemek Ekle",
+    "dashboard": "Profil",
+    "account-settings": "Hesap Ayarları",
+    "logout": "Çıkış",
+    "name": "{{isim}}"
+}

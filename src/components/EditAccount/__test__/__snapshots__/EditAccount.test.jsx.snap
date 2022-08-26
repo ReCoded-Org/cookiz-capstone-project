@@ -1,0 +1,205 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Edit Account Component 1`] = `
+<div
+  className="min-w-sm m-5"
+>
+  <div
+    className="flex w-1/2 flex-row items-center justify-center"
+  >
+    <svg
+      fill="currentColor"
+      height={38}
+      stroke="currentColor"
+      strokeWidth="0"
+      style={
+        Object {
+          "color": undefined,
+        }
+      }
+      viewBox="0 0 24 24"
+      width={38}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12 2A10.13 10.13 0 0 0 2 12a10 10 0 0 0 4 7.92V20h.1a9.7 9.7 0 0 0 11.8 0h.1v-.08A10 10 0 0 0 22 12 10.13 10.13 0 0 0 12 2zM8.07 18.93A3 3 0 0 1 11 16.57h2a3 3 0 0 1 2.93 2.36 7.75 7.75 0 0 1-7.86 0zm9.54-1.29A5 5 0 0 0 13 14.57h-2a5 5 0 0 0-4.61 3.07A8 8 0 0 1 4 12a8.1 8.1 0 0 1 8-8 8.1 8.1 0 0 1 8 8 8 8 0 0 1-2.39 5.64z"
+      />
+      <path
+        d="M12 6a3.91 3.91 0 0 0-4 4 3.91 3.91 0 0 0 4 4 3.91 3.91 0 0 0 4-4 3.91 3.91 0 0 0-4-4zm0 6a1.91 1.91 0 0 1-2-2 1.91 1.91 0 0 1 2-2 1.91 1.91 0 0 1 2 2 1.91 1.91 0 0 1-2 2z"
+      />
+    </svg>
+    <h1
+      className="ml-2 text-2xl"
+    >
+      account
+    </h1>
+  </div>
+  <div
+    className=""
+  >
+    <div
+      className="m-9 flex flex-row flex-wrap justify-center"
+    >
+      <div
+        className="mb-9 h-40 w-40"
+      >
+        <span
+          style={
+            Object {
+              "background": "none",
+              "border": 0,
+              "boxSizing": "border-box",
+              "display": "inline-block",
+              "height": "initial",
+              "margin": 0,
+              "maxWidth": "100%",
+              "opacity": 1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "relative",
+              "width": "initial",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "background": "none",
+                "border": 0,
+                "boxSizing": "border-box",
+                "display": "block",
+                "height": "initial",
+                "margin": 0,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "padding": 0,
+                "width": "initial",
+              }
+            }
+          >
+            <img
+              alt=""
+              aria-hidden={true}
+              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27500%27%20height=%27500%27/%3e"
+              style={
+                Object {
+                  "background": "none",
+                  "border": 0,
+                  "display": "block",
+                  "height": "initial",
+                  "margin": 0,
+                  "maxWidth": "100%",
+                  "opacity": 1,
+                  "padding": 0,
+                  "width": "initial",
+                }
+              }
+            />
+          </span>
+          <img
+            alt="user avatar"
+            className="rounded-full object-cover"
+            data-nimg="intrinsic"
+            decoding="async"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style={
+              Object {
+                "border": "none",
+                "bottom": 0,
+                "boxSizing": "border-box",
+                "display": "block",
+                "height": 0,
+                "left": 0,
+                "margin": "auto",
+                "maxHeight": "100%",
+                "maxWidth": "100%",
+                "minHeight": "100%",
+                "minWidth": "100%",
+                "objectFit": undefined,
+                "objectPosition": undefined,
+                "padding": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+                "width": 0,
+              }
+            }
+          />
+          <noscript>
+            <img
+              alt="user avatar"
+              className="rounded-full object-cover"
+              data-nimg="intrinsic"
+              decoding="async"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2Fprofile.jpeg&w=1080&q=75"
+              srcSet="/_next/image?url=%2Fimages%2Fprofile.jpeg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fprofile.jpeg&w=1080&q=75 2x"
+              style={
+                Object {
+                  "border": "none",
+                  "bottom": 0,
+                  "boxSizing": "border-box",
+                  "display": "block",
+                  "height": 0,
+                  "left": 0,
+                  "margin": "auto",
+                  "maxHeight": "100%",
+                  "maxWidth": "100%",
+                  "minHeight": "100%",
+                  "minWidth": "100%",
+                  "objectFit": undefined,
+                  "objectPosition": undefined,
+                  "padding": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                  "width": 0,
+                }
+              }
+            />
+          </noscript>
+        </span>
+      </div>
+      <div
+        className="ml-9 w-96"
+      >
+        <form
+          className="flex w-full flex-col space-y-4"
+        >
+          <input
+            className="rounded border text-sm font-bold leading-tight text-gray-700 shadow focus:outline-none"
+            id="phoneNum"
+            onChange={[Function]}
+            placeholder="phone-num"
+            type="text"
+            value=""
+          />
+          <input
+            className="rounded border text-sm font-bold leading-tight text-gray-700 shadow focus:outline-none"
+            id="oldPass"
+            onChange={[Function]}
+            placeholder="old-password"
+            type="password"
+            value=""
+          />
+          <input
+            className="rounded border text-sm font-bold leading-tight text-gray-700 shadow focus:outline-none"
+            id="newPass"
+            onChange={[Function]}
+            placeholder="new-password"
+            type="password"
+            value=""
+          />
+          <button
+            className="focus:shadow-outline rounded-xl bg-primary py-2 px-4 font-bold text-white shadow hover:bg-emerald-700"
+          >
+            save-btn
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,229 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="flex h-fit w-[340px] flex-col items-start justify-start gap-3 overflow-hidden"
+>
+  <div
+    className="mx-0 mt-0 flex h-48 w-full items-center justify-center overflow-hidden bg-center bg-no-repeat"
+    style={
+      Object {
+        "backgroundImage": "url(../images/header.jpg)",
+        "backgroundSize": "cover",
+        "border": "none",
+      }
+    }
+  >
+    <div
+      className="flex items-center justify-between gap-28 text-white md:gap-80 lg:gap-y-96"
+    >
+      <input
+        className="peer hidden"
+        id="add-image"
+        onChange={[Function]}
+        required=""
+        type="file"
+      />
+      <label
+        className="inline-flex w-full cursor-pointer items-center justify-between"
+        htmlFor="add-image"
+      >
+        <div
+          className="block"
+        >
+          <svg
+            className="cursor-pointer"
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+                "fontSize": "40px",
+              }
+            }
+            viewBox="0 0 20 20"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              clipRule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+      </label>
+    </div>
+  </div>
+  <input
+    className="ml-5 w-2/3 rounded border-none bg-[#00494533] text-center text-sm focus:ring-1 focus:ring-[#004945] lg:text-base"
+    onChange={[Function]}
+    placeholder="fried-chips"
+    required={true}
+    type="text"
+    value=""
+  />
+  <p
+    className="ml-3 text-sm lg:text-base"
+  >
+     
+    dietary
+  </p>
+  <ul
+    className="ml-5 flex w-full items-center justify-start gap-3"
+  >
+    <li>
+      <input
+        className="peer hidden"
+        id="react-option"
+        onChange={[Function]}
+        required=""
+        type="checkbox"
+      />
+      <label
+        className="inline-flex w-full cursor-pointer items-center justify-between rounded-full bg-[#00494533] p-1 ring-1 ring-[#00494533] peer-checked:ring-[#004945]"
+        htmlFor="react-option"
+      >
+        <div
+          className="block"
+        >
+          <div
+            className="w-full text-xs "
+          >
+            vegeterian
+          </div>
+        </div>
+      </label>
+    </li>
+    <li>
+      <input
+        className="peer hidden"
+        id="flowbite-option"
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <label
+        className="inline-flex w-full cursor-pointer items-center justify-between rounded-full bg-[#00494533] p-1 ring-1 ring-[#00494533] peer-checked:ring-[#004945]"
+        htmlFor="flowbite-option"
+      >
+        <div
+          className="block"
+        >
+          <div
+            className="w-full text-xs"
+          >
+            vegan
+          </div>
+        </div>
+      </label>
+    </li>
+    <li>
+      <input
+        className="peer hidden"
+        id="angular-option"
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <label
+        className="inline-flex w-full cursor-pointer items-center justify-between rounded-full bg-[#00494533] p-1 ring-1 ring-[#00494533] peer-checked:ring-[#004945]"
+        htmlFor="angular-option"
+      >
+        <div
+          className="block"
+        >
+          <div
+            className="w-full text-xs"
+          >
+            gluten-free
+          </div>
+        </div>
+      </label>
+    </li>
+  </ul>
+  <p
+    className="ml-3 text-sm lg:text-base"
+  >
+    ingredients
+  </p>
+  <div
+    className="ml-5 flex w-full flex-col items-start justify-start gap-3"
+  >
+    <div
+      className="relative w-1/3"
+    >
+      <input
+        className=" w-full rounded-full border-none bg-[#00494533] p-2 text-start text-xs focus:ring-1 focus:ring-[#004945] lg:text-sm"
+        onChange={[Function]}
+        placeholder="tomatoes"
+        type="text"
+        value=""
+      />
+      <svg
+        className="absolute top-2 right-0.5 w-10 cursor-pointer"
+        fill="currentColor"
+        height="1em"
+        onClick={[Function]}
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 512 512"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z"
+          fill="none"
+          strokeMiterlimit="10"
+          strokeWidth="32"
+        />
+        <path
+          d="M256 176v160m80-80H176"
+          fill="none"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="32"
+        />
+      </svg>
+    </div>
+    <div
+      className="flex w-full flex-wrap items-start justify-start gap-3"
+    />
+  </div>
+  <p
+    className="ml-3 text-sm lg:text-base"
+  >
+    delivery
+  </p>
+  <input
+    className="ml-5 rounded border-none text-xs ring-1 ring-[#004945] focus:rounded focus:ring-1 focus:ring-[#004945] lg:text-base"
+    onChange={[Function]}
+    placeholder="time"
+    type="text"
+    value=""
+  />
+  <p
+    className="ml-3 text-sm lg:text-base"
+  >
+    price
+  </p>
+  <input
+    className="ml-5 mb-3 rounded border-none text-xs ring-1 ring-[#004945] focus:rounded focus:ring-1 focus:ring-[#004945] lg:text-base"
+    onChange={[Function]}
+    placeholder="howmuch"
+    type="text"
+    value=""
+  />
+  <button
+    className=" absolute bottom-80 right-0 mr-2 rounded bg-[#004945] px-6 py-1 text-white"
+    onClick={[Function]}
+  >
+    save
+  </button>
+</div>
+`;

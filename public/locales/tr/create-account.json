@@ -1,0 +1,18 @@
+{
+    "create-account": "Hesap Oluştur",
+    "firstname": "İsim",
+    "lastname": "Soyisim",
+    "password": "Şifre",
+    "email": "Mail Adresi",
+    "adress": "Adres",
+    "area-code": "Alan Kodu",
+    "phone": "Telefon Numarası",
+    "zip-code": "Posta Kodu",
+    "city": "Şehir",
+    "country": "Ülke",
+    "terms-conditions": "Hüküm ve Koşulları kabul ediyorum  ",
+    "cancel": "İptal",
+    "have-account": "Hesabın Var Mı?",
+    "register-btn": "Kayıt Ol",
+    "signin": "Giriş Yap"
+}

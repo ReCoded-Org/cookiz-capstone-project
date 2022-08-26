@@ -1,0 +1,356 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar Component 1`] = `
+<div
+  className=" flex h-screen"
+>
+  <div
+    className="w-full pt-7 pl-4 sm:pl-12"
+  >
+    <div
+      className="flex items-center justify-items-center gap-3 text-4xl sm:text-6xl"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 4h-3V2h-2v2h-4V2H8v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zM5 20V7h14V6l.002 14H5z"
+        />
+        <path
+          d="M7 9h10v2H7zm0 4h5v2H7z"
+        />
+      </svg>
+      <p>
+        Orders
+      </p>
+    </div>
+    <div
+      className="mt-8 flex w-full items-center justify-items-center gap-2 sm:gap-4"
+    >
+      <div
+        className="flex h-24 w-1/4 flex-col items-start justify-center gap-4 rounded-lg border-l-4 border-l-[#ABD0AC] bg-[#DFECE0] pl-4 sm:h-40"
+      >
+        <p
+          className="text-sm text-[#707070] sm:text-xl"
+        >
+          Total orders
+        </p>
+        <p
+          className="text-base sm:text-3xl"
+        >
+          <b>
+            135
+          </b>
+        </p>
+      </div>
+      <div
+        className="flex h-24 w-1/4 flex-col items-start justify-center gap-4 rounded-lg border-l-4 border-l-[#E1CDB4] bg-[#FEEDD8] pl-4 sm:h-40"
+      >
+        <p
+          className="text-sm text-[#707070] sm:text-xl"
+        >
+          Revenue
+        </p>
+        <p
+          className="text-base sm:text-3xl"
+        >
+          <b>
+            450$
+          </b>
+        </p>
+      </div>
+      <div
+        className="flex h-24 w-1/4 flex-col items-start justify-center gap-4 rounded-lg border-l-4 border-l-[#BBCDE1] bg-[#E2EDF9] pl-4 sm:h-40"
+      >
+        <p
+          className="text-sm text-[#707070] sm:text-xl"
+        >
+          Popular Order
+        </p>
+        <p
+          className="text-base sm:text-3xl"
+        >
+          <b>
+            Fried Chips
+          </b>
+        </p>
+      </div>
+    </div>
+    <p
+      className="mt-8 text-2xl font-bold"
+    >
+      Filter
+    </p>
+    <div
+      className="mt-4 flex items-center justify-start gap-2 sm:gap-4"
+    >
+      <div
+        className="flex items-center justify-center gap-3 rounded border-2 border-[#004945] p-2 text-xs text-[#004945] sm:text-xl"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"
+          />
+        </svg>
+        <p>
+          Search by food name
+        </p>
+      </div>
+      <div
+        className="flex items-center justify-center gap-3 rounded border-2 border-[#004945] p-2 text-xs text-[#004945] sm:text-xl"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M7 11h2v2H7zm0 4h2v2H7zm4-4h2v2h-2zm0 4h2v2h-2zm4-4h2v2h-2zm0 4h2v2h-2z"
+          />
+          <path
+            d="M5 22h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2zM19 8l.001 12H5V8h14z"
+          />
+        </svg>
+        <p>
+          Date range
+        </p>
+      </div>
+      <div
+        className="flex items-center justify-center gap-3 rounded border-2 border-[#004945] p-2 text-xs text-[#004945] sm:text-xl"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M22 8a.76.76 0 0 0 0-.21v-.08a.77.77 0 0 0-.07-.16.35.35 0 0 0-.05-.08l-.1-.13-.08-.06-.12-.09-9-5a1 1 0 0 0-1 0l-9 5-.09.07-.11.08a.41.41 0 0 0-.07.11.39.39 0 0 0-.08.1.59.59 0 0 0-.06.14.3.3 0 0 0 0 .1A.76.76 0 0 0 2 8v8a1 1 0 0 0 .52.87l9 5a.75.75 0 0 0 .13.06h.1a1.06 1.06 0 0 0 .5 0h.1l.14-.06 9-5A1 1 0 0 0 22 16V8zm-10 3.87L5.06 8l2.76-1.52 6.83 3.9zm0-7.72L18.94 8 16.7 9.25 9.87 5.34zM4 9.7l7 3.92v5.68l-7-3.89zm9 9.6v-5.68l3-1.68V15l2-1v-3.18l2-1.11v5.7z"
+          />
+        </svg>
+        <p>
+          Status
+        </p>
+      </div>
+      <div
+        className="flex items-center justify-center gap-3 rounded border-2 border-[#004945] p-2 text-xs text-[#004945] sm:text-xl"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16 12h2v4h-2z"
+          />
+          <path
+            d="M20 7V5c0-1.103-.897-2-2-2H5C3.346 3 2 4.346 2 6v12c0 2.201 1.794 3 3 3h15c1.103 0 2-.897 2-2V9c0-1.103-.897-2-2-2zM5 5h13v2H5a1.001 1.001 0 0 1 0-2zm15 14H5.012C4.55 18.988 4 18.805 4 18V8.815c.314.113.647.185 1 .185h15v10z"
+          />
+        </svg>
+        <p>
+          Payment Method
+        </p>
+      </div>
+    </div>
+    <div
+      className="flex w-full flex-col"
+    >
+      <div
+        className="justify-stretch sm:gap-26 mt-6 flex h-10 w-5/6 items-center gap-6 bg-[#F6F6F6] pl-4 text-base font-semibold sm:font-bold"
+      >
+        <p>
+          DATE
+        </p>
+        <p>
+          CUSTOMER
+        </p>
+        <p>
+          FOOD
+        </p>
+        <p>
+          STATUS
+        </p>
+        <p>
+          PAYMENT
+        </p>
+        <p>
+          PRICE
+        </p>
+      </div>
+      <div
+        className="flex w-5/6 items-center justify-start gap-4 bg-[#F6F6F6] py-8 pl-4 text-lg hover:bg-[#FFFDF3] sm:gap-24 sm:text-xl"
+      >
+        <div
+          className="flex flex-col"
+        >
+          <p>
+            01/02/2022
+          </p>
+          <p>
+            16:00
+          </p>
+        </div>
+        <div>
+          <p>
+            Brad Pitt
+          </p>
+        </div>
+        <div>
+          <p>
+            Sausage
+          </p>
+        </div>
+        <div>
+          <p>
+            Preparing
+          </p>
+        </div>
+        <div
+          className="sm:w-32"
+        >
+          <p>
+            Credit Card
+          </p>
+        </div>
+        <div>
+          <p>
+            5
+          </p>
+        </div>
+      </div>
+      <div
+        className="flex w-5/6 items-center justify-start gap-4 bg-[#F6F6F6] py-8 pl-4 text-lg hover:bg-[#FFFDF3] sm:gap-24 sm:text-xl"
+      >
+        <div
+          className="flex flex-col"
+        >
+          <p>
+            01/02/2022
+          </p>
+          <p>
+            16:00
+          </p>
+        </div>
+        <div>
+          <p>
+            Brad Pitt
+          </p>
+        </div>
+        <div>
+          <p>
+            Sausage
+          </p>
+        </div>
+        <div>
+          <p>
+            Preparing
+          </p>
+        </div>
+        <div
+          className="sm:w-32"
+        >
+          <p>
+            Credit Card
+          </p>
+        </div>
+        <div>
+          <p>
+            5
+          </p>
+        </div>
+      </div>
+      <div
+        className="flex w-5/6 items-center justify-start gap-4 bg-[#F6F6F6] py-8 pl-4 text-lg hover:bg-[#FFFDF3] sm:gap-24 sm:text-xl"
+      >
+        <div
+          className="flex flex-col"
+        >
+          <p>
+            01/02/2022
+          </p>
+          <p>
+            16:00
+          </p>
+        </div>
+        <div>
+          <p>
+            Brad Pitt
+          </p>
+        </div>
+        <div>
+          <p>
+            Sausage
+          </p>
+        </div>
+        <div>
+          <p>
+            Preparing
+          </p>
+        </div>
+        <div
+          className="sm:w-32"
+        >
+          <p>
+            Credit Card
+          </p>
+        </div>
+        <div>
+          <p>
+            5
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

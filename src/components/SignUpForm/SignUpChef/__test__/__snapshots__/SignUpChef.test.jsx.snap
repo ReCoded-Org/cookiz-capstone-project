@@ -1,0 +1,339 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Create Sign up Chef Form Component 1`] = `
+<div
+  className="flex flex-row flex-wrap justify-center"
+>
+  <div
+    className="flex flex-col space-y-4 px-10 pt-9 pb-9"
+  >
+    <h1
+      className="text-center text-2xl font-bold text-primary"
+    >
+      Create A Chef Account
+    </h1>
+    <form
+      action="#"
+      className="flex w-96 flex-col space-y-5"
+      onSubmit={[Function]}
+    >
+      <input
+        className="w-full appearance-none rounded border py-2 px-3 text-sm font-bold leading-tight text-gray-700 shadow"
+        id="username"
+        onChange={[Function]}
+        placeholder="Username"
+        required={true}
+        type="text"
+        value=""
+      />
+      <div
+        className="flex w-full flex-row justify-between space-x-4"
+      >
+        <input
+          className="w-1/2 appearance-none rounded border py-2 px-3 text-sm font-bold leading-tight text-gray-700 shadow"
+          id="firstName"
+          onChange={[Function]}
+          placeholder="First Name"
+          required={true}
+          type="text"
+          value=""
+        />
+        <input
+          className="w-1/2 appearance-none rounded border py-2 px-3 text-sm font-bold leading-tight text-gray-700 shadow focus:outline-none"
+          id="lastName"
+          onChange={[Function]}
+          placeholder="Last Name"
+          required={true}
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        className="flex w-full flex-row justify-between space-x-4"
+      >
+        <input
+          className="w-1/2 appearance-none rounded border py-2 px-3 text-sm font-bold leading-tight text-gray-700 shadow focus:outline-none"
+          id="password"
+          onChange={[Function]}
+          placeholder="Password"
+          required={true}
+          type="password"
+          value=""
+        />
+        <input
+          className="w-1/2 appearance-none rounded border py-2 px-3 text-sm font-bold leading-tight text-gray-700 shadow focus:outline-none"
+          id="confirmPassword"
+          onChange={[Function]}
+          placeholder="Confirm Password"
+          required={true}
+          type="password"
+          value=""
+        />
+      </div>
+      <div
+        style={
+          Object {
+            "fontSize": "10px",
+            "height": "1px",
+            "marginBottom": "5px",
+            "marginTop": "5px",
+          }
+        }
+      >
+        <span
+          className="font-bold tracking-wide text-stone-700"
+        >
+          * Password Must Contain a Number, Uppercase and Lowercase
+        </span>
+      </div>
+      <input
+        className="w-full appearance-none rounded border py-2 px-3 text-sm font-bold leading-tight text-gray-700 shadow focus:outline-none"
+        id="email"
+        onChange={[Function]}
+        placeholder="Email"
+        required={true}
+        type="email"
+        value=""
+      />
+      <input
+        className="w-full appearance-none rounded border py-2 px-3 text-sm font-bold leading-tight text-gray-700 shadow focus:outline-none"
+        id="phone"
+        onChange={[Function]}
+        placeholder="Phone Number"
+        required={true}
+        type="tel"
+        value=""
+      />
+      <div
+        style={
+          Object {
+            "fontSize": "10px",
+            "height": "1px",
+            "marginBottom": "5px",
+            "marginTop": "5px",
+          }
+        }
+      >
+        <span
+          className="font-bold tracking-wide text-stone-700"
+        >
+          * Phone Number Must Be 10 digits and Starts with 5xx
+        </span>
+      </div>
+      <div
+        className="flex w-full flex-row justify-between space-x-4"
+      >
+        <input
+          className="w-1/2 appearance-none rounded border py-2 px-3 text-sm font-bold leading-tight text-gray-700 shadow focus:outline-none"
+          id="birthday"
+          onChange={[Function]}
+          placeholder="Birthday"
+          required={true}
+          type="text"
+          value=""
+        />
+        <input
+          className="w-1/2 appearance-none rounded border py-2 px-3 text-sm font-bold leading-tight text-gray-700 shadow focus:outline-none"
+          id="gender"
+          onChange={[Function]}
+          placeholder="Gender"
+          required={true}
+          type="text"
+          value=""
+        />
+      </div>
+      <input
+        className="w-full appearance-none rounded border py-2 px-3 text-sm font-bold leading-tight text-gray-700 shadow focus:outline-none"
+        id="bio"
+        onChange={[Function]}
+        placeholder="Bio"
+        required={true}
+        type="text"
+        value=""
+      />
+      <input
+        className="w-full appearance-none rounded border py-2 px-3 text-sm font-bold leading-tight text-gray-700 shadow focus:outline-none"
+        id="kitchenName"
+        onChange={[Function]}
+        placeholder="Kitchen Name"
+        required={true}
+        type="text"
+        value=""
+      />
+      <input
+        className="w-full appearance-none rounded border py-2 px-3 text-sm font-bold leading-tight text-gray-700 shadow focus:outline-none"
+        id="kitchenDescription"
+        onChange={[Function]}
+        placeholder="Kitchen Description"
+        required={true}
+        type="text"
+        value=""
+      />
+      <label
+        className="block w-full items-center font-bold text-black"
+      >
+        <input
+          className="mr-2 rounded bg-gray-100 text-primary focus:ring-primary"
+          id="termsAndConditions"
+          onClick={[Function]}
+          required={true}
+          type="checkbox"
+        />
+        <span
+          className="text-sm"
+        >
+          I agree to Terms and Conditions
+        </span>
+      </label>
+      <input
+        className="focus:shadow-outline cursor-pointer rounded-xl bg-primary py-2 px-4 font-bold text-white shadow hover:bg-emerald-700"
+        type="submit"
+        value="Submit"
+      />
+      <button
+        className="focus:shadow-outline rounded-xl border border-primary bg-transparent py-2 px-4 font-bold text-primary shadow hover:bg-primary hover:text-white"
+        onClick={[Function]}
+      >
+        Cancel
+      </button>
+      <div
+        className="text-center text-xs font-bold text-black"
+      >
+        <span>
+          Already Have An Account? 
+        </span>
+        <span
+          className="text-blue-500"
+        >
+          <button
+            className="underline"
+            onClick={[Function]}
+          >
+            Sign in
+          </button>
+        </span>
+      </div>
+    </form>
+  </div>
+  <div
+    className="flex max-w-screen-sm items-center bg-signUpImageColor"
+  >
+    <span
+      style={
+        Object {
+          "background": "none",
+          "border": 0,
+          "boxSizing": "border-box",
+          "display": "inline-block",
+          "height": "initial",
+          "margin": 0,
+          "maxWidth": "100%",
+          "opacity": 1,
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "relative",
+          "width": "initial",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "background": "none",
+            "border": 0,
+            "boxSizing": "border-box",
+            "display": "block",
+            "height": "initial",
+            "margin": 0,
+            "maxWidth": "100%",
+            "opacity": 1,
+            "padding": 0,
+            "width": "initial",
+          }
+        }
+      >
+        <img
+          alt=""
+          aria-hidden={true}
+          src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27500%27%20height=%27500%27/%3e"
+          style={
+            Object {
+              "background": "none",
+              "border": 0,
+              "display": "block",
+              "height": "initial",
+              "margin": 0,
+              "maxWidth": "100%",
+              "opacity": 1,
+              "padding": 0,
+              "width": "initial",
+            }
+          }
+        />
+      </span>
+      <img
+        alt="test"
+        data-nimg="intrinsic"
+        decoding="async"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        style={
+          Object {
+            "border": "none",
+            "bottom": 0,
+            "boxSizing": "border-box",
+            "display": "block",
+            "height": 0,
+            "left": 0,
+            "margin": "auto",
+            "maxHeight": "100%",
+            "maxWidth": "100%",
+            "minHeight": "100%",
+            "minWidth": "100%",
+            "objectFit": undefined,
+            "objectPosition": undefined,
+            "padding": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "width": 0,
+          }
+        }
+      />
+      <noscript>
+        <img
+          alt="test"
+          data-nimg="intrinsic"
+          decoding="async"
+          loading="lazy"
+          src="/_next/image?url=%2Fimages%2Fsignup2.jpg&w=1080&q=75"
+          srcSet="/_next/image?url=%2Fimages%2Fsignup2.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fsignup2.jpg&w=1080&q=75 2x"
+          style={
+            Object {
+              "border": "none",
+              "bottom": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": 0,
+              "left": 0,
+              "margin": "auto",
+              "maxHeight": "100%",
+              "maxWidth": "100%",
+              "minHeight": "100%",
+              "minWidth": "100%",
+              "objectFit": undefined,
+              "objectPosition": undefined,
+              "padding": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": 0,
+            }
+          }
+        />
+      </noscript>
+    </span>
+  </div>
+</div>
+`;
