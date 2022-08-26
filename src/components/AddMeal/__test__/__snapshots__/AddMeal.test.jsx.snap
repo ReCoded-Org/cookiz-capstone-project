@@ -60,7 +60,7 @@ exports[`renders correctly 1`] = `
   <input
     className="ml-5 w-2/3 rounded border-none bg-[#00494533] text-center text-sm focus:ring-1 focus:ring-[#004945] lg:text-base"
     onChange={[Function]}
-    placeholder="Fried Chips"
+    placeholder="fried-chips"
     required={true}
     type="text"
     value=""
@@ -68,7 +68,8 @@ exports[`renders correctly 1`] = `
   <p
     className="ml-3 text-sm lg:text-base"
   >
-    Dietary
+     
+    dietary
   </p>
   <ul
     className="ml-5 flex w-full items-center justify-start gap-3"
@@ -91,7 +92,7 @@ exports[`renders correctly 1`] = `
           <div
             className="w-full text-xs "
           >
-            Vegetarian
+            vegeterian
           </div>
         </div>
       </label>
@@ -113,7 +114,7 @@ exports[`renders correctly 1`] = `
           <div
             className="w-full text-xs"
           >
-            Vegan
+            vegan
           </div>
         </div>
       </label>
@@ -135,7 +136,7 @@ exports[`renders correctly 1`] = `
           <div
             className="w-full text-xs"
           >
-            Gluten Free
+            gluten-free
           </div>
         </div>
       </label>
@@ -144,7 +145,7 @@ exports[`renders correctly 1`] = `
   <p
     className="ml-3 text-sm lg:text-base"
   >
-    Ingredients
+    ingredients
   </p>
   <div
     className="ml-5 flex w-full flex-col items-start justify-start gap-3"
@@ -155,7 +156,7 @@ exports[`renders correctly 1`] = `
       <input
         className=" w-full rounded-full border-none bg-[#00494533] p-2 text-start text-xs focus:ring-1 focus:ring-[#004945] lg:text-sm"
         onChange={[Function]}
-        placeholder="Tomatoes"
+        placeholder="tomatoes"
         type="text"
         value=""
       />
@@ -197,24 +198,24 @@ exports[`renders correctly 1`] = `
   <p
     className="ml-3 text-sm lg:text-base"
   >
-    Delivery in
+    delivery
   </p>
   <input
     className="ml-5 rounded border-none text-xs ring-1 ring-[#004945] focus:rounded focus:ring-1 focus:ring-[#004945] lg:text-base"
     onChange={[Function]}
-    placeholder="30 min"
+    placeholder="time"
     type="text"
     value=""
   />
   <p
     className="ml-3 text-sm lg:text-base"
   >
-    Price
+    price
   </p>
   <input
     className="ml-5 mb-3 rounded border-none text-xs ring-1 ring-[#004945] focus:rounded focus:ring-1 focus:ring-[#004945] lg:text-base"
     onChange={[Function]}
-    placeholder="30 dollar"
+    placeholder="howmuch"
     type="text"
     value=""
   />
@@ -222,7 +223,7 @@ exports[`renders correctly 1`] = `
     className=" absolute bottom-80 right-0 mr-2 rounded bg-[#004945] px-6 py-1 text-white"
     onClick={[Function]}
   >
-    Save
+    save
   </button>
 </div>
 `;
