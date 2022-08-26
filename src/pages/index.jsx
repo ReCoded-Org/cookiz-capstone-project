@@ -27,6 +27,7 @@ export async function getStaticProps({ locale }) {
                 "edit-account",
                 "cards",
                 "addmeal",
+                "hero",
                 "order",
             ])),
 
