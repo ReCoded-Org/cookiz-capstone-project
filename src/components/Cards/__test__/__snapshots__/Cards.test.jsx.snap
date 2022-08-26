@@ -13,12 +13,12 @@ exports[`renders correctly 1`] = `
       <p
         className=" text-3xl font-bold text-black"
       >
-        You’ve missed home made food?
+        card-title
       </p>
       <p
         className=" pb-12 pt-2 text-xl text-black"
       >
-        Pick your favorite chef, food or cousin.
+        card-subtitle
       </p>
     </div>
     <div
@@ -151,8 +151,7 @@ exports[`renders correctly 1`] = `
           <div
             className="text-xl font-semibold text-black sm:text-2xl lg:text-3xl"
           >
-             
-            Pick your chef order the food and get it when you want
+            card1-text
           </div>
           <div>
             <span
@@ -405,7 +404,7 @@ exports[`renders correctly 1`] = `
           <p
             className="text-xl font-semibold text-black sm:text-2xl lg:text-3xl"
           >
-            Get a 15% discount for your first order!
+            card2-text
           </p>
           <button
             className=" box-border h-10 w-32 bg-green-900 "
@@ -413,7 +412,7 @@ exports[`renders correctly 1`] = `
             <span
               className="h-5 w-20 text-sm font-bold leading-5 text-white sm:text-lg"
             >
-              Order Now
+              card2-btn
             </span>
           </button>
         </div>
