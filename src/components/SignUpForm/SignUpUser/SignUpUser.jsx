@@ -18,6 +18,7 @@ export default function SignUpUserForm() {
     });
 
     const [err, setErr] = useState("");
+    const [message, setMessage] = useState("");
 
     const handleFormData = (event) => {
         if (event.target.type === "checkbox") {
@@ -67,6 +68,31 @@ export default function SignUpUserForm() {
         //try {
         const res = await api
             .post("/auth/customer/signup", newUser)
+            .then(async function (response) {
+                // alert(response);
+
+                setMessage(response.data.message);
+                console.log(response.data.message);
+                const id = newUser.username;
+                const password = newUser.password;
+
+                const signInRes = await api
+                    .post("/auth/signin", { id, password })
+                    .then(function (response) {
+                        setMessage(response.data.message);
+                        console.log(response);
+                        router.push("/");
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                        let isArray = Array.isArray(error.response.data.errors);
+                        if (isArray) {
+                            setErr(error.response.data.errors[0].msg);
+                        } else {
+                            setErr(error.response.data.error);
+                        }
+                    });
+            })
             .catch(function (error) {
                 console.log(error);
                 let isArray = Array.isArray(error.response.data.errors);
@@ -77,10 +103,7 @@ export default function SignUpUserForm() {
                 }
             });
         // if res.ok redirect to sign in
-        if (res) {
-            alert("You have Successfuly Signed Up");
-            router.push("/");
-        }
+
         // debugging
         // } catch (err) {
         // res not in 200 res, errs from axios itself
@@ -290,6 +313,12 @@ export default function SignUpUserForm() {
                 {err && (
                     <h2 className='text-center font-bold text-red-600'>
                         {err}
+                    </h2>
+                )}
+
+                {message && (
+                    <h2 className='text-center font-bold text-green-600'>
+                        {message}
                     </h2>
                 )}
             </div>
