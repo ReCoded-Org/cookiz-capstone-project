@@ -30,6 +30,7 @@ export async function getStaticProps({ locale }) {
                 "hero",
                 "order",
                 "footer",
+                "search-cities",
             ])),
 
             // Will be passed to the page component as props
