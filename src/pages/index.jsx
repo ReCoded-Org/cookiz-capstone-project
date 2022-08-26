@@ -23,6 +23,7 @@ export async function getStaticProps({ locale }) {
     return {
         props: {
             ...(await serverSideTranslations(locale, ["common", "cards"])),
+            ...(await serverSideTranslations(locale, ["common", "addmeal"])),
             // Will be passed to the page component as props
         },
     };
