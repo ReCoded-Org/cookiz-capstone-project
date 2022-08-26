@@ -1,6 +1,25 @@
 import Link from "next/link";
+import { useReducer } from "react";
 
-function Profile({ children }) {
+import EditAccount from "../EditAccount/EditAccount";
+import Orders from "../Orders/Orders";
+
+function reducer(state, action) {
+    if (action.type === "foods") {
+        return [null];
+    }
+    if (action.type === "orders") {
+        return [<Orders />];
+    }
+    if (action.type === "editProfile") {
+        return [<EditAccount />];
+    }
+    throw Error("Unknown action.");
+}
+
+function Profile() {
+    const [state, dispatch] = useReducer(reducer, []);
+
     return (
         <div className='dashboard flex h-screen w-auto font-opensans'>
             <div className='sidebar w-[15%] border-r-[1px] pt-[1.5rem] pb-[1.5rem]'>
@@ -30,24 +49,33 @@ function Profile({ children }) {
                 <div className='dash-nav pl-8'>
                     <ul className='flex flex-col gap-5'>
                         <li>
-                            <Link href='#'>
-                                <a>Listed foods</a>
-                            </Link>
+                            <div
+                                href='#'
+                                onClick={() => {
+                                    dispatch({ type: "editProfile" });
+                                }}
+                            >
+                                <a>Foods</a>
+                            </div>
                         </li>
                         <li>
-                            <Link href='#'>
+                            <div
+                                href='#'
+                                onClick={() => {
+                                    dispatch({ type: "orders" });
+                                }}
+                            >
                                 <a>Orders</a>
-                            </Link>
+                            </div>
                         </li>
                         <li>
-                            <Link href='#'>
-                                <a>Payment settings</a>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href='#'>
+                            <div
+                                onClick={() => {
+                                    dispatch({ type: "editProfile" });
+                                }}
+                            >
                                 <a>Edit profile</a>
-                            </Link>
+                            </div>
                         </li>
                         <li>
                             <Link href='#'>
@@ -57,7 +85,7 @@ function Profile({ children }) {
                     </ul>
                 </div>
             </div>
-            <div className='dash-content w-[85%]'>{children}</div>
+            <div className='dash-content w-[85%]'>{state}</div>
         </div>
     );
 }
