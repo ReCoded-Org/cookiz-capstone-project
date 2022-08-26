@@ -32,7 +32,7 @@ exports[`Navbar Component 1`] = `
         />
       </svg>
       <p>
-        Orders
+        orders
       </p>
     </div>
     <div
@@ -44,7 +44,7 @@ exports[`Navbar Component 1`] = `
         <p
           className="text-sm text-[#707070] sm:text-xl"
         >
-          Total orders
+          total
         </p>
         <p
           className="text-base sm:text-3xl"
@@ -60,7 +60,7 @@ exports[`Navbar Component 1`] = `
         <p
           className="text-sm text-[#707070] sm:text-xl"
         >
-          Revenue
+          revenue
         </p>
         <p
           className="text-base sm:text-3xl"
@@ -76,13 +76,14 @@ exports[`Navbar Component 1`] = `
         <p
           className="text-sm text-[#707070] sm:text-xl"
         >
-          Popular Order
+          popular
         </p>
         <p
           className="text-base sm:text-3xl"
         >
           <b>
-            Fried Chips
+            fried-chips
+             
           </b>
         </p>
       </div>
@@ -90,7 +91,8 @@ exports[`Navbar Component 1`] = `
     <p
       className="mt-8 text-2xl font-bold"
     >
-      Filter
+      filter
+       
     </p>
     <div
       className="mt-4 flex items-center justify-start gap-2 sm:gap-4"
@@ -117,7 +119,8 @@ exports[`Navbar Component 1`] = `
           />
         </svg>
         <p>
-          Search by food name
+          search
+           
         </p>
       </div>
       <div
@@ -145,7 +148,8 @@ exports[`Navbar Component 1`] = `
           />
         </svg>
         <p>
-          Date range
+          date-btn
+           
         </p>
       </div>
       <div
@@ -170,7 +174,8 @@ exports[`Navbar Component 1`] = `
           />
         </svg>
         <p>
-          Status
+          status-btn
+           
         </p>
       </div>
       <div
@@ -198,7 +203,8 @@ exports[`Navbar Component 1`] = `
           />
         </svg>
         <p>
-          Payment Method
+          payment-btn
+           
         </p>
       </div>
     </div>
@@ -209,22 +215,22 @@ exports[`Navbar Component 1`] = `
         className="justify-stretch sm:gap-26 mt-6 flex h-10 w-5/6 items-center gap-6 bg-[#F6F6F6] pl-4 text-base font-semibold sm:font-bold"
       >
         <p>
-          DATE
+          date
         </p>
         <p>
-          CUSTOMER
+          customer
         </p>
         <p>
-          FOOD
+          food
         </p>
         <p>
-          STATUS
+          status
         </p>
         <p>
-          PAYMENT
+          payment
         </p>
         <p>
-          PRICE
+          price
         </p>
       </div>
       <div
@@ -247,19 +253,19 @@ exports[`Navbar Component 1`] = `
         </div>
         <div>
           <p>
-            Sausage
+            sausage
           </p>
         </div>
         <div>
           <p>
-            Preparing
+            preparing
           </p>
         </div>
         <div
           className="sm:w-32"
         >
           <p>
-            Credit Card
+            credit-card
           </p>
         </div>
         <div>
@@ -288,19 +294,19 @@ exports[`Navbar Component 1`] = `
         </div>
         <div>
           <p>
-            Sausage
+            sausage
           </p>
         </div>
         <div>
           <p>
-            Preparing
+            preparing
           </p>
         </div>
         <div
           className="sm:w-32"
         >
           <p>
-            Credit Card
+            credit-card
           </p>
         </div>
         <div>
@@ -329,19 +335,19 @@ exports[`Navbar Component 1`] = `
         </div>
         <div>
           <p>
-            Sausage
+            sausage
           </p>
         </div>
         <div>
           <p>
-            Preparing
+            preparing
           </p>
         </div>
         <div
           className="sm:w-32"
         >
           <p>
-            Credit Card
+            credit-card
           </p>
         </div>
         <div>

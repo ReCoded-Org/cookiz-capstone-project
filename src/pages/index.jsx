@@ -28,6 +28,7 @@ export async function getStaticProps({ locale }) {
                 "cards",
                 "addmeal",
                 "hero",
+                "order",
             ])),
 
             // Will be passed to the page component as props
