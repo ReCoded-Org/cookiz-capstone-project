@@ -1,3 +1,5 @@
+import axios from "axios";
+import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import { useEffect, useState } from "react";
 
@@ -6,6 +8,20 @@ function Hero() {
     const { t } = useTranslation("hero");
 
     useEffect(() => {}, [search]);
+
+    // intializing axios obj
+    const api = axios.create({
+        baseURL: "https://cookiez-app.herokuapp.com/api",
+    });
+
+    // intializing router
+    const router = useRouter();
+
+    // redirect handler
+    const handleRedirect = (event, PATH) => {
+        event.preventDefault();
+        router.push(PATH);
+    };
 
     return (
         <section className='hero-container mb-[10rem] flex h-screen items-center bg-herobg bg-cover pl-[10rem]'>
@@ -17,6 +33,7 @@ function Hero() {
                 </div>
                 <div className='hero-search-section box-border'>
                     <div className='search-container mb-[2rem] flex items-center'>
+                        {/* search input */}
                         <div className='search-box mr-3'>
                             <input
                                 className='w-[800px] pt-6 pb-6 text-[24px]'
@@ -27,7 +44,18 @@ function Hero() {
                             />
                         </div>
                         <div className='search-btn'>
-                            <button className='box-border bg-yellow-600 px-10 py-[23px] text-[24px] font-medium text-[white] hover:bg-yellow-700'>
+                            <button
+                                onClick={(e) => {
+                                    if (search != "") {
+                                        handleRedirect(e, "/LandingMeal");
+                                    } else {
+                                        console.log(
+                                            "Enter a food name or location"
+                                        );
+                                    }
+                                }}
+                                className='box-border bg-yellow-600 px-10 py-[23px] text-[24px] font-medium text-[white] hover:bg-yellow-700'
+                            >
                                 {t("search-button")}
                             </button>
                         </div>
