@@ -2,12 +2,16 @@ import axios from "axios";
 import { useTranslation } from "next-i18next";
 import { useEffect, useState } from "react";
 
-const Menu = ({ dishes, chefs, findChef }) => {
+const Menu = ({ dishes, findChef }) => {
     return (
         <>
             {dishes.map((dish, id) => {
                 const name = findChef(dish._id);
-                console.log(name);
+                console.log(
+                    "have just printed dish the one in the begiingig",
+                    dish
+                );
+
                 return (
                     <div className='card relative' key={id}>
                         <img
@@ -31,7 +35,37 @@ const Menu = ({ dishes, chefs, findChef }) => {
                             <span className='pt-3 text-sm font-bold md:pr-7 md:pl-3 md:text-base'>
                                 {name?.kitchen_name}
                             </span>
-                            <button className='focus:shadow-outline text-black-700 m-2 h-8 rounded-lg bg-gray-300 px-4 text-sm font-semibold transition-colors duration-100 hover:bg-gray-400'>
+                            <button
+                                className='focus:shadow-outline text-black-700 m-2 h-8 rounded-lg bg-gray-300 px-4 text-sm font-semibold transition-colors duration-100 hover:bg-gray-400'
+                                onClick={() => {
+                                    window.location.href = `/AddMealModal`;
+                                    return (
+                                        <div
+                                            className='relative rounded border border-red-400 bg-red-100 px-4 py-3 text-red-700'
+                                            role='alert'
+                                        >
+                                            <strong className='font-bold'>
+                                                Holy smokes!
+                                            </strong>
+                                            <span className='block sm:inline'>
+                                                Something seriously bad
+                                                happened.
+                                            </span>
+                                            <span className='absolute top-0 bottom-0 right-0 px-4 py-3'>
+                                                <svg
+                                                    className='h-6 w-6 fill-current text-red-500'
+                                                    role='button'
+                                                    xmlns='http://www.w3.org/2000/svg'
+                                                    viewBox='0 0 20 20'
+                                                >
+                                                    <title>Close</title>
+                                                    <path d='M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z' />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    );
+                                }}
+                            >
                                 Add
                             </button>
                         </div>
@@ -65,6 +99,10 @@ const LandingMeals = () => {
             .then((response) => {
                 setMenu(response.data);
                 setChefs(response.data);
+                setLoading(false);
+                {
+                    setMenu(dishes);
+                }
             });
         setLoading(false);
     }, []);
@@ -101,16 +139,16 @@ const LandingMeals = () => {
                     <div>
                         <div className='mt-[1px] flex justify-center'>
                             <input
-                                className='rounded-xl  font-semibold hover:font-bold'
+                                className='mt-20  rounded-xl font-semibold hover:font-bold'
                                 type='search'
                                 placeholder={t("Search")}
                                 name='search'
                             />
                         </div>
-                        <h1 className='flex justify-start pt-8 font-bold'>
+                        <h1 className='flex justify-start pt-2 font-bold'>
                             {t("Categories")}
                         </h1>
-                        <ul className='flex flex-col items-start px-2 pt-3'>
+                        <ul className='flex flex-col items-start px-2 pb-3'>
                             <li
                                 key='-1'
                                 className='font-sans hover:underline'
@@ -132,6 +170,10 @@ const LandingMeals = () => {
                                         onClick={(e) => {
                                             console.log("this is it ");
                                             console.log(e.target.id);
+                                            console.log(
+                                                "this is the my dihes  ",
+                                                dishes
+                                            );
                                             if (e.target.id === "All Menu") {
                                                 setMenu(dishes);
                                             } else {
@@ -153,7 +195,7 @@ const LandingMeals = () => {
                     </div>
                 </nav>
             </div>
-            <div className='md:col-span-5  '>
+            <div className='py-7  md:col-span-5'>
                 <div className='m-16 mt-8 grid gap-10 sm:grid-cols-1  lg:grid-cols-3'>
                     <Menu dishes={menu} chefs={chefs} findChef={findChef} />
                 </div>
