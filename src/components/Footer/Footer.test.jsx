@@ -1,11 +1,11 @@
 import React from "react";
 import renderer from "react-test-renderer";
 
-import Navbar from "@/components/Navbar/Navbar";
+import Footer from "./Footer";
 
 // eslint-disable-next-line
-it("Navbar Component", () => {
-    const tree = renderer.create(<Navbar />).toJSON();
+it("Dashboard Component", () => {
+    const tree = renderer.create(<Footer />).toJSON();
     // eslint-disable-next-line no-undef
     expect(tree).toMatchSnapshot();
 });

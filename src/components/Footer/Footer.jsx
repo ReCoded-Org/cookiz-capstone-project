@@ -1,7 +1,9 @@
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
 import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 
 const Footer = () => {
+    const { t } = useTranslation("footer");
     return (
         <>
             <footer className='footer w-auto bg-black pt-[5rem] pb-[5rem] pl-[4rem] pr-[4rem] font-opensans text-[1.5rem] text-white'>
@@ -26,22 +28,22 @@ const Footer = () => {
                             <ul>
                                 <li className='mb-3 hover:underline'>
                                     <Link href='#'>
-                                        <a>Get Help</a>
+                                        <a>{t("help")}</a>
                                     </Link>
                                 </li>
                                 <li className='mb-3 hover:underline'>
                                     <Link href='#'>
-                                        <a>Become a chef</a>
+                                        <a>{t("chef")}</a>
                                     </Link>
                                 </li>
                                 <li className='mb-3 hover:underline'>
                                     <Link href='#'>
-                                        <a>Promotions</a>
+                                        <a>{t("promotions")}</a>
                                     </Link>
                                 </li>
                                 <li className='mb-3 hover:underline'>
                                     <Link href='#'>
-                                        <a>About Cookiez</a>
+                                        <a>{t("about")}</a>
                                     </Link>
                                 </li>
                             </ul>
@@ -50,22 +52,22 @@ const Footer = () => {
                             <ul>
                                 <li className='mb-3 hover:underline'>
                                     <Link href='#'>
-                                        <a>Chefs near me</a>
+                                        <a>{t("chef-around")}</a>
                                     </Link>
                                 </li>
                                 <li className='mb-3 hover:underline'>
                                     <Link href='#'>
-                                        <a>View all foods</a>
+                                        <a>{t("view-foods")}</a>
                                     </Link>
                                 </li>
                                 <li className='mb-3 hover:underline'>
                                     <Link href='#'>
-                                        <a>View all cities</a>
+                                        <a>{t("view-cities")}</a>
                                     </Link>
                                 </li>
                                 <li className='mb-3 hover:underline'>
                                     <Link href='#'>
-                                        <a>View all chefs</a>
+                                        <a>{t("view-chefs")}</a>
                                     </Link>
                                 </li>
                             </ul>
@@ -73,7 +75,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='copyright text-center text-[1rem] font-normal'>
-                    Cookiez Copyright 2022
+                    {t("copyright")}
                 </div>
             </footer>
         </>

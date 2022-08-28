@@ -13,7 +13,7 @@ exports[`Hero Component 1`] = `
       <h1
         className="max-w-[35vw] text-[5rem] font-bold leading-[1] text-orange-700"
       >
-        Fast delivery, delicious and cheaper
+        title
       </h1>
     </div>
     <div
@@ -28,7 +28,7 @@ exports[`Hero Component 1`] = `
           <input
             className="w-[800px] pt-6 pb-6 text-[24px]"
             onChange={[Function]}
-            placeholder="Enter delivery address"
+            placeholder="placeholder"
             type="text"
             value=""
           />
@@ -39,14 +39,14 @@ exports[`Hero Component 1`] = `
           <button
             className="box-border bg-yellow-600 px-10 py-[23px] text-[24px] font-medium text-[white] hover:bg-yellow-700"
           >
-            Find
+            search-button
           </button>
         </div>
       </div>
       <h6
         className="pl-[10px] text-[0.9vw] text-gray-800"
       >
-        Find your favorite home made food and order in seconds
+        subtitle
       </h6>
     </div>
   </div>
