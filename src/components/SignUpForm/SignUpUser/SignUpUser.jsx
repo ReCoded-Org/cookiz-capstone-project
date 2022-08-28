@@ -17,6 +17,9 @@ export default function SignUpUserForm() {
         termsAndConditions: false,
     });
 
+    const [err, setErr] = useState("");
+    const [message, setMessage] = useState("");
+
     const handleFormData = (event) => {
         if (event.target.type === "checkbox") {
             setFormData({
@@ -62,27 +65,54 @@ export default function SignUpUserForm() {
     // POSTing to customer endpoint
     const handleSubmit = async (e) => {
         e.preventDefault();
-        try {
-            const res = await api.post("/auth/customer/signup", newUser);
-            // if res.ok redirect to sign in
-            if (res) {
-                router.push("/");
-            }
-            // debugging
-            console.log(res.data);
-            console.log("Server Response: " + res.statusText);
-        } catch (err) {
-            // res not in 200 res, errs from axios itself
-            // errs from axios, if err is within the 200 range
-            if (err.response) {
-                console.log(err.response.data);
-                console.log(err.response.status);
-                console.log(err.response.headers);
-            } else {
-                // if err is not in 200 range, tis will display the err message itself
-                console.log(`Error, res not in 200 range: ${err.message}`);
-            }
-        }
+        //try {
+        const res = await api
+            .post("/auth/customer/signup", newUser)
+            .then(async function (response) {
+                // alert(response);
+
+                setMessage(response.data.message);
+                console.log(response.data.message);
+                const id = newUser.username;
+                const password = newUser.password;
+
+                const signInRes = await api
+                    .post("/auth/signin", { id, password })
+                    .then(function (response) {
+                        setMessage(response.data.message);
+                        console.log(response);
+                        router.push("/");
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                        let isArray = Array.isArray(error.response.data.errors);
+                        if (isArray) {
+                            setErr(error.response.data.errors[0].msg);
+                        } else {
+                            setErr(error.response.data.error);
+                        }
+                    });
+            })
+            .catch(function (error) {
+                console.log(error);
+                let isArray = Array.isArray(error.response.data.errors);
+                if (isArray) {
+                    setErr(error.response.data.errors[0].msg);
+                } else {
+                    setErr(error.response.data.error);
+                }
+            });
+        // if res.ok redirect to sign in
+
+        // debugging
+        // } catch (err) {
+        // res not in 200 res, errs from axios itself
+        // errs from axios, if err is within the 200 range
+        // if (err.response) {
+        //} else {
+        // if err is not in 200 range, tis will display the err message itself
+        // }
+        //}
     };
 
     // initializing router
@@ -279,10 +309,22 @@ export default function SignUpUserForm() {
                         </span>
                     </div>
                 </form>
+
+                {err && (
+                    <h2 className='text-center font-bold text-red-600'>
+                        {err}
+                    </h2>
+                )}
+
+                {message && (
+                    <h2 className='text-center font-bold text-green-600'>
+                        {message}
+                    </h2>
+                )}
             </div>
 
             {/* image section */}
-            <div className='max-w-screen-sm flex items-center bg-signUpImageColor'>
+            <div className='flex max-w-screen-sm items-center bg-signUpImageColor'>
                 <Image
                     src='/images/signup.png'
                     alt='test'

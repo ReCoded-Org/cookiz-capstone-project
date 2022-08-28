@@ -1,12 +1,15 @@
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
 
 function Profile({ children }) {
+    const { t } = useTranslation("profile");
+
     return (
         <div className='dashboard flex h-screen w-auto font-opensans'>
             <div className='sidebar w-[15%] border-r-[1px] pt-[1.5rem] pb-[1.5rem]'>
                 <div className='dash-title mb-10 border-b-[1px]'>
                     <div className='logo-wrapper mb-[7rem] pl-8'>
-                        <div className='logo text-2xl tablet:text-xl'>
+                        <div className='logo tablet:text-xl text-2xl'>
                             <Link href='#'>
                                 <a>
                                     <span className='font-black'>COOK</span>IEZ
@@ -15,7 +18,7 @@ function Profile({ children }) {
                         </div>
                         <div className='sub-title'>
                             <span className='text-base text-gray-500'>
-                                Profile
+                                {t("profile")}
                             </span>
                         </div>
                     </div>
@@ -31,27 +34,27 @@ function Profile({ children }) {
                     <ul className='flex flex-col gap-5'>
                         <li>
                             <Link href='#'>
-                                <a>Listed foods</a>
+                                <a>{t("listed-foods")}</a>
                             </Link>
                         </li>
                         <li>
                             <Link href='#'>
-                                <a>Orders</a>
+                                <a>{t("orders")}</a>
                             </Link>
                         </li>
                         <li>
                             <Link href='#'>
-                                <a>Payment settings</a>
+                                <a>{t("payment-settings")}</a>
                             </Link>
                         </li>
                         <li>
                             <Link href='#'>
-                                <a>Edit profile</a>
+                                <a>{t("edit-profile")}</a>
                             </Link>
                         </li>
                         <li>
                             <Link href='#'>
-                                <a>Logout</a>
+                                <a> {t("logout")}</a>
                             </Link>
                         </li>
                     </ul>

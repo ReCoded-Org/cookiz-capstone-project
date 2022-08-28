@@ -1,3 +1,4 @@
+import { useTranslation } from "next-i18next";
 import {
     BiCalendar,
     BiNotepad,
@@ -7,68 +8,70 @@ import {
 } from "react-icons/bi";
 
 const Orders = () => {
+    const { t } = useTranslation("order");
+
     return (
         <div className=' flex h-screen'>
-            <div className='sm:pl-12 w-full pt-7 pl-4'>
-                <div className='sm:text-6xl flex items-center justify-items-center gap-3  text-4xl'>
+            <div className='w-full pt-7 pl-4 sm:pl-12'>
+                <div className='flex items-center justify-items-center gap-3 text-4xl  sm:text-6xl'>
                     <BiNotepad />
-                    <p>Orders</p>
+                    <p>{t("orders")}</p>
                 </div>
-                <div className='sm:gap-4 mt-8 flex w-full items-center justify-items-center gap-2'>
-                    <div className='sm:h-40 flex h-24 w-1/4 flex-col items-start justify-center  gap-4 rounded-lg border-l-4 border-l-[#ABD0AC] bg-[#DFECE0] pl-4'>
-                        <p className='sm:text-xl text-sm text-[#707070]'>
-                            Total orders
+                <div className='mt-8 flex w-full items-center justify-items-center gap-2 sm:gap-4'>
+                    <div className='flex h-24 w-1/4 flex-col items-start justify-center gap-4  rounded-lg border-l-4 border-l-[#ABD0AC] bg-[#DFECE0] pl-4 sm:h-40'>
+                        <p className='text-sm text-[#707070] sm:text-xl'>
+                            {t("total")}
                         </p>
-                        <p className='sm:text-3xl text-base'>
+                        <p className='text-base sm:text-3xl'>
                             <b>135</b>
                         </p>
                     </div>
-                    <div className='sm:h-40 flex  h-24 w-1/4 flex-col items-start justify-center gap-4 rounded-lg border-l-4  border-l-[#E1CDB4] bg-[#FEEDD8] pl-4'>
-                        <p className='sm:text-xl text-sm text-[#707070]'>
-                            Revenue
+                    <div className='flex h-24  w-1/4 flex-col items-start justify-center gap-4 rounded-lg border-l-4 border-l-[#E1CDB4]  bg-[#FEEDD8] pl-4 sm:h-40'>
+                        <p className='text-sm text-[#707070] sm:text-xl'>
+                            {t("revenue")}
                         </p>
-                        <p className='sm:text-3xl text-base'>
+                        <p className='text-base sm:text-3xl'>
                             <b>450$</b>
                         </p>
                     </div>
-                    <div className='sm:h-40 flex h-24 w-1/4 flex-col items-start justify-center gap-4 rounded-lg border-l-4 border-l-[#BBCDE1] bg-[#E2EDF9] pl-4'>
-                        <p className='sm:text-xl text-sm text-[#707070]'>
-                            Popular Order
+                    <div className='flex h-24 w-1/4 flex-col items-start justify-center gap-4 rounded-lg border-l-4 border-l-[#BBCDE1] bg-[#E2EDF9] pl-4 sm:h-40'>
+                        <p className='text-sm text-[#707070] sm:text-xl'>
+                            {t("popular")}
                         </p>
-                        <p className='sm:text-3xl text-base'>
-                            <b>Fried Chips</b>
+                        <p className='text-base sm:text-3xl'>
+                            <b>{t("fried-chips")} </b>
                         </p>
                     </div>
                 </div>
-                <p className='mt-8  text-2xl font-bold'>Filter</p>
-                <div className='sm:gap-4 mt-4 flex items-center justify-start gap-2'>
-                    <div className='sm:text-xl flex items-center justify-center gap-3 rounded border-2 border-[#004945] p-2 text-xs text-[#004945]'>
+                <p className='mt-8  text-2xl font-bold'>{t("filter")} </p>
+                <div className='mt-4 flex items-center justify-start gap-2 sm:gap-4'>
+                    <div className='flex items-center justify-center gap-3 rounded border-2 border-[#004945] p-2 text-xs text-[#004945] sm:text-xl'>
                         <BiSearch />
-                        <p>Search by food name</p>
+                        <p>{t("search")} </p>
                     </div>
-                    <div className='sm:text-xl flex items-center justify-center gap-3 rounded border-2 border-[#004945] p-2 text-xs text-[#004945]'>
+                    <div className='flex items-center justify-center gap-3 rounded border-2 border-[#004945] p-2 text-xs text-[#004945] sm:text-xl'>
                         <BiCalendar />
-                        <p>Date range</p>
+                        <p>{t("date-btn")} </p>
                     </div>
-                    <div className='sm:text-xl flex items-center justify-center gap-3 rounded border-2 border-[#004945] p-2 text-xs  text-[#004945]'>
+                    <div className='flex items-center justify-center gap-3 rounded border-2 border-[#004945] p-2 text-xs text-[#004945]  sm:text-xl'>
                         <BiPackage />
-                        <p>Status</p>
+                        <p>{t("status-btn")} </p>
                     </div>
-                    <div className='sm:text-xl flex items-center justify-center gap-3 rounded border-2 border-[#004945] p-2 text-xs text-[#004945]'>
+                    <div className='flex items-center justify-center gap-3 rounded border-2 border-[#004945] p-2 text-xs text-[#004945] sm:text-xl'>
                         <BiWallet />
-                        <p>Payment Method</p>
+                        <p>{t("payment-btn")} </p>
                     </div>
                 </div>
                 <div className='flex w-full flex-col'>
-                    <div className='justify-stretch sm:gap-26 sm:font-bold mt-6  flex h-10 w-5/6 items-center gap-6 bg-[#F6F6F6]  pl-4 text-base font-semibold'>
-                        <p>DATE</p>
-                        <p>CUSTOMER</p>
-                        <p>FOOD</p>
-                        <p>STATUS</p>
-                        <p>PAYMENT</p>
-                        <p>PRICE</p>
+                    <div className='justify-stretch sm:gap-26 mt-6 flex  h-10 w-5/6 items-center gap-6 bg-[#F6F6F6] pl-4  text-base font-semibold sm:font-bold'>
+                        <p>{t("date")}</p>
+                        <p>{t("customer")}</p>
+                        <p>{t("food")}</p>
+                        <p>{t("status")}</p>
+                        <p>{t("payment")}</p>
+                        <p>{t("price")}</p>
                     </div>
-                    <div className='sm:gap-24 sm:text-xl flex w-5/6 items-center  justify-start gap-4 bg-[#F6F6F6]  py-8 pl-4 text-lg hover:bg-[#FFFDF3]'>
+                    <div className='flex w-5/6 items-center justify-start gap-4  bg-[#F6F6F6] py-8 pl-4  text-lg hover:bg-[#FFFDF3] sm:gap-24 sm:text-xl'>
                         <div className='flex flex-col'>
                             <p>01/02/2022</p>
                             <p>16:00</p>
@@ -77,19 +80,19 @@ const Orders = () => {
                             <p>Brad Pitt</p>
                         </div>
                         <div>
-                            <p>Sausage</p>
+                            <p>{t("sausage")}</p>
                         </div>
                         <div>
-                            <p>Preparing</p>
+                            <p>{t("preparing")}</p>
                         </div>
                         <div className='sm:w-32'>
-                            <p>Credit Card</p>
+                            <p>{t("credit-card")}</p>
                         </div>
                         <div>
                             <p>5</p>
                         </div>
                     </div>
-                    <div className='sm:gap-24 sm:text-xl  flex w-5/6 items-center  justify-start gap-4 bg-[#F6F6F6]  py-8 pl-4 text-lg hover:bg-[#FFFDF3]'>
+                    <div className='flex w-5/6  items-center justify-start gap-4  bg-[#F6F6F6] py-8 pl-4  text-lg hover:bg-[#FFFDF3] sm:gap-24 sm:text-xl'>
                         <div className='flex flex-col'>
                             <p>01/02/2022</p>
                             <p>16:00</p>
@@ -98,19 +101,19 @@ const Orders = () => {
                             <p>Brad Pitt</p>
                         </div>
                         <div>
-                            <p>Sausage</p>
+                            <p>{t("sausage")}</p>
                         </div>
                         <div>
-                            <p>Preparing</p>
+                            <p>{t("preparing")}</p>
                         </div>
                         <div className='sm:w-32'>
-                            <p>Credit Card</p>
+                            <p>{t("credit-card")}</p>
                         </div>
                         <div>
                             <p>5</p>
                         </div>
                     </div>
-                    <div className='sm:gap-24 sm:text-xl  flex w-5/6 items-center  justify-start gap-4 bg-[#F6F6F6]  py-8 pl-4 text-lg hover:bg-[#FFFDF3]'>
+                    <div className='flex w-5/6  items-center justify-start gap-4  bg-[#F6F6F6] py-8 pl-4  text-lg hover:bg-[#FFFDF3] sm:gap-24 sm:text-xl'>
                         <div className='flex flex-col'>
                             <p>01/02/2022</p>
                             <p>16:00</p>
@@ -119,13 +122,13 @@ const Orders = () => {
                             <p>Brad Pitt</p>
                         </div>
                         <div>
-                            <p>Sausage</p>
+                            <p>{t("sausage")}</p>
                         </div>
                         <div>
-                            <p>Preparing</p>
+                            <p>{t("preparing")}</p>
                         </div>
                         <div className='sm:w-32'>
-                            <p>Credit Card</p>
+                            <p>{t("credit-card")}</p>
                         </div>
                         <div>
                             <p>5</p>

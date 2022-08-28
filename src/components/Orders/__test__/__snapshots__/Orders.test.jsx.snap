@@ -5,10 +5,10 @@ exports[`Navbar Component 1`] = `
   className=" flex h-screen"
 >
   <div
-    className="sm:pl-12 w-full pt-7 pl-4"
+    className="w-full pt-7 pl-4 sm:pl-12"
   >
     <div
-      className="sm:text-6xl flex items-center justify-items-center gap-3 text-4xl"
+      className="flex items-center justify-items-center gap-3 text-4xl sm:text-6xl"
     >
       <svg
         fill="currentColor"
@@ -32,22 +32,22 @@ exports[`Navbar Component 1`] = `
         />
       </svg>
       <p>
-        Orders
+        orders
       </p>
     </div>
     <div
-      className="sm:gap-4 mt-8 flex w-full items-center justify-items-center gap-2"
+      className="mt-8 flex w-full items-center justify-items-center gap-2 sm:gap-4"
     >
       <div
-        className="sm:h-40 flex h-24 w-1/4 flex-col items-start justify-center gap-4 rounded-lg border-l-4 border-l-[#ABD0AC] bg-[#DFECE0] pl-4"
+        className="flex h-24 w-1/4 flex-col items-start justify-center gap-4 rounded-lg border-l-4 border-l-[#ABD0AC] bg-[#DFECE0] pl-4 sm:h-40"
       >
         <p
-          className="sm:text-xl text-sm text-[#707070]"
+          className="text-sm text-[#707070] sm:text-xl"
         >
-          Total orders
+          total
         </p>
         <p
-          className="sm:text-3xl text-base"
+          className="text-base sm:text-3xl"
         >
           <b>
             135
@@ -55,15 +55,15 @@ exports[`Navbar Component 1`] = `
         </p>
       </div>
       <div
-        className="sm:h-40 flex h-24 w-1/4 flex-col items-start justify-center gap-4 rounded-lg border-l-4 border-l-[#E1CDB4] bg-[#FEEDD8] pl-4"
+        className="flex h-24 w-1/4 flex-col items-start justify-center gap-4 rounded-lg border-l-4 border-l-[#E1CDB4] bg-[#FEEDD8] pl-4 sm:h-40"
       >
         <p
-          className="sm:text-xl text-sm text-[#707070]"
+          className="text-sm text-[#707070] sm:text-xl"
         >
-          Revenue
+          revenue
         </p>
         <p
-          className="sm:text-3xl text-base"
+          className="text-base sm:text-3xl"
         >
           <b>
             450$
@@ -71,18 +71,19 @@ exports[`Navbar Component 1`] = `
         </p>
       </div>
       <div
-        className="sm:h-40 flex h-24 w-1/4 flex-col items-start justify-center gap-4 rounded-lg border-l-4 border-l-[#BBCDE1] bg-[#E2EDF9] pl-4"
+        className="flex h-24 w-1/4 flex-col items-start justify-center gap-4 rounded-lg border-l-4 border-l-[#BBCDE1] bg-[#E2EDF9] pl-4 sm:h-40"
       >
         <p
-          className="sm:text-xl text-sm text-[#707070]"
+          className="text-sm text-[#707070] sm:text-xl"
         >
-          Popular Order
+          popular
         </p>
         <p
-          className="sm:text-3xl text-base"
+          className="text-base sm:text-3xl"
         >
           <b>
-            Fried Chips
+            fried-chips
+             
           </b>
         </p>
       </div>
@@ -90,13 +91,14 @@ exports[`Navbar Component 1`] = `
     <p
       className="mt-8 text-2xl font-bold"
     >
-      Filter
+      filter
+       
     </p>
     <div
-      className="sm:gap-4 mt-4 flex items-center justify-start gap-2"
+      className="mt-4 flex items-center justify-start gap-2 sm:gap-4"
     >
       <div
-        className="sm:text-xl flex items-center justify-center gap-3 rounded border-2 border-[#004945] p-2 text-xs text-[#004945]"
+        className="flex items-center justify-center gap-3 rounded border-2 border-[#004945] p-2 text-xs text-[#004945] sm:text-xl"
       >
         <svg
           fill="currentColor"
@@ -117,11 +119,12 @@ exports[`Navbar Component 1`] = `
           />
         </svg>
         <p>
-          Search by food name
+          search
+           
         </p>
       </div>
       <div
-        className="sm:text-xl flex items-center justify-center gap-3 rounded border-2 border-[#004945] p-2 text-xs text-[#004945]"
+        className="flex items-center justify-center gap-3 rounded border-2 border-[#004945] p-2 text-xs text-[#004945] sm:text-xl"
       >
         <svg
           fill="currentColor"
@@ -145,11 +148,12 @@ exports[`Navbar Component 1`] = `
           />
         </svg>
         <p>
-          Date range
+          date-btn
+           
         </p>
       </div>
       <div
-        className="sm:text-xl flex items-center justify-center gap-3 rounded border-2 border-[#004945] p-2 text-xs text-[#004945]"
+        className="flex items-center justify-center gap-3 rounded border-2 border-[#004945] p-2 text-xs text-[#004945] sm:text-xl"
       >
         <svg
           fill="currentColor"
@@ -170,11 +174,12 @@ exports[`Navbar Component 1`] = `
           />
         </svg>
         <p>
-          Status
+          status-btn
+           
         </p>
       </div>
       <div
-        className="sm:text-xl flex items-center justify-center gap-3 rounded border-2 border-[#004945] p-2 text-xs text-[#004945]"
+        className="flex items-center justify-center gap-3 rounded border-2 border-[#004945] p-2 text-xs text-[#004945] sm:text-xl"
       >
         <svg
           fill="currentColor"
@@ -198,7 +203,8 @@ exports[`Navbar Component 1`] = `
           />
         </svg>
         <p>
-          Payment Method
+          payment-btn
+           
         </p>
       </div>
     </div>
@@ -206,29 +212,29 @@ exports[`Navbar Component 1`] = `
       className="flex w-full flex-col"
     >
       <div
-        className="justify-stretch sm:gap-26 sm:font-bold mt-6 flex h-10 w-5/6 items-center gap-6 bg-[#F6F6F6] pl-4 text-base font-semibold"
+        className="justify-stretch sm:gap-26 mt-6 flex h-10 w-5/6 items-center gap-6 bg-[#F6F6F6] pl-4 text-base font-semibold sm:font-bold"
       >
         <p>
-          DATE
+          date
         </p>
         <p>
-          CUSTOMER
+          customer
         </p>
         <p>
-          FOOD
+          food
         </p>
         <p>
-          STATUS
+          status
         </p>
         <p>
-          PAYMENT
+          payment
         </p>
         <p>
-          PRICE
+          price
         </p>
       </div>
       <div
-        className="sm:gap-24 sm:text-xl flex w-5/6 items-center justify-start gap-4 bg-[#F6F6F6] py-8 pl-4 text-lg hover:bg-[#FFFDF3]"
+        className="flex w-5/6 items-center justify-start gap-4 bg-[#F6F6F6] py-8 pl-4 text-lg hover:bg-[#FFFDF3] sm:gap-24 sm:text-xl"
       >
         <div
           className="flex flex-col"
@@ -247,19 +253,19 @@ exports[`Navbar Component 1`] = `
         </div>
         <div>
           <p>
-            Sausage
+            sausage
           </p>
         </div>
         <div>
           <p>
-            Preparing
+            preparing
           </p>
         </div>
         <div
           className="sm:w-32"
         >
           <p>
-            Credit Card
+            credit-card
           </p>
         </div>
         <div>
@@ -269,7 +275,7 @@ exports[`Navbar Component 1`] = `
         </div>
       </div>
       <div
-        className="sm:gap-24 sm:text-xl flex w-5/6 items-center justify-start gap-4 bg-[#F6F6F6] py-8 pl-4 text-lg hover:bg-[#FFFDF3]"
+        className="flex w-5/6 items-center justify-start gap-4 bg-[#F6F6F6] py-8 pl-4 text-lg hover:bg-[#FFFDF3] sm:gap-24 sm:text-xl"
       >
         <div
           className="flex flex-col"
@@ -288,19 +294,19 @@ exports[`Navbar Component 1`] = `
         </div>
         <div>
           <p>
-            Sausage
+            sausage
           </p>
         </div>
         <div>
           <p>
-            Preparing
+            preparing
           </p>
         </div>
         <div
           className="sm:w-32"
         >
           <p>
-            Credit Card
+            credit-card
           </p>
         </div>
         <div>
@@ -310,7 +316,7 @@ exports[`Navbar Component 1`] = `
         </div>
       </div>
       <div
-        className="sm:gap-24 sm:text-xl flex w-5/6 items-center justify-start gap-4 bg-[#F6F6F6] py-8 pl-4 text-lg hover:bg-[#FFFDF3]"
+        className="flex w-5/6 items-center justify-start gap-4 bg-[#F6F6F6] py-8 pl-4 text-lg hover:bg-[#FFFDF3] sm:gap-24 sm:text-xl"
       >
         <div
           className="flex flex-col"
@@ -329,19 +335,19 @@ exports[`Navbar Component 1`] = `
         </div>
         <div>
           <p>
-            Sausage
+            sausage
           </p>
         </div>
         <div>
           <p>
-            Preparing
+            preparing
           </p>
         </div>
         <div
           className="sm:w-32"
         >
           <p>
-            Credit Card
+            credit-card
           </p>
         </div>
         <div>
