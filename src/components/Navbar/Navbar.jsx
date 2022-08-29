@@ -1,5 +1,4 @@
 import { Menu } from "@headlessui/react";
-import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
@@ -19,10 +18,6 @@ function Navbar() {
     useEffect(() => {
         if (localStorage.getItem("id")) {
             setLoggedIn(true);
-
-            axios
-                .get("https://cookiez-app.herokuapp.com/api/customer/new")
-                .then((res) => console.log(res));
         }
     }, []);
 
@@ -30,7 +25,7 @@ function Navbar() {
 
     return (
         <>
-            <nav className='tablet:pl-3 tablet:pr-3 fixed m-auto flex w-[100%] items-center bg-white pt-[1.5rem] pb-[1.5rem] pl-8 pr-8 font-opensans'>
+            <nav className='tablet:pl-3 tablet:pr-3 fixed z-[99999] m-auto flex w-[100%] items-center bg-white pt-[1.5rem] pb-[1.5rem] pl-8 pr-8 font-opensans '>
                 <div className='navbar flex w-[100%] items-center justify-between'>
                     <div className='logo tablet:text-xl text-2xl'>
                         <Link href='/'>
@@ -62,9 +57,9 @@ function Navbar() {
 
                                 <Menu.Items className='absolute right-0  w-56 origin-top-right divide-y divide-gray-100 rounded-[40px] bg-white p-3 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'>
                                     <div className='px-1 py-1 '>
-                                        <Menu.Item>
-                                            {({ active }) => (
-                                                <Link href='/addmealmodal'>
+                                        <Link href='/addmealmodal'>
+                                            <Menu.Item>
+                                                {({ active }) => (
                                                     <button
                                                         className={`${
                                                             active
@@ -77,12 +72,12 @@ function Navbar() {
                                                         </span>
                                                         {t("add-new-food")}
                                                     </button>
-                                                </Link>
-                                            )}
-                                        </Menu.Item>
-                                        <Menu.Item>
-                                            {({ active }) => (
-                                                <Link href='/landingmeal'>
+                                                )}
+                                            </Menu.Item>
+                                        </Link>
+                                        <Link href='/landingmeal'>
+                                            <Menu.Item>
+                                                {({ active }) => (
                                                     <button
                                                         className={`${
                                                             active
@@ -92,12 +87,12 @@ function Navbar() {
                                                     >
                                                         {t("dashboard")}
                                                     </button>
-                                                </Link>
-                                            )}
-                                        </Menu.Item>
-                                        <Menu.Item>
-                                            {({ active }) => (
-                                                <Link href='/profile'>
+                                                )}
+                                            </Menu.Item>
+                                        </Link>
+                                        <Link href='/profile'>
+                                            <Menu.Item>
+                                                {({ active }) => (
                                                     <button
                                                         className={`${
                                                             active
@@ -107,9 +102,9 @@ function Navbar() {
                                                     >
                                                         {t("account-settings")}
                                                     </button>
-                                                </Link>
-                                            )}
-                                        </Menu.Item>
+                                                )}
+                                            </Menu.Item>
+                                        </Link>
 
                                         <Menu.Item>
                                             {({ active }) => (
