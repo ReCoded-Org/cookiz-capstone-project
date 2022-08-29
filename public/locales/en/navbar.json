@@ -2,7 +2,7 @@
     "signup": "Sign Up",
     "login": "Login",
     "add-new-food": " Add a new food",
-    "dashboard": "Dashboard",
+    "dashboard": "Profile",
     "account-settings": "Account Settings",
     "logout": "Logout",
     "name": "{{name}}"

@@ -1,7 +1,25 @@
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
+import { useReducer } from "react";
 
-function Profile({ children }) {
+import EditAccount from "../EditAccount/EditAccount";
+import Orders from "../Orders/Orders";
+
+function reducer(state, action) {
+    if (action.type === "foods") {
+        return [null];
+    }
+    if (action.type === "orders") {
+        return <Orders />;
+    }
+    if (action.type === "editProfile") {
+        return <EditAccount />;
+    }
+    throw Error("Unknown action.");
+}
+
+function Profile() {
+    const [state, dispatch] = useReducer(reducer, <EditAccount />);
     const { t } = useTranslation("profile");
 
     return (
@@ -10,7 +28,7 @@ function Profile({ children }) {
                 <div className='dash-title mb-10 border-b-[1px]'>
                     <div className='logo-wrapper mb-[7rem] pl-8'>
                         <div className='logo tablet:text-xl text-2xl'>
-                            <Link href='#'>
+                            <Link href='/'>
                                 <a>
                                     <span className='font-black'>COOK</span>IEZ
                                 </a>
@@ -33,34 +51,38 @@ function Profile({ children }) {
                 <div className='dash-nav pl-8'>
                     <ul className='flex flex-col gap-5'>
                         <li>
-                            <Link href='#'>
-                                <a>{t("listed-foods")}</a>
-                            </Link>
+                            <div
+                                href='#'
+                                onClick={() => {
+                                    dispatch({ type: "editProfile" });
+                                }}
+                            >
+                                <a>Foods</a>
+                            </div>
                         </li>
                         <li>
-                            <Link href='#'>
-                                <a>{t("orders")}</a>
-                            </Link>
+                            <div
+                                href='#'
+                                onClick={() => {
+                                    dispatch({ type: "orders" });
+                                }}
+                            >
+                                <a>Orders</a>
+                            </div>
                         </li>
                         <li>
-                            <Link href='#'>
-                                <a>{t("payment-settings")}</a>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href='#'>
-                                <a>{t("edit-profile")}</a>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href='#'>
-                                <a> {t("logout")}</a>
-                            </Link>
+                            <div
+                                onClick={() => {
+                                    dispatch({ type: "editProfile" });
+                                }}
+                            >
+                                <a>Edit profile</a>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div className='dash-content w-[85%]'>{children}</div>
+            <div className='dash-content w-[85%]'>{state}</div>
         </div>
     );
 }
