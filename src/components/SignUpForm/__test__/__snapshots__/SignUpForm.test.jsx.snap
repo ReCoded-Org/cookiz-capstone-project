@@ -100,5 +100,15 @@ exports[`Create Sign up Landing page Component 1`] = `
       </div>
     </div>
   </div>
+  <div
+    className=" h-fit w-48 self-center rounded-lg border-2 border-primary text-center text-lg font-bold text-primary hover:cursor-pointer hover:bg-primary hover:text-white"
+  >
+    <button
+      className="m-1"
+      onClick={[Function]}
+    >
+      Cancel
+    </button>
+  </div>
 </div>
 `;

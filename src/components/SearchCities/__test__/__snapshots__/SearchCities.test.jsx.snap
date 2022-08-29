@@ -24,7 +24,7 @@ exports[`renders correctly 1`] = `
         className="flex flex-row justify-between space-x-3"
       >
         <div
-          className="form-group w-full"
+          className="form-group flex w-full flex-row gap-3"
         >
           <input
             className=" w-full p-3 text-2xl font-normal focus-within:border-[#004945] focus:ring-[#004945]"
@@ -34,6 +34,12 @@ exports[`renders correctly 1`] = `
             type="text"
             value=""
           />
+          <button
+            className="w-[200px] bg-primary pt-6 pb-6 text-[24px] text-white hover:bg-green-700"
+            onClick={[Function]}
+          >
+            Enter
+          </button>
         </div>
       </div>
     </div>
