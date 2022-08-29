@@ -75,7 +75,7 @@ function Navbar() {
                                                 )}
                                             </Menu.Item>
                                         </Link>
-                                        <Link href='/landingmeal'>
+                                        <Link href='/profile'>
                                             <Menu.Item>
                                                 {({ active }) => (
                                                     <button

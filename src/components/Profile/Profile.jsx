@@ -10,16 +10,16 @@ function reducer(state, action) {
         return [null];
     }
     if (action.type === "orders") {
-        return [<Orders />];
+        return <Orders />;
     }
     if (action.type === "editProfile") {
-        return [<EditAccount />];
+        return <EditAccount />;
     }
     throw Error("Unknown action.");
 }
 
 function Profile() {
-    const [state, dispatch] = useReducer(reducer, [<EditAccount />]);
+    const [state, dispatch] = useReducer(reducer, <EditAccount />);
     const { t } = useTranslation("profile");
 
     return (
@@ -28,7 +28,7 @@ function Profile() {
                 <div className='dash-title mb-10 border-b-[1px]'>
                     <div className='logo-wrapper mb-[7rem] pl-8'>
                         <div className='logo tablet:text-xl text-2xl'>
-                            <Link href='#'>
+                            <Link href='/'>
                                 <a>
                                     <span className='font-black'>COOK</span>IEZ
                                 </a>
