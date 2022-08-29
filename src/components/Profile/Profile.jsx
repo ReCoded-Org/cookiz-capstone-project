@@ -1,4 +1,5 @@
 import Link from "next/link";
+<<<<<<< HEAD
 import { useReducer } from "react";
 
 import EditAccount from "../EditAccount/EditAccount";
@@ -20,6 +21,13 @@ function reducer(state, action) {
 function Profile() {
     const [state, dispatch] = useReducer(reducer, []);
 
+=======
+import { useTranslation } from "next-i18next";
+
+function Profile({ children }) {
+    const { t } = useTranslation("profile");
+
+>>>>>>> c3c0c52d3bc57f5b4d6bc5f79abdd66749f84bb7
     return (
         <div className='dashboard flex h-screen w-auto font-opensans'>
             <div className='sidebar w-[15%] border-r-[1px] pt-[1.5rem] pb-[1.5rem]'>
@@ -34,7 +42,7 @@ function Profile() {
                         </div>
                         <div className='sub-title'>
                             <span className='text-base text-gray-500'>
-                                Profile
+                                {t("profile")}
                             </span>
                         </div>
                     </div>
@@ -49,6 +57,7 @@ function Profile() {
                 <div className='dash-nav pl-8'>
                     <ul className='flex flex-col gap-5'>
                         <li>
+<<<<<<< HEAD
                             <div
                                 href='#'
                                 onClick={() => {
@@ -76,10 +85,30 @@ function Profile() {
                             >
                                 <a>Edit profile</a>
                             </div>
+=======
+                            <Link href='#'>
+                                <a>{t("listed-foods")}</a>
+                            </Link>
                         </li>
                         <li>
                             <Link href='#'>
-                                <a>Logout</a>
+                                <a>{t("orders")}</a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href='#'>
+                                <a>{t("payment-settings")}</a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href='#'>
+                                <a>{t("edit-profile")}</a>
+                            </Link>
+>>>>>>> c3c0c52d3bc57f5b4d6bc5f79abdd66749f84bb7
+                        </li>
+                        <li>
+                            <Link href='#'>
+                                <a> {t("logout")}</a>
                             </Link>
                         </li>
                     </ul>

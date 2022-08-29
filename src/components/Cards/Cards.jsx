@@ -1,5 +1,8 @@
 import Image from "next/image";
+import { useTranslation } from "next-i18next";
+
 const Cards = () => {
+    const { t } = useTranslation("cards");
     return (
         <div className='mt-20 ml-10 flex flex-col items-center justify-center md:ml-0'>
             {/* title part */}
@@ -7,10 +10,10 @@ const Cards = () => {
             <div className='m-auto flex flex-col'>
                 <div className=' flex  flex-col'>
                     <p className=' text-3xl font-bold text-black'>
-                        You’ve missed home made food?
+                        {t("card-title")}
                     </p>
                     <p className=' pb-12  pt-2 text-xl   text-black'>
-                        Pick your favorite chef, food or cousin.
+                        {t("card-subtitle")}
                     </p>
                 </div>
 
@@ -26,9 +29,7 @@ const Cards = () => {
                                 />
                             </div>
                             <div className='text-xl font-semibold text-black  sm:text-2xl lg:text-3xl'>
-                                {" "}
-                                Pick your chef order the food and get it when
-                                you want
+                                {t("card1-text")}
                             </div>
                             <div>
                                 <Image
@@ -53,11 +54,11 @@ const Cards = () => {
                     <div className='flex  h-[350px] w-[660px] flex-row rounded-[10px] bg-[#FFE7E3] shadow-lg '>
                         <div className='flex basis-2/3 flex-col justify-center gap-4 px-6 pt-12 '>
                             <p className='text-xl font-semibold text-black  sm:text-2xl lg:text-3xl'>
-                                Get a 15% discount for your first order!
+                                {t("card2-text")}
                             </p>
                             <button className='  box-border  h-10 w-32 bg-green-900 '>
                                 <span className='h-5 w-20  text-sm font-bold leading-5 text-white sm:text-lg'>
-                                    Order Now
+                                    {t("card2-btn")}
                                 </span>
                             </button>
                         </div>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useTranslation } from "next-i18next";
 import { useState } from "react";
 import { BiUserCircle } from "react-icons/bi";
 
@@ -6,6 +7,8 @@ export default function EditAccount() {
     const [phoneNum, setPhoneNum] = useState("");
     const [oldPass, setOldPass] = useState("");
     const [newPass, setNewPass] = useState("");
+
+    const { t } = useTranslation("edit-account");
 
     // return EditPage component
     return (
@@ -15,7 +18,7 @@ export default function EditAccount() {
                 {/* icon */}
                 <div className='flex w-1/2 flex-row items-center justify-center'>
                     <BiUserCircle size={38} />
-                    <h1 className='ml-2 text-2xl'>Edit Your Account</h1>
+                    <h1 className='ml-2 text-2xl'>{t("account")}</h1>
                 </div>
                 <div className=''>
                     {/* image, fields */}
@@ -38,7 +41,7 @@ export default function EditAccount() {
                                     className='rounded border text-sm font-bold leading-tight text-gray-700 shadow focus:outline-none'
                                     id='phoneNum'
                                     type='text'
-                                    placeholder='Phone Number'
+                                    placeholder={t("phone-num")}
                                     value={phoneNum}
                                     onChange={(event) =>
                                         setPhoneNum(event.target.value)
@@ -49,7 +52,7 @@ export default function EditAccount() {
                                     className='rounded border text-sm font-bold leading-tight text-gray-700 shadow focus:outline-none'
                                     id='oldPass'
                                     type='password'
-                                    placeholder='Old Password'
+                                    placeholder={t("old-password")}
                                     value={oldPass}
                                     onChange={(event) =>
                                         setOldPass(event.target.value)
@@ -60,7 +63,7 @@ export default function EditAccount() {
                                     className='rounded border text-sm font-bold leading-tight text-gray-700 shadow focus:outline-none'
                                     id='newPass'
                                     type='password'
-                                    placeholder='New Password'
+                                    placeholder={t("new-password")}
                                     value={newPass}
                                     onChange={(event) =>
                                         setNewPass(event.target.value)
@@ -68,7 +71,7 @@ export default function EditAccount() {
                                 />
                                 {/* save button */}
                                 <button className='focus:shadow-outline rounded-xl bg-primary py-2 px-4 font-bold text-white shadow hover:bg-emerald-700'>
-                                    Save
+                                    {t("save-btn")}
                                 </button>
                             </form>
                         </div>
