@@ -12,6 +12,13 @@ export default function SignUpLanding() {
         router.push(PATH);
     };
 
+    // handle cancel button
+    const handleCancel = (e) => {
+        e.preventDefault();
+        // redirect user to home page
+        router.push("/");
+    };
+
     return (
         // root
         <div className='container mx-auto mt-28 flex flex-col p-10'>
@@ -42,6 +49,12 @@ export default function SignUpLanding() {
                         <p className='m-1 text-xl font-bold '>Chef</p>
                     </div>
                 </div>
+            </div>
+            {/* cancel button */}
+            <div className=' h-fit w-48 self-center rounded-lg border-2 border-primary text-center text-lg font-bold text-primary hover:cursor-pointer  hover:bg-primary hover:text-white'>
+                <button className='m-1' onClick={(e) => handleCancel(e)}>
+                    Cancel
+                </button>
             </div>
         </div>
     );

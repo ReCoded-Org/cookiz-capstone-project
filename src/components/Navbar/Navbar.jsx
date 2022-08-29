@@ -123,7 +123,7 @@ function Navbar() {
                         <div className='nav-list'>
                             <ul className='tablet:text-base flex items-center gap-10 text-lg'>
                                 <Link href='/signin'>{t("login")}</Link>
-                                <Link href='/signup'>{t("signup")}</Link>
+                                <Link href='/signUp'>{t("signup")}</Link>
                                 <li>
                                     <Link href='/' locale='en'>
                                         <a>En</a>
