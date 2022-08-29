@@ -1,4 +1,3 @@
-import axios from "axios";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import { useEffect, useState } from "react";
@@ -8,11 +7,6 @@ function Hero() {
     const { t } = useTranslation("hero");
 
     useEffect(() => {}, [search]);
-
-    // intializing axios obj
-    const api = axios.create({
-        baseURL: "https://cookiez-app.herokuapp.com/api",
-    });
 
     // intializing router
     const router = useRouter();
@@ -32,11 +26,11 @@ function Hero() {
                     </h1>
                 </div>
                 <div className='hero-search-section box-border'>
-                    <div className='search-container mb-[2rem] flex items-center'>
+                    <div className='search-container mb-[2rem] flex flex-wrap items-center'>
                         {/* search input */}
                         <div className='search-box mr-3'>
                             <input
-                                className='w-[800px] pt-6 pb-6 text-[24px]'
+                                className='pt-6 pb-6 text-[24px] sm:w-96'
                                 type='text'
                                 placeholder={t("placeholder")}
                                 onChange={(e) => setSearch(e.target.value)}
