@@ -18,25 +18,27 @@ function Hero() {
     };
 
     return (
-        <section className='hero-container mb-[10rem] flex h-screen items-center bg-herobg bg-cover pl-[10rem]'>
-            <div className='wrapper flex h-[30vw] w-auto max-w-[1920px] flex-col justify-center p-[2rem]'>
+        <section className='hero-container mb-[10rem] flex h-screen items-center bg-herobg bg-cover '>
+            <div className='wrapper flex h-[30vw] w-auto max-w-[1920px] flex-col justify-center p-[2rem] pt-80'>
                 <div className='hero-title mb-[3rem] mt-[-10rem]'>
-                    <h1 className='max-w-[35vw] text-[5rem] font-bold leading-[1] text-orange-700'>
+                    <h1 className=' text-6xl font-bold leading-[1] text-orange-700 shadow-black drop-shadow-lg'>
                         {t("title")}
                     </h1>
                 </div>
                 <div className='hero-search-section box-border'>
-                    <div className='search-container mb-[2rem] flex flex-wrap items-center'>
+                    {/* search container */}
+                    <div className='search-container mb-[2rem] flex flex-wrap items-center justify-center gap-3 md:justify-start'>
                         {/* search input */}
-                        <div className='search-box mr-3'>
+                        <div className='search-box w-96 bg-black'>
                             <input
-                                className='pt-6 pb-6 text-[24px] sm:w-96'
+                                className='w-full pt-6 pb-6'
                                 type='text'
                                 placeholder={t("placeholder")}
                                 onChange={(e) => setSearch(e.target.value)}
                                 value={search}
                             />
                         </div>
+                        {/* search btn */}
                         <div className='search-btn'>
                             <button
                                 onClick={(e) => {
@@ -54,7 +56,7 @@ function Hero() {
                             </button>
                         </div>
                     </div>
-                    <h6 className='pl-[10px] text-[0.9vw] text-gray-800'>
+                    <h6 className='pl-[10px] text-center text-gray-800 md:text-left'>
                         {t("subtitle")}
                     </h6>
                 </div>
