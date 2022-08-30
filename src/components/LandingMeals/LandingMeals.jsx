@@ -13,14 +13,14 @@ const Menu = ({ dishes, findChef }) => {
                 );
 
                 return (
-                    <div className='card relative' key={id}>
+                    <div className='card relative ' key={id}>
                         <img
                             src='/images/meat.jpg'
                             width='500'
                             height='300'
                             alt='meatball'
                         />
-                        <span className='m-4 text-sm font-bold md:text-base '>
+                        <span className='m-2 text-sm font-bold md:text-base '>
                             {dish.title}
                         </span>
 
@@ -28,7 +28,7 @@ const Menu = ({ dishes, findChef }) => {
                             <img
                                 src='/images/Avatar.png'
                                 width='50'
-                                height='32'
+                                height='30'
                                 layout='intrinsic'
                                 alt='chef'
                             />
@@ -40,6 +40,7 @@ const Menu = ({ dishes, findChef }) => {
                                 onClick={() => {
                                     window.location.href = `/AddMealModal`;
                                     return (
+                                        // <></>
                                         <div
                                             className='relative rounded border border-red-400 bg-red-100 px-4 py-3 text-red-700'
                                             role='alert'
@@ -88,27 +89,52 @@ const LandingMeals = () => {
     const [menu, setMenu] = useState([]);
     const [chefs, setChefs] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [filter, setFilter] = useState("");
 
     useEffect(() => {
         const dishesList = axios
             .get("https://cookiez-app.herokuapp.com/api/dishes")
-            .then((response) => setDishes(response.data));
+            .then((response) => {
+                setDishes(response.data);
+                setMenu(response.data);
+            });
 
         const chefs = axios
             .get("https://cookiez-app.herokuapp.com/api/chefs")
             .then((response) => {
-                setMenu(response.data);
                 setChefs(response.data);
                 setLoading(false);
-                {
-                    setMenu(dishes);
-                }
             });
+        setMenu(dishes);
         setLoading(false);
     }, []);
 
     const findChef = (chefId) => {
         return chefs.find((chef) => chef.dishes[0] === chefId);
+    };
+
+    const handleKeyDown = (event) => {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            const filter = axios
+                .get(
+                    `https://cookiez-app.herokuapp.com/api/dishes/filter/${event.target.value}`
+                )
+                .then((res) => {
+                    setFilter(res.data);
+                    setMenu(res.data);
+                    console.log(menu);
+                })
+                .catch((err) =>
+                    setMenu(
+                        <>
+                            <div className='text-center text-2xl font-bold'>
+                                {t("no-results")}
+                            </div>
+                        </>
+                    )
+                );
+        }
     };
 
     const content = loading ? (
@@ -134,7 +160,7 @@ const LandingMeals = () => {
         </div>
     ) : (
         <div className='m-14 grid md:grid-cols-6 '>
-            <div className='md:col-span-1 '>
+            <div className='md:  py-7 md:col-span-1'>
                 <nav>
                     <div>
                         <div className='mt-[1px] flex justify-center'>
@@ -143,6 +169,7 @@ const LandingMeals = () => {
                                 type='search'
                                 placeholder={t("Search")}
                                 name='search'
+                                onKeyDown={handleKeyDown}
                             />
                         </div>
                         <h1 className='flex justify-start pt-2 font-bold'>
@@ -195,8 +222,8 @@ const LandingMeals = () => {
                     </div>
                 </nav>
             </div>
-            <div className='py-7  md:col-span-5'>
-                <div className='m-16 mt-8 grid gap-10 sm:grid-cols-1  lg:grid-cols-3'>
+            <div className='md: my-11  md:col-span-5'>
+                <div className='m-16 mt-11 grid gap-10 sm:grid-cols-1  lg:grid-cols-3'>
                     <Menu dishes={menu} chefs={chefs} findChef={findChef} />
                 </div>
             </div>
