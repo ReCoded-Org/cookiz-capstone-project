@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import { useEffect, useState } from "react";
 
@@ -6,6 +7,15 @@ function Hero() {
     const { t } = useTranslation("hero");
 
     useEffect(() => {}, [search]);
+
+    // intializing router
+    const router = useRouter();
+
+    // redirect handler
+    const handleRedirect = (event, PATH) => {
+        event.preventDefault();
+        router.push(PATH);
+    };
 
     return (
         <section className='hero-container mb-[10rem] flex h-screen items-center bg-herobg bg-cover pl-[10rem]'>
@@ -16,10 +26,11 @@ function Hero() {
                     </h1>
                 </div>
                 <div className='hero-search-section box-border'>
-                    <div className='search-container mb-[2rem] flex items-center'>
+                    <div className='search-container mb-[2rem] flex flex-wrap items-center'>
+                        {/* search input */}
                         <div className='search-box mr-3'>
                             <input
-                                className='w-[800px] pt-6 pb-6 text-[24px]'
+                                className='pt-6 pb-6 text-[24px] sm:w-96'
                                 type='text'
                                 placeholder={t("placeholder")}
                                 onChange={(e) => setSearch(e.target.value)}
@@ -27,7 +38,18 @@ function Hero() {
                             />
                         </div>
                         <div className='search-btn'>
-                            <button className='box-border bg-yellow-600 px-10 py-[23px] text-[24px] font-medium text-[white] hover:bg-yellow-700'>
+                            <button
+                                onClick={(e) => {
+                                    if (search != "") {
+                                        handleRedirect(e, "/LandingMeal");
+                                    } else {
+                                        console.log(
+                                            "Enter a food name or location"
+                                        );
+                                    }
+                                }}
+                                className='box-border bg-yellow-600 px-10 py-[23px] text-[24px] font-medium text-[white] hover:bg-yellow-700'
+                            >
                                 {t("search-button")}
                             </button>
                         </div>

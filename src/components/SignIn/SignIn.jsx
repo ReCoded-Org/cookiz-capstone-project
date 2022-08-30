@@ -56,6 +56,7 @@ export default function SignUpUserForm() {
             .then(function (response) {
                 setMessage(response.data.message);
                 console.log(response);
+                localStorage.setItem("id", JSON.parse(response.config.data).id);
                 router.push("/");
             })
             .catch(function (error) {
