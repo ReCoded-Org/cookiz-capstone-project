@@ -40,7 +40,6 @@ const Cards = () => {
                                 />
                             </div>
                         </div>
-                        <div className='flex items-center justify-center'></div>
                         <img
                             src='/images/chef.png'
                             alt='cart'
@@ -53,13 +52,13 @@ const Cards = () => {
                             <p className='text-xl font-semibold text-black  sm:text-2xl lg:text-3xl'>
                                 {t("card2-text")}
                             </p>
-                            <button className='  box-border  h-10 w-32 bg-green-900 '>
+                            <button className='mb-10 box-border h-10 w-32 bg-green-900'>
                                 <span className='h-5 w-20  text-sm font-bold leading-5 text-white sm:text-lg'>
                                     {t("card2-btn")}
                                 </span>
                             </button>
                         </div>
-                        <div>
+                        <div className='w-64'>
                             <img
                                 src='/images/basket.png'
                                 alt='cart'
