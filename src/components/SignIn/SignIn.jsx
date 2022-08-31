@@ -1,5 +1,4 @@
 import axios from "axios";
-import Image from "next/image";
 import { useRouter } from "next/router";
 import { useState } from "react";
 
@@ -39,15 +38,6 @@ export default function SignUpUserForm() {
         password: formData.password,
     };
 
-    //TODO: this has worked, yay!!!
-    /*
-        * Previous err message was: Access to XMLHttpRequest at 'https://cookiez-app.herokuapp.com/api/dishes'
-            from origin 'http://localhost:3000' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
-        * solution was to disable CROSS, I did this by installing a Chrome plugin
-            plugin link: https://chrome.google.com/webstore/detail/moesif-origin-cors-change/digfbfaphojjndkpccljibejjbppifbc/related
-            stackOverFlow solution link: https://stackoverflow.com/questions/46522749/how-to-solve-redirect-has-been-blocked-by-cors-policy-no-access-control-allow
-    */
-
     // POSTing to customer endpoint
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -68,17 +58,6 @@ export default function SignUpUserForm() {
                     setErr(error.response.data.error);
                 }
             });
-        // if res.ok redirect to sign in
-
-        // debugging
-        // } catch (err) {
-        // res not in 200 res, errs from axios itself
-        // errs from axios, if err is within the 200 range
-        // if (err.response) {
-        //} else {
-        // if err is not in 200 range, tis will display the err message itself
-        // }
-        //}
     };
 
     // initializing router
@@ -88,13 +67,12 @@ export default function SignUpUserForm() {
     const handleCancel = (e) => {
         e.preventDefault();
         // redirect user to home page
-        router.push("/signUp");
+        router.push("/");
     };
 
-    const handleSignIn = (e) => {
+    const handleSignUp = (e) => {
         e.preventDefault();
-        // TODO: add route to sign in page
-        router.push("/");
+        router.push("/signUp");
     };
 
     return (
@@ -111,7 +89,6 @@ export default function SignUpUserForm() {
                     onSubmit={(event) => handleSubmit(event)}
                 >
                     {/* username */}
-                    <h2>User Name</h2>
                     <input
                         className='w-full appearance-none rounded border py-2 px-3 text-sm font-bold leading-tight text-gray-700 shadow'
                         id='username'
@@ -125,7 +102,6 @@ export default function SignUpUserForm() {
                     {/* password fields  */}
 
                     {/* password */}
-                    <h2>Password</h2>
                     <input
                         className='w-full appearance-none rounded border py-2 px-3 text-sm font-bold leading-tight text-gray-700 shadow'
                         id='password'
@@ -151,13 +127,13 @@ export default function SignUpUserForm() {
                     </button>
                     {/* sign in redirecting */}
                     <div className='text-center text-xs font-bold text-black'>
-                        <span>Already Have An Account? </span>
+                        <span>Don&apos;t Have An Account? </span>
                         <span className='text-blue-500'>
                             <button
                                 className='underline'
-                                onClick={(e) => handleSignIn(e)}
+                                onClick={(e) => handleSignUp(e)}
                             >
-                                Sign in
+                                Sign Up
                             </button>
                         </span>
                     </div>
@@ -174,16 +150,6 @@ export default function SignUpUserForm() {
                         {message}
                     </h2>
                 )}
-            </div>
-
-            {/* image section */}
-            <div className='flex max-w-screen-sm items-center bg-signUpImageColor'>
-                <Image
-                    src='/images/signup.png'
-                    alt='test'
-                    width={500}
-                    height={500}
-                ></Image>
             </div>
         </div>
     );
