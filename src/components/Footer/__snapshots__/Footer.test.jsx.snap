@@ -2,13 +2,13 @@
 
 exports[`Dashboard Component 1`] = `
 <footer
-  className="footer w-auto bg-black pt-[5rem] pb-[5rem] pl-[4rem] pr-[4rem] font-opensans text-[1.5rem] text-white"
+  className="footer flex w-auto flex-row flex-wrap justify-center bg-black pt-[5rem] pb-[5rem] pl-[4rem] pr-[4rem] font-opensans text-[1.5rem] text-white"
 >
   <div
-    className="footer-wrapper mb-[8rem] flex justify-between"
+    className="footer-wrapper flex flex-row flex-wrap justify-center gap-8 "
   >
     <div
-      className="footer-logo w-[50%]"
+      className="footer-logo w-96 p-0"
     >
       <div
         className="logo mb-[2rem] text-[3rem] font-bold uppercase"
@@ -17,7 +17,6 @@ exports[`Dashboard Component 1`] = `
           href="/#"
           onClick={[Function]}
           onMouseEnter={[Function]}
-          onTouchStart={[Function]}
         >
           cook
           <span
@@ -87,7 +86,7 @@ exports[`Dashboard Component 1`] = `
       </div>
     </div>
     <div
-      className="footer-navigation flex w-[50%] items-center justify-around"
+      className="footer-navigation flex flex-row flex-wrap items-center gap-10 "
     >
       <div
         className="nav-links_left"
@@ -100,7 +99,6 @@ exports[`Dashboard Component 1`] = `
               href="/#"
               onClick={[Function]}
               onMouseEnter={[Function]}
-              onTouchStart={[Function]}
             >
               help
             </a>
@@ -112,7 +110,6 @@ exports[`Dashboard Component 1`] = `
               href="/#"
               onClick={[Function]}
               onMouseEnter={[Function]}
-              onTouchStart={[Function]}
             >
               chef
             </a>
@@ -124,7 +121,6 @@ exports[`Dashboard Component 1`] = `
               href="/#"
               onClick={[Function]}
               onMouseEnter={[Function]}
-              onTouchStart={[Function]}
             >
               promotions
             </a>
@@ -136,7 +132,6 @@ exports[`Dashboard Component 1`] = `
               href="/#"
               onClick={[Function]}
               onMouseEnter={[Function]}
-              onTouchStart={[Function]}
             >
               about
             </a>
@@ -154,7 +149,6 @@ exports[`Dashboard Component 1`] = `
               href="/#"
               onClick={[Function]}
               onMouseEnter={[Function]}
-              onTouchStart={[Function]}
             >
               chef-around
             </a>
@@ -166,7 +160,6 @@ exports[`Dashboard Component 1`] = `
               href="/#"
               onClick={[Function]}
               onMouseEnter={[Function]}
-              onTouchStart={[Function]}
             >
               view-foods
             </a>
@@ -178,7 +171,6 @@ exports[`Dashboard Component 1`] = `
               href="/#"
               onClick={[Function]}
               onMouseEnter={[Function]}
-              onTouchStart={[Function]}
             >
               view-cities
             </a>
@@ -190,7 +182,6 @@ exports[`Dashboard Component 1`] = `
               href="/#"
               onClick={[Function]}
               onMouseEnter={[Function]}
-              onTouchStart={[Function]}
             >
               view-chefs
             </a>
@@ -200,7 +191,7 @@ exports[`Dashboard Component 1`] = `
     </div>
   </div>
   <div
-    className="copyright text-center text-[1rem] font-normal"
+    className="copyright w-full pt-10 text-center text-[1rem] font-normal"
   >
     copyright
   </div>
