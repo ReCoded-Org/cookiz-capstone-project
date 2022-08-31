@@ -18,7 +18,7 @@ const Cards = () => {
                 </div>
 
                 <div className='mb-4  flex flex-row  flex-wrap justify-between gap-16'>
-                    <div className='flex h-[350px]  w-[660px] flex-row items-center  justify-center rounded-[10px]  bg-[#9EE2B8] shadow-lg'>
+                    <div className='max-h-sm flex max-w-sm flex-row items-center justify-center  rounded-[10px] bg-[#9EE2B8]  shadow-lg '>
                         <div className='basis-2/3 p-5'>
                             <div>
                                 <Image
@@ -40,35 +40,29 @@ const Cards = () => {
                                 />
                             </div>
                         </div>
-                        <div className='flex items-center justify-center'>
-                            <Image
-                                alt='t'
-                                src='/images/chef.png'
-                                height={355}
-                                width={225}
-                                className='rounded-r-xl'
-                            />
-                        </div>
+                        <img
+                            src='/images/chef.png'
+                            alt='cart'
+                            className='h-full w-1/2 rounded-r-lg'
+                        />
                     </div>
 
-                    <div className='flex  h-[350px] w-[660px] flex-row rounded-[10px] bg-[#FFE7E3] shadow-lg '>
+                    <div className='max-h-sm  flex max-w-sm flex-row rounded-[10px] bg-[#FFE7E3] shadow-lg '>
                         <div className='flex basis-2/3 flex-col justify-center gap-4 px-6 pt-12 '>
                             <p className='text-xl font-semibold text-black  sm:text-2xl lg:text-3xl'>
                                 {t("card2-text")}
                             </p>
-                            <button className='  box-border  h-10 w-32 bg-green-900 '>
+                            <button className='mb-10 box-border h-10 w-32 bg-green-900'>
                                 <span className='h-5 w-20  text-sm font-bold leading-5 text-white sm:text-lg'>
                                     {t("card2-btn")}
                                 </span>
                             </button>
                         </div>
-                        <div>
-                            <Image
+                        <div className='w-64'>
+                            <img
                                 src='/images/basket.png'
-                                alt='x'
-                                height={355}
-                                width={225}
-                                className='overflow-hidden rounded-r-lg '
+                                alt='cart'
+                                className='h-full rounded-r-lg'
                             />
                         </div>
                     </div>

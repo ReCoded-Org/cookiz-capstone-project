@@ -25,7 +25,7 @@ exports[`renders correctly 1`] = `
       className="mb-4 flex flex-row flex-wrap justify-between gap-16"
     >
       <div
-        className="flex h-[350px] w-[660px] flex-row items-center justify-center rounded-[10px] bg-[#9EE2B8] shadow-lg"
+        className="max-h-sm flex max-w-sm flex-row items-center justify-center rounded-[10px] bg-[#9EE2B8] shadow-lg "
       >
         <div
           className="basis-2/3 p-5"
@@ -272,131 +272,14 @@ exports[`renders correctly 1`] = `
             </span>
           </div>
         </div>
-        <div
-          className="flex items-center justify-center"
-        >
-          <span
-            style={
-              Object {
-                "background": "none",
-                "border": 0,
-                "boxSizing": "border-box",
-                "display": "inline-block",
-                "height": "initial",
-                "margin": 0,
-                "maxWidth": "100%",
-                "opacity": 1,
-                "overflow": "hidden",
-                "padding": 0,
-                "position": "relative",
-                "width": "initial",
-              }
-            }
-          >
-            <span
-              style={
-                Object {
-                  "background": "none",
-                  "border": 0,
-                  "boxSizing": "border-box",
-                  "display": "block",
-                  "height": "initial",
-                  "margin": 0,
-                  "maxWidth": "100%",
-                  "opacity": 1,
-                  "padding": 0,
-                  "width": "initial",
-                }
-              }
-            >
-              <img
-                alt=""
-                aria-hidden={true}
-                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27225%27%20height=%27355%27/%3e"
-                style={
-                  Object {
-                    "background": "none",
-                    "border": 0,
-                    "display": "block",
-                    "height": "initial",
-                    "margin": 0,
-                    "maxWidth": "100%",
-                    "opacity": 1,
-                    "padding": 0,
-                    "width": "initial",
-                  }
-                }
-              />
-            </span>
-            <img
-              alt="t"
-              className="rounded-r-xl"
-              data-nimg="intrinsic"
-              decoding="async"
-              onError={[Function]}
-              onLoad={[Function]}
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style={
-                Object {
-                  "border": "none",
-                  "bottom": 0,
-                  "boxSizing": "border-box",
-                  "display": "block",
-                  "height": 0,
-                  "left": 0,
-                  "margin": "auto",
-                  "maxHeight": "100%",
-                  "maxWidth": "100%",
-                  "minHeight": "100%",
-                  "minWidth": "100%",
-                  "objectFit": undefined,
-                  "objectPosition": undefined,
-                  "padding": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-            <noscript>
-              <img
-                alt="t"
-                className="rounded-r-xl"
-                data-nimg="intrinsic"
-                decoding="async"
-                loading="lazy"
-                src="/_next/image?url=%2Fimages%2Fchef.png&w=640&q=75"
-                srcSet="/_next/image?url=%2Fimages%2Fchef.png&w=256&q=75 1x, /_next/image?url=%2Fimages%2Fchef.png&w=640&q=75 2x"
-                style={
-                  Object {
-                    "border": "none",
-                    "bottom": 0,
-                    "boxSizing": "border-box",
-                    "display": "block",
-                    "height": 0,
-                    "left": 0,
-                    "margin": "auto",
-                    "maxHeight": "100%",
-                    "maxWidth": "100%",
-                    "minHeight": "100%",
-                    "minWidth": "100%",
-                    "objectFit": undefined,
-                    "objectPosition": undefined,
-                    "padding": 0,
-                    "position": "absolute",
-                    "right": 0,
-                    "top": 0,
-                    "width": 0,
-                  }
-                }
-              />
-            </noscript>
-          </span>
-        </div>
+        <img
+          alt="cart"
+          className="h-full w-1/2 rounded-r-lg"
+          src="/images/chef.png"
+        />
       </div>
       <div
-        className="flex h-[350px] w-[660px] flex-row rounded-[10px] bg-[#FFE7E3] shadow-lg "
+        className="max-h-sm flex max-w-sm flex-row rounded-[10px] bg-[#FFE7E3] shadow-lg "
       >
         <div
           className="flex basis-2/3 flex-col justify-center gap-4 px-6 pt-12 "
@@ -407,7 +290,7 @@ exports[`renders correctly 1`] = `
             card2-text
           </p>
           <button
-            className=" box-border h-10 w-32 bg-green-900 "
+            className="mb-10 box-border h-10 w-32 bg-green-900"
           >
             <span
               className="h-5 w-20 text-sm font-bold leading-5 text-white sm:text-lg"
@@ -416,125 +299,14 @@ exports[`renders correctly 1`] = `
             </span>
           </button>
         </div>
-        <div>
-          <span
-            style={
-              Object {
-                "background": "none",
-                "border": 0,
-                "boxSizing": "border-box",
-                "display": "inline-block",
-                "height": "initial",
-                "margin": 0,
-                "maxWidth": "100%",
-                "opacity": 1,
-                "overflow": "hidden",
-                "padding": 0,
-                "position": "relative",
-                "width": "initial",
-              }
-            }
-          >
-            <span
-              style={
-                Object {
-                  "background": "none",
-                  "border": 0,
-                  "boxSizing": "border-box",
-                  "display": "block",
-                  "height": "initial",
-                  "margin": 0,
-                  "maxWidth": "100%",
-                  "opacity": 1,
-                  "padding": 0,
-                  "width": "initial",
-                }
-              }
-            >
-              <img
-                alt=""
-                aria-hidden={true}
-                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27225%27%20height=%27355%27/%3e"
-                style={
-                  Object {
-                    "background": "none",
-                    "border": 0,
-                    "display": "block",
-                    "height": "initial",
-                    "margin": 0,
-                    "maxWidth": "100%",
-                    "opacity": 1,
-                    "padding": 0,
-                    "width": "initial",
-                  }
-                }
-              />
-            </span>
-            <img
-              alt="x"
-              className="overflow-hidden rounded-r-lg "
-              data-nimg="intrinsic"
-              decoding="async"
-              onError={[Function]}
-              onLoad={[Function]}
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style={
-                Object {
-                  "border": "none",
-                  "bottom": 0,
-                  "boxSizing": "border-box",
-                  "display": "block",
-                  "height": 0,
-                  "left": 0,
-                  "margin": "auto",
-                  "maxHeight": "100%",
-                  "maxWidth": "100%",
-                  "minHeight": "100%",
-                  "minWidth": "100%",
-                  "objectFit": undefined,
-                  "objectPosition": undefined,
-                  "padding": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-            <noscript>
-              <img
-                alt="x"
-                className="overflow-hidden rounded-r-lg "
-                data-nimg="intrinsic"
-                decoding="async"
-                loading="lazy"
-                src="/_next/image?url=%2Fimages%2Fbasket.png&w=640&q=75"
-                srcSet="/_next/image?url=%2Fimages%2Fbasket.png&w=256&q=75 1x, /_next/image?url=%2Fimages%2Fbasket.png&w=640&q=75 2x"
-                style={
-                  Object {
-                    "border": "none",
-                    "bottom": 0,
-                    "boxSizing": "border-box",
-                    "display": "block",
-                    "height": 0,
-                    "left": 0,
-                    "margin": "auto",
-                    "maxHeight": "100%",
-                    "maxWidth": "100%",
-                    "minHeight": "100%",
-                    "minWidth": "100%",
-                    "objectFit": undefined,
-                    "objectPosition": undefined,
-                    "padding": 0,
-                    "position": "absolute",
-                    "right": 0,
-                    "top": 0,
-                    "width": 0,
-                  }
-                }
-              />
-            </noscript>
-          </span>
+        <div
+          className="w-64"
+        >
+          <img
+            alt="cart"
+            className="h-full rounded-r-lg"
+            src="/images/basket.png"
+          />
         </div>
       </div>
     </div>

@@ -24,10 +24,10 @@ const SearchCities = () => {
 
                 <div className='w-2/3 '>
                     <div className='flex flex-row justify-between space-x-3'>
-                        <div className='form-group flex w-full flex-row gap-3'>
+                        <div className=' form-group flex w-full flex-row flex-wrap justify-center gap-3'>
                             <input
                                 type='text'
-                                className=' w-full p-3 text-2xl font-normal focus-within:border-[#004945] focus:ring-[#004945]'
+                                className='p-3 text-2xl font-normal focus-within:border-[#004945] focus:ring-[#004945]'
                                 placeholder={t("placeholder")}
                                 value={city}
                                 onChange={(e) => setCity(e.target.value)}
