@@ -134,6 +134,7 @@ function Navbar() {
                     ) : (
                         <div className='nav-list'>
                             <ul className='tablet:text-base flex items-center gap-10 text-lg'>
+                                <Link href='/LandingMeal'>{t("Meals")}</Link>
                                 <Link href='/signin'>{t("login")}</Link>
                                 <Link href='/signUp'>{t("signup")}</Link>
                                 <li>
