@@ -17,6 +17,7 @@ exports[`Dashboard Component 1`] = `
           href="/#"
           onClick={[Function]}
           onMouseEnter={[Function]}
+          onTouchStart={[Function]}
         >
           cook
           <span
@@ -99,6 +100,7 @@ exports[`Dashboard Component 1`] = `
               href="/#"
               onClick={[Function]}
               onMouseEnter={[Function]}
+              onTouchStart={[Function]}
             >
               help
             </a>
@@ -110,6 +112,7 @@ exports[`Dashboard Component 1`] = `
               href="/#"
               onClick={[Function]}
               onMouseEnter={[Function]}
+              onTouchStart={[Function]}
             >
               chef
             </a>
@@ -121,6 +124,7 @@ exports[`Dashboard Component 1`] = `
               href="/#"
               onClick={[Function]}
               onMouseEnter={[Function]}
+              onTouchStart={[Function]}
             >
               promotions
             </a>
@@ -132,6 +136,7 @@ exports[`Dashboard Component 1`] = `
               href="/#"
               onClick={[Function]}
               onMouseEnter={[Function]}
+              onTouchStart={[Function]}
             >
               about
             </a>
@@ -149,6 +154,7 @@ exports[`Dashboard Component 1`] = `
               href="/#"
               onClick={[Function]}
               onMouseEnter={[Function]}
+              onTouchStart={[Function]}
             >
               chef-around
             </a>
@@ -160,6 +166,7 @@ exports[`Dashboard Component 1`] = `
               href="/#"
               onClick={[Function]}
               onMouseEnter={[Function]}
+              onTouchStart={[Function]}
             >
               view-foods
             </a>
@@ -171,6 +178,7 @@ exports[`Dashboard Component 1`] = `
               href="/#"
               onClick={[Function]}
               onMouseEnter={[Function]}
+              onTouchStart={[Function]}
             >
               view-cities
             </a>
@@ -182,6 +190,7 @@ exports[`Dashboard Component 1`] = `
               href="/#"
               onClick={[Function]}
               onMouseEnter={[Function]}
+              onTouchStart={[Function]}
             >
               view-chefs
             </a>
